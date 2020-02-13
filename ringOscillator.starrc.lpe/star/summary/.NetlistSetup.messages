@@ -1,0 +1,10 @@
+  
+ReadHNdb            Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=190.1 
+XtrNet              Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=190.1 
+NETLIST_SELECT_NETS Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=190.2 
+WrtSelectNets       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=190.2 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=190.2 
+
+End Time: Thu Feb  6 11:10:03 2020
+

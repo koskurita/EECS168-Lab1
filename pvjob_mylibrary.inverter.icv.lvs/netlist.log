@@ -1,0 +1,7 @@
+[10:54:24.71] /m Information: "Starting netlisting for design "mylibrary/inverter/schematic"..."
+               (NETLISTING-010)
+[10:54:24.76] /# db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows
+               1]] -value 704x485+670+318
+[10:54:25.01] /o No Design Integrity rule violations found in "mylibrary/inverter/schematic"
+[10:54:25.07] /m Information: "Netlisting design "mylibrary/inverter/schematic" finished
+               successfully." (NETLISTING-012)

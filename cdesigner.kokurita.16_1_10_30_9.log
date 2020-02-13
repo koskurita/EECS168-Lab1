@@ -1,0 +1,54 @@
+[11:53:27.31] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Feb  7 11:53:20 2020
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[11:53:31.96] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[11:53:31.96] /i de::showOpenDesign
+[11:53:32.01] /o oa:0x237dabf0
+[11:53:32.08] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[11:53:32.36] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+667
+[11:53:33.94] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+171+426
+[11:53:34.58] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[11:53:34.59] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[11:53:36.17] /i gi::setCurrentIndex {designCells} -index {ringOscillator_testbench} -in [gi::getDialogs {deOpenDesign}]
+[11:53:36.24] /i gi::setItemSelection {designCells} -index {ringOscillator_testbench} -in [gi::getDialogs {deOpenDesign}]
+[11:53:37.39] /i gi::setCurrentIndex {designViews} -index {config} -in [gi::getDialogs {deOpenDesign}]
+[11:53:37.40] /i gi::setItemSelection {designViews} -index {config} -in [gi::getDialogs {deOpenDesign}]
+[11:53:37.96] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[11:53:37.97] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[11:53:45.84] /i gi::setCurrentIndex {designViews} -index {config} -in [gi::getDialogs {deOpenDesign}]
+[11:53:45.85] /i gi::setItemSelection {designViews} -index {config} -in [gi::getDialogs {deOpenDesign}]
+[11:53:46.34] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[11:53:46.35] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[11:53:47.51] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[11:53:47.52] /# de::open [dm::findCellView {schematic} -cellName {ringOscillator_testbench} -libName {mylibrary}] -readOnly 0
+[11:53:47.56] /o 	############################################
+[11:53:47.56] /o 	--------------------------------------------
+[11:53:47.56] /o 	PDK Name................... : SAED_PDK_90
+[11:53:47.56] /o 	PDK Release Date........... : 29-Sep-2015
+[11:53:47.56] /o 	PDK Custom Designer Version : J-2014.12-2
+[11:53:47.56] /o 	--------------------------------------------
+[11:53:47.56] /o 	############################################
+[11:53:47.56] /o 
+[11:53:47.56] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[11:53:47.57] /o SAED PDK 90: Loaded callbacks
+[11:53:47.57] /o SAED PDK 90: Loaded display resources
+[11:53:47.63] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[11:53:47.73] /r giWindowId 1
+[11:53:47.74] /r giWindowGeometry 1428x925
+[11:53:48.08] /o 0.1
+[11:53:50.09] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+519+22
+[11:53:52.68] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+230+22
+[11:54:02.52] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+-316+22
+[11:54:26.94] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[11:54:27.40] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[11:54:27.48] /i gi::setActiveWindow 0
+[11:54:27.48] /i gi::setActiveWindow 0 -raise true
+[11:54:28.99] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[11:54:29.06] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[11:54:29.37] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+667

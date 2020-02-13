@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--Created by Custom Designer (TM), build , on Thu Jan 16 10:18:32 2020-->
+<!--Created by Custom Designer (TM), build , on Thu Feb  6 09:01:41 2020-->
 <file-format version="1.0" name="stateCategory">
  <object version="1" type="saOutputs" name="outputs">
   <attribute type="giString" value="default" name="outputSet"/>
@@ -11,7 +11,7 @@
       <attribute type="giString" value="dc tran" name="analyses"/>
       <attribute type="giString" value="v(/VOUT)" name="expr"/>
       <attribute type="giString" value="VOUT" name="name"/>
-      <attribute type="enOutputType" value="expression" name="outputType"/>
+      <attribute type="enOutputType" value="net" name="outputType"/>
       <attribute type="giBoolean" value="1" name="plot"/>
       <attribute type="giString" value="" name="probe"/>
       <attribute type="giBoolean" value="1" name="save"/>

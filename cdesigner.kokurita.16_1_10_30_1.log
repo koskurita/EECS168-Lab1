@@ -1,0 +1,1971 @@
+[08:25:21.11] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 30 08:25:18 2020
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[08:25:24.55] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+407+223
+[08:25:28.57] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 0]
+[08:25:28.57] /i dm::showNewCellView -parent 0
+[08:25:28.61] /o oa:0x228c4890
+[08:25:28.71] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[08:25:29.06] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+427+243
+[08:25:30.04] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[08:25:30.06] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[08:25:31.71] /i gi::setCurrentIndex {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+[08:25:31.77] /i gi::setItemSelection {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+[08:25:45.08] /i gi::setItemSelection {views} -index {layout} -in [gi::getDialogs {dmNewCellView}]
+[08:25:50.90] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+[08:25:50.91] /# db::getAttr viewType -of [dm::findCellView layout -cell [dm::findCell inverter -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[08:25:50.98] /r giDialog gi::setActiveDialog [gi::getDialogs {dmOverwrite}]
+[08:25:51.25] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmOverwrite}] -value 254x89+447+263
+[08:25:52.54] /r giDialog gi::pressButton {overwrite} -in [gi::getDialogs {dmOverwrite}]
+[08:25:52.61] /# db::destroy [dm::findCellView layout -cellName inverter -libName mylibrary]
+[08:25:52.63] /# gi::setItemSelection {views} -index {} -in [gi::getDialogs {dmNewCellView}]
+[08:25:52.64] /# dm::createCellView layout -cell [dm::findCell inverter -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]] -viewType maskLayout
+[08:25:52.65] /# de::open [dm::findCellView layout -cell [dm::findCell inverter -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]] -application leLayout
+[08:25:52.70] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[08:25:52.72] /o 	############################################
+[08:25:52.72] /o 	--------------------------------------------
+[08:25:52.72] /o 	PDK Name................... : SAED_PDK_90
+[08:25:52.72] /o 	PDK Release Date........... : 29-Sep-2015
+[08:25:52.72] /o 	PDK Custom Designer Version : J-2014.12-2
+[08:25:52.72] /o 	--------------------------------------------
+[08:25:52.72] /o 	############################################
+[08:25:52.72] /o 
+[08:25:52.72] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[08:25:52.72] /o SAED PDK 90: Loaded callbacks
+[08:25:52.73] /o SAED PDK 90: Loaded display resources
+[08:25:52.84] /r giWindowId 1
+[08:25:52.84] /r giWindowGeometry 1428x925
+[08:25:53.07] /# gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[08:25:53.68] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x775
+[08:25:55.08] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+116+22
+[08:25:56.08] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+131+31
+[08:25:56.61] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+131+31
+[08:26:02.52] /i gi::setField {drcMode} -value {Assist} -in [gi::getToolbars {leDRCToolbar} -from [gi::getWindows 1]]
+[08:26:18.00] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:18.01] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:18.02] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:18.03] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:18.03] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:18.16] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:26:22.82] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:26:22.82] /i ile::createRuler
+[08:26:27.74] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:26:27.74] /i de::startDrag {0 -0.002} -window 1
+[08:26:32.21] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:26:32.21] /i de::endDrag {0.285 0.001} -window 1
+[08:26:38.85] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:26:38.85] /i de::startDrag {0 0} -window 1
+[08:26:42.05] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:26:42.05] /i de::endDrag {0.004 0.149} -window 1
+[08:27:13.89] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:27:13.90] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:27:13.90] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:27:14.02] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:27:17.02] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:27:17.02] /i ile::createRectangle
+[08:27:35.14] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:27:35.14] /i de::startDrag {0 -0.001} -window 1
+[08:27:39.63] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:27:39.63] /i de::endDrag {0.277 0.152} -window 1
+[08:29:17.97] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:29:17.97] /i ile::createRectangle
+[08:29:20.56] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:29:20.56] /i de::startDrag {0.052 0.1} -window 1
+[08:29:23.94] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:29:23.94] /i de::endDrag {0.052 0.05} -window 1
+[08:29:25.31] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:29:25.32] /i de::addPoint {0.065 0.075} -window 1
+[08:29:27.97] /# gi::executeAction leMove -in [gi::getWindows 1]
+[08:29:27.97] /i ile::move
+[08:29:37.80] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:29:37.80] /i ile::delete
+[08:29:39.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:29:39.07] /i de::addPoint {0.064 0.098} -window 1
+[08:29:40.58] /i gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:40.58] /i gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:40.59] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:40.60] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:40.60] /# gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:40.72] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:29:49.58] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:29:49.58] /i ile::createRectangle
+[08:29:55.02] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:29:55.02] /i de::startDrag {0.051 0.099} -window 1
+[08:29:59.72] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:29:59.72] /i de::endDrag {0.151 0.049} -window 1
+[08:30:09.75] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:30:09.75] /i ile::createRuler
+[08:30:11.46] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:30:11.46] /i de::startDrag {0.05 0.049} -window 1
+[08:30:12.81] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:30:12.81] /i de::endDrag {0.053 0.099} -window 1
+[08:30:14.20] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:30:14.20] /i ile::createRectangle
+[08:30:17.24] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:30:17.24] /i de::startDrag {0.189 0.1} -window 1
+[08:30:22.80] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:30:22.80] /i de::endDrag {0.242 0.051} -window 1
+[08:30:25.17] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[08:30:25.17] /i de::zoom -window 1 -factor 0.5 -center {-0.164 0.098}
+[08:30:25.18] /o {-0.43 -0.483} {0.759 0.288}
+[08:30:25.85] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[08:30:25.85] /i de::zoom -window 1 -factor 2.0 -center {-0.169 0.099}
+[08:30:25.86] /o {-0.3 -0.192} {0.295 0.193}
+[08:30:25.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[08:30:25.93] /i de::zoom -window 1 -factor 2.0 -center {-0.169 0.099}
+[08:30:25.94] /o {-0.234 -0.047} {0.063 0.146}
+[08:30:26.31] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[08:30:26.31] /i de::zoom -window 1 -factor 0.5 -center {-0.169 0.099}
+[08:30:26.32] /o {-0.3 -0.192} {0.295 0.193}
+[08:30:26.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[08:30:26.49] /i de::zoom -window 1 -factor 0.5 -center {-0.168 0.099}
+[08:30:26.50] /o {-0.431 -0.483} {0.758 0.288}
+[08:30:26.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[08:30:26.83] /i de::zoom -window 1 -factor 2.0 -center {-0.168 0.099}
+[08:30:26.84] /o {-0.3 -0.192} {0.295 0.193}
+[08:30:29.32] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:30:29.32] /i ile::delete
+[08:30:30.23] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:30:30.23] /i de::addPoint {0.227 0.076} -window 1
+[08:30:31.60] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:30:31.60] /i ile::createRectangle
+[08:30:33.70] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:30:33.70] /i de::startDrag {0.2 0.099} -window 1
+[08:30:35.38] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:30:35.38] /i de::endDrag {0.249 0.051} -window 1
+[08:30:47.17] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:30:47.17] /i ile::createRuler
+[08:30:50.55] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:30:50.55] /i de::startDrag {0.052 -0.075} -window 1
+[08:30:52.44] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:30:52.44] /i de::endDrag {0.051 -0.1} -window 1
+[08:30:58.20] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:30:58.20] /i ile::createRectangle
+[08:30:59.58] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:30:59.58] /i de::startDrag {0.05 -0.076} -window 1
+[08:31:05.30] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:31:05.30] /i de::endDrag {0.151 -0.1} -window 1
+[08:31:12.47] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:31:12.47] /i de::startDrag {0.202 -0.075} -window 1
+[08:31:18.02] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:31:18.02] /i de::endDrag {0.25 -0.099} -window 1
+[08:31:37.37] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 1]
+[08:31:37.37] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value true
+[08:31:37.39] /# gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:31:37.70] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x750
+[08:31:37.72] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value 190x750
+[08:31:38.53] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:31:38.53] /i de::addPoint {0.102 -0.083} -window 1
+[08:31:42.76] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:31:42.76] /i de::abortCommand -window 1
+[08:31:52.36] /# gi::executeAction leMove -in [gi::getWindows 1]
+[08:31:52.36] /i ile::move
+[08:31:54.29] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:31:54.29] /i de::addPoint {0.124 0.083} -window 1
+[08:31:59.04] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:31:59.04] /i de::addPoint {0.124 0.085} -window 1
+[08:32:50.29] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value false
+[08:32:50.31] /i gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:32:50.63] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x775
+[08:33:56.79] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:33:56.79] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:33:56.80] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:33:56.80] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:33:56.80] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:33:56.95] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:34:04.92] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:34:04.92] /i ile::createRuler
+[08:34:07.62] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:34:07.62] /i de::startDrag {0.049 0.15} -window 1
+[08:34:09.66] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:34:09.66] /i de::endDrag {0.051 0.121} -window 1
+[08:34:19.88] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:34:19.88] /i de::startDrag {0.099 0.102} -window 1
+[08:34:24.78] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:34:24.78] /i de::endDrag {0.099 0.121} -window 1
+[08:34:37.46] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:34:37.47] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:34:37.47] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:34:37.60] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:34:39.09] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:34:39.09] /i ile::createRectangle
+[08:35:01.37] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:35:01.37] /i de::startDrag {0.05 0.119} -window 1
+[08:35:08.81] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:35:08.81] /i de::endDrag {0.172 0.036} -window 1
+[08:35:20.15] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:35:20.15] /i ile::delete
+[08:35:21.85] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:35:21.85] /i de::addPoint {0.161 0.12} -window 1
+[08:35:24.37] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:35:24.37] /i ile::createRuler
+[08:35:28.40] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:35:28.40] /i de::startDrag {0.051 0.086} -window 1
+[08:35:36.81] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:35:36.81] /i de::endDrag {0.045 0.086} -window 1
+[08:35:39.09] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:35:39.09] /i ile::delete
+[08:35:42.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:35:42.84] /i de::addPoint {0.047 0.098} -window 1
+[08:35:45.07] /w Warning: Nothing is bound to the 'Meta-z' in the current active set. (WINDOW-015)
+[08:35:46.54] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:46.55] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:46.55] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:46.56] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:46.56] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:46.72] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:35:48.66] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:35:48.66] /i de::startDrag {0 0.15} -window 1
+[08:36:00.71] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:36:00.71] /i de::endDrag {0.285 0} -window 1
+[08:36:11.45] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:36:11.45] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:36:12.81] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:36:12.81] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:36:15.53] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:36:15.53] /i ile::createRuler
+[08:36:17.98] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:36:17.98] /i de::startDrag {0.151 0.074} -window 1
+[08:36:21.00] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:36:21.00] /i de::endDrag {0.17 0.074} -window 1
+[08:39:52.91] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:39:52.91] /i de::addPoint {0.17 0.073} -window 1
+[08:39:55.72] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:39:55.72] /i de::addPoint {0.176 0.075} -window 1
+[08:39:58.69] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:39:58.69] /i ile::createRuler
+[08:40:01.88] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:40:01.88] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:40:08.60] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:40:08.60] /i de::startDrag {0.227 0.149} -window 1
+[08:40:12.36] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:40:12.36] /i de::endDrag {0.226 0.121} -window 1
+[08:40:22.54] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:40:22.54] /i ile::createRuler
+[08:40:24.21] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:40:24.21] /i ile::createRectangle
+[08:40:25.80] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:25.80] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:25.81] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:25.81] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:25.81] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.01] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.83] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.83] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.84] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.84] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.84] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:26.96] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:40:51.62] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+9+27
+[08:41:45.78] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:41:45.78] /i de::startDrag {0.175 0.119} -window 1
+[08:42:34.92] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:42:34.92] /i de::endDrag {0.031 0.031} -window 1
+[08:42:39.24] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:42:39.24] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:42:41.03] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:41.04] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:41.04] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:41.05] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:41.05] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:41.19] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:42.41] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:43.57] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:44.38] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:45.12] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.74] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.74] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.75] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.75] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.75] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:47.87] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:48.74] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:49.32] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:51.13] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.24] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.24] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.25] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.25] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.25] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:52.39] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.02] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.03] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.03] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.04] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.04] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:42:54.19] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:03.19] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:03.95] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.01] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.02] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.02] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.03] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.03] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:05.18] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.10] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.10] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.11] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.11] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.11] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.30] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.65] /i gi::setCurrentIndex {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.66] /i gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.66] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.67] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.67] /# gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:06.84] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:07.95] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:07.95] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:07.96] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:07.96] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:07.96] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.10] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.54] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.55] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.55] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.56] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.56] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:08.68] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:43:19.18] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:43:19.18] /i ile::delete
+[08:44:07.46] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.47] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.47] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.62] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.83] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.84] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.84] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.85] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:07.85] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:08.00] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:14.25] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:44:14.25] /i de::startDrag {0.175 0.12} -window 1
+[08:44:23.21] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:44:23.21] /i de::endDrag {0.272 0.033} -window 1
+[08:44:29.91] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:44:29.91] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:44:32.26] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:44:32.26] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:44:34.98] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:36.46] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:36.84] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:37.49] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:37.77] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:38.52] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:38.57] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:38.64] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:38.71] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:44:38.77] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.41] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.42] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.42] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.43] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.43] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:35.56] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:36.85] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.25] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.26] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.26] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.26] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.26] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:39.41] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:40.78] /i gi::setCurrentIndex {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:40.78] /i gi::setItemSelection {lpps} -index {0,0 1,0 2,0 3,0 4,0 5,0 6,0 7,0 8,0 9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:42.15] /i gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:43.40] /i gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:44.12] /i gi::executeAction leOLPSetAllSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:52.99] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:52.99] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:53.00] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:53.01] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:53.01] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:53.13] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.55] /i gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.55] /i gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.56] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.56] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.56] /# gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:45:56.90] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.30] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.30] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.31] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.31] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.31] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:01.46] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:13.48] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:46:13.48] /i de::startDrag {0.026 -0.052} -window 1
+[08:46:16.41] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:46:16.41] /i de::endDrag {0.176 -0.125} -window 1
+[08:46:20.27] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:46:20.27] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:46:21.97] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:46:21.97] /i ile::createRectangle
+[08:46:26.01] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:46:26.01] /i de::startDrag {0.026 -0.049} -window 1
+[08:46:29.14] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:46:29.14] /i de::endDrag {0.175 -0.125} -window 1
+[08:46:31.26] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:31.27] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:31.27] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:31.28] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:31.28] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:31.36] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:32.66] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:46:32.66] /i ile::createRectangle
+[08:46:34.11] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:46:34.11] /i de::startDrag {0.177 -0.049} -window 1
+[08:46:39.48] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:46:39.48] /i de::endDrag {0.265 -0.126} -window 1
+[08:46:53.17] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:53.17] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:53.18] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:53.19] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:53.19] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:53.29] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:46:56.24] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:46:56.24] /i de::startDrag {0.176 0.124} -window 1
+[08:47:09.42] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:47:09.42] /i de::endDrag {0.265 0.031} -window 1
+[08:47:31.90] /i gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:31.91] /i gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:31.91] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:31.92] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:31.92] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:32.03] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:33.19] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:47:33.19] /i de::startDrag {0.176 0.124} -window 1
+[08:47:43.68] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:47:43.68] /i de::endDrag {0.026 0.025} -window 1
+[08:47:46.42] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:47:46.42] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:47:47.57] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:47:47.57] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:47:48.86] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:48.87] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:48.87] /# gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:48.97] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:54.12] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:47:54.12] /i de::startDrag {0.177 0.125} -window 1
+[08:47:56.17] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:47:56.17] /i de::endDrag {0.025 0.024} -window 1
+[08:47:57.48] /i gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:57.48] /i gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:57.49] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:57.50] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:57.50] /# gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:57.53] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:47:59.99] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:47:59.99] /i de::startDrag {0.176 0.123} -window 1
+[08:48:05.91] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:48:05.91] /i de::endDrag {0.264 0.021} -window 1
+[08:48:09.71] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:48:09.71] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:48:11.20] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:48:11.20] /i de::startDrag {0.176 0.124} -window 1
+[08:48:16.27] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:48:16.27] /i de::endDrag {0.266 0.025} -window 1
+[08:49:29.30] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+29+22
+[08:49:34.78] /i gi::setCurrentIndex {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:49:34.78] /i gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:49:34.79] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:49:34.80] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:49:34.80] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:49:34.94] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:51:01.01] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:51:01.01] /i ile::createPath
+[08:51:07.22] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:51:07.22] /i ile::createRuler
+[08:51:16.00] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:51:16.00] /i de::startDrag {0.089 -0.102} -window 1
+[08:51:19.11] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:51:19.11] /i de::endDrag {0.09 -0.12} -window 1
+[08:51:22.91] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:51:22.91] /i de::startDrag {0.091 -0.12} -window 1
+[08:51:24.57] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:51:24.57] /i de::endDrag {0.079 -0.121} -window 1
+[08:51:29.53] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:51:29.53] /i ile::createPath
+[08:51:41.59] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:51:41.59] /i de::startDrag {0.092 -0.121} -window 1
+[08:51:47.03] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:51:47.03] /i de::endDrag {0.076 0.118} -window 1
+[08:51:51.90] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:51:51.90] /i de::addPoint {0.072 -0.117} -window 1
+[08:51:53.01] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:51:53.01] /i de::addPoint {0.077 -0.049} -window 1
+[08:51:54.30] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:51:54.30] /i de::addPoint {0.034 -0.094} -window 1
+[08:51:55.36] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:51:55.36] /i de::addPoint {0.071 -0.096} -window 1
+[08:51:57.52] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:51:57.52] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:51:58.79] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:51:58.79] /i de::startDrag {0.096 0.003} -window 1
+[08:51:59.31] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:51:59.31] /i de::endDrag {0.063 -0.027} -window 1
+[08:51:59.71] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:51:59.71] /i de::startDrag {0.103 -0.026} -window 1
+[08:52:00.12] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:00.12] /i de::endDrag {0.037 -0.147} -window 1
+[08:52:00.60] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:00.60] /i de::startDrag {-0.001 -0.127} -window 1
+[08:52:00.77] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:00.77] /i de::endDrag {0.022 -0.052} -window 1
+[08:52:01.40] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:52:01.40] /i de::commandOption toggleAngleMode -point {0.164 -0.04}
+[08:52:01.52] /w Warning: Nothing is bound to the 'Button3-Double' in the current active set. (WINDOW-015)
+[08:52:02.79] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:52:02.79] /i de::addPoint {0.044 -0.02} -window 1
+[08:52:04.58] /# gi::executeAction leInterconnect -in [gi::getWindows 1]
+[08:52:04.58] /i ile::createInterconnect
+[08:52:08.90] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:52:08.90] /i ile::createRuler
+[08:52:11.64] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:11.64] /i de::startDrag {0.09 -0.121} -window 1
+[08:52:12.34] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:12.34] /i de::endDrag {0.078 -0.121} -window 1
+[08:52:14.12] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:52:14.12] /i ile::createPath
+[08:52:18.03] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:18.03] /i de::startDrag {0.042 -0.029} -window 1
+[08:52:18.89] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:18.89] /i de::endDrag {0.025 -0.04} -window 1
+[08:52:19.33] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:19.33] /i de::startDrag {0.055 -0.027} -window 1
+[08:52:19.69] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:19.69] /i de::endDrag {0.116 -0.061} -window 1
+[08:52:21.84] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:21.84] /i de::startDrag {-0.046 0.004} -window 1
+[08:52:22.60] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:22.60] /i de::endDrag {0.009 -0.021} -window 1
+[08:52:24.61] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:52:24.61] /i de::addPoint {0.134 -0.038} -window 1
+[08:52:26.01] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:26.01] /i de::startDrag {0.074 -0.004} -window 1
+[08:52:26.55] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:26.55] /i de::endDrag {0.115 -0.006} -window 1
+[08:52:28.53] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:28.53] /i de::startDrag {0.1 -0.049} -window 1
+[08:52:29.23] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:29.23] /i de::endDrag {0.05 -0.032} -window 1
+[08:52:38.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:52:38.16] /i de::addPoint {0.08 -0.04} -window 1
+[08:52:44.10] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:44.10] /i de::startDrag {0.008 -0.073} -window 1
+[08:52:45.30] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:45.30] /i de::endDrag {0.088 -0.059} -window 1
+[08:52:47.11] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:47.11] /i de::startDrag {0.109 -0.036} -window 1
+[08:52:48.02] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:48.02] /i de::endDrag {0.113 -0.106} -window 1
+[08:52:49.43] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:49.43] /i de::startDrag {0.056 -0.032} -window 1
+[08:52:50.69] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:50.69] /i de::endDrag {0.108 -0.105} -window 1
+[08:52:52.78] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:52:52.78] /i de::startDrag {0.168 -0.011} -window 1
+[08:52:53.21] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:52:53.21] /i de::endDrag {0.171 -0.124} -window 1
+[08:52:54.45] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:52:54.45] /i de::addPoint {0.079 -0.03} -window 1
+[08:52:56.80] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:52:56.80] /i de::addPoint {0.057 -0.111} -window 1
+[08:52:57.92] /# gi::executeAction leInterconnect -in [gi::getWindows 1]
+[08:52:57.92] /i ile::createInterconnect
+[08:53:11.04] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:53:11.04] /i ile::createPath
+[08:53:13.45] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:53:13.45] /i ile::delete
+[08:53:14.69] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:53:14.69] /i de::addPoint {-0.146 -0.08} -window 1
+[08:53:15.75] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:53:15.75] /i ile::createPath
+[08:53:19.87] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:53:19.87] /i de::addPoint {0.079 -0.119} -window 1
+[08:53:23.93] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:53:23.93] /i de::startDrag {0.056 -0.11} -window 1
+[08:53:25.65] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:53:25.65] /i de::endDrag {0.058 -0.052} -window 1
+[08:53:27.78] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:53:27.78] /i de::startDrag {0.031 -0.111} -window 1
+[08:53:29.10] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:53:29.10] /i de::endDrag {0.027 -0.047} -window 1
+[08:53:31.62] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:53:31.62] /i de::startDrag {0.076 -0.079} -window 1
+[08:53:33.09] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:53:33.09] /i de::endDrag {-0.022 -0.042} -window 1
+[08:53:34.52] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:53:34.52] /i de::addPoint {0.043 -0.114} -window 1
+[08:53:39.00] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[08:53:39.00] /i ile::createRectangle
+[08:53:40.61] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:53:40.61] /i de::startDrag {-0.175 -0.032} -window 1
+[08:53:40.92] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:53:40.92] /i de::endDrag {-0.156 -0.068} -window 1
+[08:53:49.09] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[08:53:49.09] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[08:53:50.20] /i gi::setCurrentIndex {lpps} -index {7,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.21] /i gi::setItemSelection {lpps} -index {7,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.21] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.22] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.22] /# gi::setItemSelection {lpps} -index {7,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.37] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.90] /i gi::setCurrentIndex {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.90] /i gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.90] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.91] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:50.91] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:51.00] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[08:53:53.38] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:53:53.38] /i ile::createPath
+[08:53:58.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:53:58.16] /i de::addPoint {0.08 -0.078} -window 1
+[08:53:59.37] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:53:59.37] /i de::addPoint {0.073 -0.131} -window 1
+[08:53:59.89] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:53:59.89] /i de::startDrag {0.064 -0.119} -window 1
+[08:54:00.32] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:00.32] /i de::endDrag {0.051 -0.046} -window 1
+[08:54:01.88] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:01.88] /i de::startDrag {0.057 -0.025} -window 1
+[08:54:02.05] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:02.05] /i de::endDrag {0.037 -0.015} -window 1
+[08:54:05.77] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:05.77] /i de::addPoint {0.091 -0.124} -window 1
+[08:54:09.24] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:09.24] /i de::startDrag {0.075 -0.03} -window 1
+[08:54:09.54] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:09.54] /i de::endDrag {0.167 -0.031} -window 1
+[08:54:11.57] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:11.57] /i de::addPoint {0.079 0.167} -window 1
+[08:54:12.45] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:12.45] /i de::startDrag {0.134 0.173} -window 1
+[08:54:12.88] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:12.88] /i de::endDrag {0.064 0.18} -window 1
+[08:54:15.08] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:15.08] /i de::addPoint {0.016 -0.014} -window 1
+[08:54:16.39] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:16.39] /i de::addPoint {0.095 -0.023} -window 1
+[08:54:18.60] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:18.60] /i de::startDrag {0.118 0.163} -window 1
+[08:54:18.81] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:18.81] /i de::endDrag {0.048 0.172} -window 1
+[08:54:20.83] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:20.83] /i de::addPoint {0.054 -0.034} -window 1
+[08:54:21.95] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:21.95] /i de::startDrag {-0.172 0.127} -window 1
+[08:54:22.27] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:22.27] /i de::endDrag {-0.161 0.109} -window 1
+[08:54:23.28] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:23.28] /i de::startDrag {-0.048 -0.033} -window 1
+[08:54:26.03] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:26.03] /i de::endDrag {-0.105 -0.146} -window 1
+[08:54:26.60] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:54:26.60] /i de::startDrag {-0.104 -0.131} -window 1
+[08:54:27.88] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:54:27.88] /i de::endDrag {0.083 -0.14} -window 1
+[08:54:30.97] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:30.97] /i de::addPoint {-0.049 -0.026} -window 1
+[08:54:34.25] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:34.25] /i de::addPoint {-0.126 -0.009} -window 1
+[08:54:35.98] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:35.98] /i de::addPoint {-0.082 -0.059} -window 1
+[08:54:36.70] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:54:36.70] /i de::commandOption toggleAngleMode -point {-0.095 -0.011}
+[08:54:37.44] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:54:37.44] /i de::commandOption toggleAngleMode -point {-0.125 -0.035}
+[08:54:38.08] /w Warning: Nothing is bound to the 'Button3-Double' in the current active set. (WINDOW-015)
+[08:54:38.10] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:54:38.10] /i de::commandOption toggleAngleMode -point {-0.124 -0.033}
+[08:54:38.11] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[08:54:38.11] /i de::completeShape -window 1
+[08:54:38.13] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:38.13] /i de::addPoint {-0.124 -0.032} -window 1
+[08:54:38.22] /w Warning: Nothing is bound to the 'Button3-Double' in the current active set. (WINDOW-015)
+[08:54:38.33] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:38.33] /i de::addPoint {-0.123 -0.031} -window 1
+[08:54:38.51] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:54:38.51] /i de::commandOption toggleAngleMode -point {-0.123 -0.032}
+[08:54:38.63] /w Warning: Nothing is bound to the 'Button3-Double' in the current active set. (WINDOW-015)
+[08:54:39.79] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:39.79] /i de::addPoint {-0.179 0.024} -window 1
+[08:54:40.03] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[08:54:40.03] /i de::completeShape -window 1
+[08:54:42.70] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:54:42.70] /i ile::delete
+[08:54:43.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:43.16] /i de::addPoint {-0.066 -0.008} -window 1
+[08:54:44.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:44.06] /i de::addPoint {-0.134 -0.016} -window 1
+[08:54:48.90] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:48.90] /i de::addPoint {0.081 -0.12} -window 1
+[08:54:51.96] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:54:51.96] /i ile::createPath
+[08:54:53.46] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:54:53.46] /i ile::createPath
+[08:54:55.74] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:54:55.74] /i de::addPoint {0.09 -0.121} -window 1
+[08:55:02.26] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:02.26] /i de::addPoint {0.081 -0.121} -window 1
+[08:55:04.70] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:55:04.70] /i de::commandOption toggleAngleMode -point {0.081 -0.121}
+[08:55:06.27] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:06.27] /i de::startDrag {-0.041 -0.102} -window 1
+[08:55:07.52] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:07.52] /i de::endDrag {0.038 -0.161} -window 1
+[08:55:08.25] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:08.25] /i de::startDrag {0.081 -0.173} -window 1
+[08:55:08.55] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:08.55] /i de::endDrag {0.112 -0.169} -window 1
+[08:55:09.28] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:09.28] /i de::addPoint {0.092 -0.171} -window 1
+[08:55:10.36] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:10.36] /i de::startDrag {0.124 -0.18} -window 1
+[08:55:11.00] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:11.00] /i de::endDrag {0.081 -0.171} -window 1
+[08:55:12.44] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:12.44] /i de::addPoint {0.132 -0.169} -window 1
+[08:55:13.60] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:13.60] /i de::startDrag {0.135 -0.173} -window 1
+[08:55:14.95] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:14.95] /i de::endDrag {0.143 -0.137} -window 1
+[08:55:16.03] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:16.03] /i de::startDrag {0.108 -0.142} -window 1
+[08:55:16.48] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:16.48] /i de::endDrag {0.103 -0.162} -window 1
+[08:55:17.28] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:17.28] /i de::startDrag {-0.005 -0.147} -window 1
+[08:55:17.91] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:17.91] /i de::endDrag {0 -0.058} -window 1
+[08:55:18.41] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:18.41] /i de::startDrag {-0.039 -0.066} -window 1
+[08:55:18.62] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:18.63] /i de::endDrag {-0.243 -0.09} -window 1
+[08:55:18.81] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:18.81] /i de::startDrag {-0.219 -0.046} -window 1
+[08:55:19.16] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:19.16] /i de::endDrag {-0.175 0.06} -window 1
+[08:55:20.14] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:20.14] /i de::addPoint {-0.177 0.089} -window 1
+[08:55:22.29] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:22.29] /i de::addPoint {-0.172 0.063} -window 1
+[08:55:24.64] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:24.64] /i de::addPoint {-0.172 0.035} -window 1
+[08:55:25.47] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:25.47] /i de::startDrag {-0.178 0.045} -window 1
+[08:55:25.74] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:25.74] /i de::endDrag {-0.18 0} -window 1
+[08:55:26.77] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:26.77] /i de::startDrag {-0.158 0.083} -window 1
+[08:55:27.52] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:27.52] /i de::endDrag {-0.204 0.059} -window 1
+[08:55:28.00] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:28.00] /i de::startDrag {-0.182 0.04} -window 1
+[08:55:28.13] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:28.13] /i de::endDrag {-0.216 -0.077} -window 1
+[08:55:28.41] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:28.41] /i de::addPoint {-0.186 -0.006} -window 1
+[08:55:28.61] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[08:55:28.61] /i de::completeShape -window 1
+[08:55:28.70] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:28.70] /i de::startDrag {-0.179 -0.006} -window 1
+[08:55:28.78] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:28.78] /i de::endDrag {-0.176 -0.053} -window 1
+[08:55:29.00] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:29.00] /i de::addPoint {-0.151 -0.083} -window 1
+[08:55:29.12] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:29.12] /i de::startDrag {-0.289 0.077} -window 1
+[08:55:29.21] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:29.21] /i de::endDrag {-0.246 0.107} -window 1
+[08:55:30.33] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:30.33] /i de::addPoint {-0.185 -0.02} -window 1
+[08:55:31.11] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:31.11] /i de::addPoint {-0.084 0.012} -window 1
+[08:55:31.76] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:31.76] /i de::addPoint {-0.143 -0.035} -window 1
+[08:55:32.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:32.07] /i de::addPoint {-0.141 -0.035} -window 1
+[08:55:32.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:32.84] /i de::addPoint {-0.19 -0.035} -window 1
+[08:55:33.86] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:55:33.86] /i de::abortCommand -window 1
+[08:55:37.31] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[08:55:37.31] /i ile::delete
+[08:55:38.12] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:55:38.12] /i de::addPoint {-0.171 -0.109} -window 1
+[08:55:39.64] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:55:39.64] /i ile::createPath
+[08:55:45.16] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:55:45.16] /i ile::createRuler
+[08:55:47.81] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:55:47.81] /i de::startDrag {0.092 -0.122} -window 1
+[08:55:48.39] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:55:48.39] /i de::endDrag {0.081 -0.122} -window 1
+[08:55:50.79] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:55:50.79] /i ile::createPath
+[08:56:00.20] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:00.20] /i de::addPoint {0.091 -0.121} -window 1
+[08:56:04.02] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:04.02] /i de::addPoint {0.082 -0.122} -window 1
+[08:56:06.49] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:06.49] /i de::addPoint {0.075 -0.171} -window 1
+[08:56:07.12] /# gi::executeAction leToggleAngleMode -in [gi::getWindows 1]
+[08:56:07.12] /i de::commandOption toggleAngleMode -point {0.007 -0.132}
+[08:56:07.87] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:56:07.87] /i de::startDrag {0.014 -0.14} -window 1
+[08:56:08.44] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:56:08.44] /i de::endDrag {-0.049 -0.076} -window 1
+[08:56:08.83] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:08.83] /i de::addPoint {-0.146 -0.026} -window 1
+[08:56:11.72] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:56:11.72] /i de::abortCommand -window 1
+[08:56:12.12] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[08:56:15.07] /# gi::executeAction lePolygon -in [gi::getWindows 1]
+[08:56:15.07] /i ile::createPolygon
+[08:56:17.22] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:17.22] /i de::addPoint {0.09 -0.119} -window 1
+[08:56:21.26] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:21.26] /i de::addPoint {0.092 0.118} -window 1
+[08:56:23.09] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:23.09] /i de::addPoint {0.081 0.118} -window 1
+[08:56:25.65] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:25.65] /i de::addPoint {0.078 0.117} -window 1
+[08:56:30.96] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:56:30.96] /i de::abortCommand -window 1
+[08:56:33.41] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[08:56:33.41] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.09 -0.119} -index 0 -intent none] -replace true
+[08:56:33.42] /o oa:0x25e25800
+[08:56:36.81] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:56:36.81] /i ile::createPath
+[08:56:40.56] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:56:40.56] /i ile::createPath
+[08:56:42.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:42.07] /i de::addPoint {0.091 -0.122} -window 1
+[08:56:46.77] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:56:46.77] /i de::addPoint {0.092 0.119} -window 1
+[08:56:49.14] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:56:49.14] /i de::abortCommand -window 1
+[08:56:53.17] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[08:56:53.17] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[08:56:53.18] /o oa:0x2598ce80
+[08:56:53.18] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.092 -0.117} -index 1 -intent none] -replace true
+[08:56:53.18] /o oa:0x25e41c40
+[08:56:54.31] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[08:56:54.31] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.09 -0.12} -index 0 -intent none] -replace true
+[08:56:54.31] /o oa:0x25ec36d0
+[08:56:56.14] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[08:56:57.66] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[08:56:59.02] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:56:59.02] /i ile::createPath
+[08:56:59.69] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:56:59.69] /i ile::createPath
+[08:57:00.96] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:57:00.96] /i ile::createPath
+[08:57:04.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:04.06] /i de::addPoint {0.089 -0.12} -window 1
+[08:57:08.69] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:08.69] /i de::addPoint {0.091 0.119} -window 1
+[08:57:10.17] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:57:10.17] /i de::abortCommand -window 1
+[08:57:12.34] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[08:57:13.97] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:57:13.97] /i ile::createPath
+[08:57:21.11] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:57:21.11] /i de::startDrag {0.09 -0.119} -window 1
+[08:57:23.53] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:57:23.53] /i de::endDrag {0.088 0.118} -window 1
+[08:57:25.18] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:25.18] /i de::addPoint {-0.123 -0.086} -window 1
+[08:57:26.43] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:26.43] /i de::addPoint {-0.065 -0.09} -window 1
+[08:57:26.79] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:57:26.79] /i de::abortCommand -window 1
+[08:57:28.78] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[08:57:29.89] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[08:57:29.89] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[08:57:33.25] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[08:57:33.25] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {-0.075 -0.125} 
+[08:57:34.24] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:57:34.24] /i de::endDrag {-0.085 -0.124} -window 1
+[08:57:41.80] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[08:57:41.80] /i ile::createRuler
+[08:57:47.33] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:57:47.33] /i ile::createPath
+[08:57:50.34] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:50.34] /i de::addPoint {0.09 -0.12} -window 1
+[08:57:59.53] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:57:59.54] /i de::addPoint {0.082 -0.121} -window 1
+[08:58:01.32] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:58:01.32] /i de::abortCommand -window 1
+[08:58:14.22] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[08:58:14.22] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {0.09 0.12} 
+[08:58:18.23] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[08:58:19.57] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[08:58:19.79] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:58:19.79] /i de::endDrag {0.082 -0.122} -window 1
+[08:58:24.44] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:58:24.44] /i ile::createPath
+[08:58:25.69] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[08:58:26.02] /# gi::executeAction lePolygon -in [gi::getWindows 1]
+[08:58:26.02] /i ile::createPolygon
+[08:58:26.39] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[08:58:42.89] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:58:42.90] /i de::startDrag {0.092 0.119} -window 1
+[08:58:46.09] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:58:46.09] /i de::endDrag {0.092 -0.118} -window 1
+[08:58:47.12] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:58:47.12] /i de::addPoint {0.09 -0.12} -window 1
+[08:58:48.33] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:58:48.33] /i de::addPoint {0.081 -0.121} -window 1
+[08:58:50.65] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:58:50.65] /i de::startDrag {0.08 -0.12} -window 1
+[08:58:54.89] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:58:54.89] /i de::endDrag {0.08 0.119} -window 1
+[08:58:56.34] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:58:56.34] /i de::addPoint {0.09 0.119} -window 1
+[08:59:04.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:04.06] /i de::addPoint {0.082 -0.046} -window 1
+[08:59:05.65] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[08:59:05.65] /i de::startDrag {0.08 -0.046} -window 1
+[08:59:06.14] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[08:59:06.14] /i de::endDrag {0.08 0.033} -window 1
+[08:59:06.90] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:59:06.90] /i de::abortCommand -window 1
+[08:59:09.33] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:59:09.33] /i ile::createPath
+[08:59:11.92] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:11.92] /i de::addPoint {0.091 -0.12} -window 1
+[08:59:16.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:16.16] /i de::addPoint {0.091 0.119} -window 1
+[08:59:17.18] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:17.18] /i de::addPoint {0.083 0.118} -window 1
+[08:59:19.34] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:19.34] /i de::addPoint {0.081 -0.119} -window 1
+[08:59:27.29] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:27.29] /i de::addPoint {0.085 0.118} -window 1
+[08:59:28.69] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:28.69] /i de::addPoint {0.08 0.108} -window 1
+[08:59:29.78] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:59:29.78] /i de::abortCommand -window 1
+[08:59:32.73] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:59:32.73] /i ile::createPath
+[08:59:39.89] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:39.89] /i de::addPoint {0.091 0} -window 1
+[08:59:40.83] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:59:40.83] /i de::abortCommand -window 1
+[08:59:42.73] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:59:42.73] /i ile::createPath
+[08:59:44.35] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:44.35] /i de::addPoint {0.09 -0.119} -window 1
+[08:59:48.91] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:48.91] /i de::addPoint {0.09 0.118} -window 1
+[08:59:50.40] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[08:59:50.40] /i de::abortCommand -window 1
+[08:59:52.33] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[08:59:52.33] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[08:59:53.62] /# gi::executeAction lePath -in [gi::getWindows 1]
+[08:59:53.62] /i ile::createPath
+[08:59:55.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:55.16] /i de::addPoint {0.09 -0.121} -window 1
+[08:59:59.63] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[08:59:59.63] /i de::addPoint {0.091 0.121} -window 1
+[09:00:01.05] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[09:00:01.05] /i de::abortCommand -window 1
+[09:00:01.32] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:00:01.32] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.082 0.118} -index 0 -intent none] -replace true
+[09:00:01.33] /o oa:0x251be4f0
+[09:00:03.57] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:00:03.57] /i ile::createPath
+[09:00:04.46] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:00:04.46] /i de::startDrag {-0.216 0.159} -window 1
+[09:00:08.30] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:00:08.30] /i de::endDrag {-0.209 -0.084} -window 1
+[09:00:08.97] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:00:08.97] /i de::startDrag {-0.168 -0.057} -window 1
+[09:00:09.29] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:00:09.29] /i de::endDrag {-0.244 -0.059} -window 1
+[09:00:09.75] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[09:00:09.75] /i de::abortCommand -window 1
+[09:00:10.43] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[09:00:12.78] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:00:12.78] /i ile::createPath
+[09:00:14.05] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:00:14.05] /i ile::createPath
+[09:00:41.09] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:00:41.09] /i de::zoom -window 1 -factor 0.5 -center {0.124 0.06}
+[09:00:41.10] /o {-0.723 -0.444} {0.466 0.327}
+[09:00:41.76] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[09:00:41.76] /i de::zoom -window 1 -factor 2.0 -center {0.129 0.055}
+[09:00:41.77] /o {-0.297 -0.195} {0.297 0.191}
+[09:00:42.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[09:00:42.16] /i de::zoom -window 1 -factor 2.0 -center {0.129 0.054}
+[09:00:42.17] /o {-0.084 -0.07} {0.213 0.122}
+[09:00:42.85] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:00:42.85] /i de::zoom -window 1 -factor 0.5 -center {0.129 0.054}
+[09:00:42.86] /o {-0.297 -0.195} {0.297 0.191}
+[09:00:47.12] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:00:47.12] /i de::zoom -window 1 -factor 2.0
+[09:00:47.12] /o {-0.149 -0.098} {0.149 0.094}
+[09:00:49.45] /# gi::executeAction dePan -in [gi::getWindows 1]
+[09:00:49.45] /i ide::pan 1
+[09:00:50.10] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:00:50.10] /i de::startDrag {0.108 -0.029} -window 1
+[09:00:52.18] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:00:52.18] /i de::endDrag {0.108 -0.029} -window 1
+[09:00:52.19] /r dePanToPoint {0.076 -0.036}
+[09:00:55.14] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:00:55.14] /i de::zoom -window 1 -factor 0.5
+[09:00:55.15] /o {-0.221 -0.229} {0.373 0.157}
+[09:00:55.97] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:00:55.97] /i de::startDrag {0.12 -0.022} -window 1
+[09:00:56.56] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:00:56.56] /i de::endDrag {0.12 -0.022} -window 1
+[09:00:56.57] /r dePanToPoint {0.067 -0.005}
+[09:00:57.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:00:57.14] /i de::zoom -window 1 -factor 0.5 -center {0.123 -0.019}
+[09:00:57.15] /o {-0.583 -0.376} {0.606 0.395}
+[09:00:57.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[09:00:57.62] /i de::zoom -window 1 -factor 2.0 -center {0.124 -0.017}
+[09:00:57.63] /o {-0.23 -0.197} {0.365 0.189}
+[09:00:58.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[09:00:58.38] /i de::zoom -window 1 -factor 2.0 -center {0.124 -0.017}
+[09:00:58.40] /o {-0.053 -0.107} {0.244 0.086}
+[09:00:59.45] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:00:59.45] /i de::zoom -window 1 -factor 0.5 -center {0.124 -0.018}
+[09:00:59.46] /o {-0.23 -0.196} {0.365 0.19}
+[09:00:59.99] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:00:59.99] /i de::zoom -window 1 -factor 0.5 -center {0.124 -0.017}
+[09:01:00.00] /o {-0.583 -0.374} {0.606 0.397}
+[09:01:00.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[09:01:00.49] /i de::zoom -window 1 -factor 2.0 -center {0.125 -0.017}
+[09:01:00.50] /o {-0.229 -0.196} {0.365 0.19}
+[09:01:02.34] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:01:02.34] /i de::addPoint {0.12 -0.021} -window 1
+[09:01:03.23] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:03.23] /i de::startDrag {0.075 -0.025} -window 1
+[09:01:06.39] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:06.39] /i de::endDrag {0.075 -0.025} -window 1
+[09:01:06.62] /r dePanToPoint {0.09 0.01}
+[09:01:07.86] /# gi::executeAction deSetViewport -in [gi::getWindows 1]
+[09:01:07.86] /i ide::setViewport 1
+[09:01:09.65] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:01:09.65] /i de::zoom -window 1 -factor 2.0
+[09:01:09.66] /o {-0.059 -0.086} {0.239 0.106}
+[09:01:10.94] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:01:10.94] /i de::zoom -window 1 -factor 0.5
+[09:01:10.95] /o {-0.207 -0.183} {0.387 0.203}
+[09:01:11.99] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:11.99] /i de::startDrag {0.107 -0.02} -window 1
+[09:01:13.49] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:13.49] /i de::endDrag {0.133 -0.026} -window 1
+[09:01:16.60] /# gi::executeAction deSetViewport -in [gi::getWindows 1]
+[09:01:16.60] /i ide::setViewport 1
+[09:01:17.97] /# gi::executeAction deSetViewport -in [gi::getWindows 1]
+[09:01:17.97] /i ide::setViewport 1
+[09:01:18.83] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:01:18.83] /i de::zoom -window 1 -factor 0.5
+[09:01:18.84] /o {0.081 -0.048} {0.159 0.002}
+[09:01:19.12] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:01:19.12] /i de::zoom -window 1 -factor 0.5
+[09:01:19.13] /o {0.043 -0.073} {0.197 0.027}
+[09:01:19.41] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:01:19.41] /i de::zoom -window 1 -factor 0.5
+[09:01:19.42] /o {-0.034 -0.123} {0.274 0.077}
+[09:01:19.95] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:01:19.95] /i de::zoom -window 1 -factor 0.5
+[09:01:19.96] /o {-0.188 -0.223} {0.428 0.177}
+[09:01:23.69] /# gi::executeAction dePan -in [gi::getWindows 1]
+[09:01:23.69] /i ide::pan 1
+[09:01:24.29] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:24.29] /i de::startDrag {0.084 -0.012} -window 1
+[09:01:25.29] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:25.29] /i de::endDrag {0.084 -0.012} -window 1
+[09:01:25.33] /r dePanToPoint {0.089 -0.002}
+[09:01:29.60] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:01:29.60] /i ile::createPath
+[09:01:30.72] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:01:30.73] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:01:30.73] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:01:30.88] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:01:32.27] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:01:32.27] /i ile::createPath
+[09:01:41.94] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:01:41.94] /i ile::createPath
+[09:01:43.81] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:43.81] /i de::startDrag {0.091 -0.12} -window 1
+[09:01:45.12] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:45.12] /i de::endDrag {-0.019 -0.034} -window 1
+[09:01:46.04] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[09:01:46.04] /i de::abortCommand -window 1
+[09:01:46.44] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:01:49.75] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:01:49.75] /i ile::createPath
+[09:01:51.15] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[09:01:51.51] /w Warning: Nothing is bound to the 'Meta-Shift-p' in the current active set. (WINDOW-015)
+[09:01:51.85] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[09:01:53.62] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:53.62] /i de::startDrag {-0.138 -0.106} -window 1
+[09:01:55.87] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:55.87] /i de::endDrag {-0.144 0.053} -window 1
+[09:01:56.47] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:01:56.47] /i de::startDrag {-0.144 0.053} -window 1
+[09:01:57.94] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:01:57.94] /i de::endDrag {-0.09 0.052} -window 1
+[09:02:01.52] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:01.52] /i de::addPoint {-0.137 0.158} -window 1
+[09:02:03.27] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:03.27] /i de::addPoint {-0.145 0.103} -window 1
+[09:02:03.56] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[09:02:03.56] /i de::completeShape -window 1
+[09:02:13.68] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[09:02:13.68] /i ile::stretch
+[09:02:15.22] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:15.23] /i de::startDrag {-0.188 0.024} -window 1
+[09:02:15.87] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:15.87] /i de::endDrag {-0.156 0.016} -window 1
+[09:02:16.76] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:16.76] /i de::addPoint {-0.138 0.103} -window 1
+[09:02:17.36] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:17.36] /i de::startDrag {-0.14 0.105} -window 1
+[09:02:17.90] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:17.90] /i de::endDrag {-0.139 0.147} -window 1
+[09:02:19.28] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:19.28] /i de::startDrag {-0.138 0.104} -window 1
+[09:02:19.59] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:19.59] /i de::endDrag {-0.137 0.148} -window 1
+[09:02:27.45] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[09:02:27.45] /i ile::stretch
+[09:02:28.52] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:28.52] /i de::startDrag {-0.143 0.091} -window 1
+[09:02:28.81] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:28.81] /i de::endDrag {-0.146 0.13} -window 1
+[09:02:29.35] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:29.35] /i de::addPoint {-0.138 0.104} -window 1
+[09:02:30.04] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:30.04] /i de::startDrag {-0.138 0.105} -window 1
+[09:02:30.54] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:30.54] /i de::endDrag {-0.141 0.142} -window 1
+[09:02:31.18] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:31.18] /i de::startDrag {-0.138 0.098} -window 1
+[09:02:31.69] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:31.69] /i de::endDrag {-0.137 0.145} -window 1
+[09:02:32.55] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:32.55] /i de::startDrag {-0.142 0.098} -window 1
+[09:02:32.99] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:32.99] /i de::endDrag {-0.14 0.15} -window 1
+[09:02:33.42] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:33.42] /i de::addPoint {-0.167 0.006} -window 1
+[09:02:35.63] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:35.63] /i de::addPoint {-0.151 0.054} -window 1
+[09:02:41.50] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:41.50] /i de::startDrag {-0.19 0.036} -window 1
+[09:02:42.03] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:42.03] /i de::endDrag {-0.156 0.032} -window 1
+[09:02:42.99] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:02:42.99] /i de::startDrag {-0.191 0.031} -window 1
+[09:02:43.22] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:02:43.22] /i de::endDrag {-0.149 0.029} -window 1
+[09:02:45.41] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[09:02:45.41] /i ile::delete
+[09:02:45.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:02:45.84] /i de::addPoint {-0.123 0.028} -window 1
+[09:02:47.27] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:02:47.27] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:02:47.27] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:02:47.40] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:02:53.40] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:02:53.40] /i ile::createPath
+[09:02:57.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.56] /i de::zoom -window 1 -factor 0.5 -center {-0.183 0.107}
+[09:02:57.57] /o {-0.256 -0.511} {0.978 0.289}
+[09:02:57.59] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[09:02:57.59] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[09:02:57.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.59] /i de::zoom -window 1 -factor 0.5 -center {-0.182 0.106}
+[09:02:57.60] /o {-0.33 -1.128} {2.138 0.472}
+[09:02:57.62] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[09:02:57.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.66] /i de::zoom -window 1 -factor 0.5 -center {-0.189 0.107}
+[09:02:57.67] /o {-0.47 -2.363} {4.464 0.837}
+[09:02:57.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.69] /i de::zoom -window 1 -factor 0.5 -center {-0.217 0.069}
+[09:02:57.70] /o {-0.724 -4.795} {9.146 1.605}
+[09:02:57.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.72] /i de::zoom -window 1 -factor 0.5 -center {-0.234 0.028}
+[09:02:57.74] /o {-1.214 -9.618} {18.526 3.182}
+[09:02:57.81] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:57.81] /i de::zoom -window 1 -factor 0.5 -center {0.164 -0.338}
+[09:02:57.82] /o {-2.592 -18.898} {36.888 6.702}
+[09:02:57.84] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[09:02:57.97] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[09:02:58.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[09:02:58.02] /i de::zoom -window 1 -factor 0.5 -center {6.041 -3.624}
+[09:02:58.03] /o {-11.224 -34.172} {67.734 17.028}
+[09:03:06.35] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:03:06.35] /i de::zoom -window 1 -factor 2.0
+[09:03:06.36] /o {8.515 -21.372} {47.995 4.228}
+[09:03:07.62] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:03:07.62] /i de::zoom -window 1 -factor 0.5
+[09:03:07.67] /o {-11.224 -34.172} {67.734 17.028}
+[09:03:08.40] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:03:08.40] /i de::zoom -window 1 -factor 0.5
+[09:03:08.42] /o {-50.703 -59.772} {107.213 42.628}
+[09:03:08.46] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:03:08.46] /i de::zoom -window 1 -factor 0.5
+[09:03:08.51] /o {-129.661 -110.972} {186.171 93.828}
+[09:03:09.22] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:03:09.22] /i de::zoom -window 1 -factor 2.0
+[09:03:09.23] /o {-50.703 -59.772} {107.213 42.628}
+[09:03:10.06] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:03:10.06] /i de::zoom -window 1 -factor 2.0
+[09:03:10.08] /o {-11.224 -34.172} {67.734 17.028}
+[09:03:11.41] /# gi::executeAction dePan -in [gi::getWindows 1]
+[09:03:11.41] /i ide::pan 1
+[09:03:11.85] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:03:11.85] /i de::startDrag {11.022 6.071} -window 1
+[09:03:12.56] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:03:12.56] /i de::endDrag {10.956 6.071} -window 1
+[09:03:12.57] /r dePanToPoint {4.746 -6.115}
+[09:03:13.57] /# gi::executeAction deFitView -in [gi::getWindows 1]
+[09:03:13.57] /i de::fit -window 1 -fitView true
+[09:03:13.58] /o {-0.093 -0.14} {0.378 0.165}
+[09:03:15.86] /# gi::executeAction lePath -in [gi::getWindows 1]
+[09:03:15.86] /i ile::createPath
+[09:03:32.80] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:03:32.80] /i de::addPoint {0.09 -0.12} -window 1
+[09:03:48.21] /# gi::executeAction deCompleteShapeHere -in [gi::getWindows 1]
+[09:03:48.21] /i de::completeShape {0.088 0.119} -window 1
+[09:04:06.55] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[09:04:06.55] /i de::addPoint {-0.058 0.088} -window 1
+[09:04:09.88] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 1]
+[09:04:09.88] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value true
+[09:04:09.88] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:04:10.19] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x750
+[09:04:14.90] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:16.42] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:16.61] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:19.56] /i gi::executeAction leCanvasDelta -in [gi::getWindows 1]
+[09:04:22.27] /# gi::executeAction deCompleteShapeHere -in [gi::getWindows 1]
+[09:04:22.27] /i de::completeShape {0.334 0.061} -window 1
+[09:04:23.89] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:24.09] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:24.24] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:24.39] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:24.54] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:26.78] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[09:04:34.82] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[09:04:34.82] /i de::abortCommand -window 1
+[09:04:35.27] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[09:04:38.00] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:04:38.00] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.339 0.088} -index 0 -intent none] -replace true
+[09:04:38.07] /o oa:0x25190dd0
+[09:04:40.25] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 1]
+[09:04:40.25] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value false
+[09:04:40.26] /i gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:04:40.56] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x775
+[09:04:43.85] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 1]
+[09:04:43.85] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value true
+[09:04:43.85] /# gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:04:44.15] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x750
+[09:04:47.00] /i gi::setItemSelection {attributes} -index {width,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]]
+[09:04:47.02] /i gi::setCurrentIndex {attributes} -index {width,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]]
+[09:05:02.88] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:05:02.88] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[09:05:35.56] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:05:35.56] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {-0.042 0.061} -index 0 -intent none] -replace true
+[09:05:35.61] /o oa:0x25ea2010
+[09:05:37.21] /w Warning: Nothing is bound to the 'BackSpace' in the current active set. (WINDOW-015)
+[09:05:38.64] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:05:38.64] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[09:05:38.65] /o oa:0x25dc94d0
+[09:05:38.65] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {-0.077 0.131} -index 0 -intent none] -replace true
+[09:05:38.65] /o oa:0x25f28950
+[09:05:41.85] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[09:05:41.85] /i ile::delete
+[09:05:42.99] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:05:42.99] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.067 -0.021} -index 0 -intent none] -replace true
+[09:05:43.06] /o oa:0x25dbe0e0
+[09:05:43.94] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[09:05:43.94] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[09:05:43.95] /o oa:0x25e08170
+[09:05:43.95] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.066 -0.029} -index 0 -intent none] -replace true
+[09:05:43.95] /o oa:0x25efb750
+[09:05:45.85] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[09:05:45.85] /i ile::delete
+[09:05:54.22] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:05:54.22] /i de::zoom -window 1 -factor 0.5
+[09:05:54.23] /o {-0.329 -0.293} {0.614 0.318}
+[09:05:58.94] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 1]] -value false
+[09:05:58.96] /i gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:05:59.34] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x775
+[09:06:00.32] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:00.32] /i gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:00.32] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:00.33] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:00.33] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:00.49] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[09:06:06.08] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[09:06:06.09] /i ile::createRuler
+[09:06:19.27] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:06:19.27] /i de::zoom -window 1 -factor 0.5
+[09:06:19.28] /o {-0.8 -0.599} {1.085 0.624}
+[09:06:26.95] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[09:06:26.95] /i ile::createRuler
+[09:06:30.70] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[09:06:30.70] /i de::startDrag {0.002 0.002} -window 1
+[09:06:33.97] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[09:06:33.97] /i de::endDrag {1.751 0.023} -window 1
+[09:06:35.35] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:06:35.35] /i de::zoom -window 1 -factor 0.5
+[09:06:35.36] /o {-1.742 -1.21} {2.027 1.235}
+[09:06:35.78] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:06:35.78] /i de::zoom -window 1 -factor 0.5
+[09:06:35.79] /o {-3.627 -2.432} {3.912 2.457}
+[09:06:36.30] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:06:36.30] /i de::zoom -window 1 -factor 0.5
+[09:06:36.31] /o {-7.397 -4.876} {7.682 4.901}
+[09:06:38.28] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:06:38.28] /i de::zoom -window 1 -factor 2.0
+[09:06:38.29] /o {-3.627 -2.432} {3.912 2.457}
+[09:06:40.07] /# gi::executeAction deZoomIn -in [gi::getWindows 1]
+[09:06:40.07] /i de::zoom -window 1 -factor 2.0
+[09:06:40.09] /o {-1.742 -1.21} {2.027 1.235}
+[09:06:41.80] /# gi::executeAction deZoomOut -in [gi::getWindows 1]
+[09:06:41.80] /i de::zoom -window 1 -factor 0.5
+[09:06:41.82] /o {-3.627 -2.432} {3.912 2.457}
+[09:06:50.08] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+155+79
+[09:06:50.95] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[09:06:51.22] /r giDialog gi::setActiveDialog [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 1]]
+[09:06:51.53] /r giDialog db::setAttr geometry -of [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 1]] -value 441x89+648+101
+[09:06:53.40] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 1]]
+[09:06:54.11] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[09:06:54.59] /i gi::setActiveWindow 0
+[09:06:54.60] /i gi::setActiveWindow 0 -raise true
+[13:07:54.42] /o Process killed
+              /c Information: The process was terminated by "Hangup" signal.
+              /c signal number = 1
+              /c Numeric Stack Dump 
+              /c '76737780 140648359715759 140648359730144 140648359730406 140648548535879 140648502047421 140648502037532 140648501978762 140648548768091 140648527678984 140648527680255 140648527680683 140648543917902 140648548768525 140648543742561 140648543743147 140648543760298 73943954 67895282 140648359634180 73908908'
+              /c PID Maps 
+              /c 00400000-0d54c000 r-xp 00000000 fd:00 3222841945                         /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0d74b000-0e115000 rw-p 0d14b000 fd:00 3222841945                         /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0e115000-1fc37000 rw-p 00000000 00:00 0 
+              /c 210e1000-25fe2000 rw-p 00000000 00:00 0                                  [heap]
+              /c 7fea88000000-7fea88064000 rw-p 00000000 00:00 0 
+              /c 7fea88064000-7fea8c000000 ---p 00000000 00:00 0 
+              /c 7fea8c000000-7fea8c064000 rw-p 00000000 00:00 0 
+              /c 7fea8c064000-7fea90000000 ---p 00000000 00:00 0 
+              /c 7fea90000000-7fea90064000 rw-p 00000000 00:00 0 
+              /c 7fea90064000-7fea94000000 ---p 00000000 00:00 0 
+              /c 7fea94000000-7fea94064000 rw-p 00000000 00:00 0 
+              /c 7fea94064000-7fea98000000 ---p 00000000 00:00 0 
+              /c 7fea98000000-7fea98064000 rw-p 00000000 00:00 0 
+              /c 7fea98064000-7fea9c000000 ---p 00000000 00:00 0 
+              /c 7fea9c000000-7fea9c064000 rw-p 00000000 00:00 0 
+              /c 7fea9c064000-7feaa0000000 ---p 00000000 00:00 0 
+              /c 7feaa0000000-7feaa0064000 rw-p 00000000 00:00 0 
+              /c 7feaa0064000-7feaa4000000 ---p 00000000 00:00 0 
+              /c 7feaa4000000-7feaa4064000 rw-p 00000000 00:00 0 
+              /c 7feaa4064000-7feaa8000000 ---p 00000000 00:00 0 
+              /c 7feaa8000000-7feaa8064000 rw-p 00000000 00:00 0 
+              /c 7feaa8064000-7feaac000000 ---p 00000000 00:00 0 
+              /c 7feaac000000-7feaac064000 rw-p 00000000 00:00 0 
+              /c 7feaac064000-7feab0000000 ---p 00000000 00:00 0 
+              /c 7feab0000000-7feab0064000 rw-p 00000000 00:00 0 
+              /c 7feab0064000-7feab4000000 ---p 00000000 00:00 0 
+              /c 7feab4000000-7feab4064000 rw-p 00000000 00:00 0 
+              /c 7feab4064000-7feab8000000 ---p 00000000 00:00 0 
+              /c 7feab8000000-7feab8064000 rw-p 00000000 00:00 0 
+              /c 7feab8064000-7feabc000000 ---p 00000000 00:00 0 
+              /c 7feabc000000-7feabc064000 rw-p 00000000 00:00 0 
+              /c 7feabc064000-7feac0000000 ---p 00000000 00:00 0 
+              /c 7feac0000000-7feac0064000 rw-p 00000000 00:00 0 
+              /c 7feac0064000-7feac4000000 ---p 00000000 00:00 0 
+              /c 7feac4000000-7feac4064000 rw-p 00000000 00:00 0 
+              /c 7feac4064000-7feac8000000 ---p 00000000 00:00 0 
+              /c 7feac8000000-7feac8064000 rw-p 00000000 00:00 0 
+              /c 7feac8064000-7feacc000000 ---p 00000000 00:00 0 
+              /c 7feacc000000-7feacc064000 rw-p 00000000 00:00 0 
+              /c 7feacc064000-7fead0000000 ---p 00000000 00:00 0 
+              /c 7fead0000000-7fead0064000 rw-p 00000000 00:00 0 
+              /c 7fead0064000-7fead4000000 ---p 00000000 00:00 0 
+              /c 7fead4000000-7fead4064000 rw-p 00000000 00:00 0 
+              /c 7fead4064000-7fead8000000 ---p 00000000 00:00 0 
+              /c 7fead8000000-7fead8064000 rw-p 00000000 00:00 0 
+              /c 7fead8064000-7feadc000000 ---p 00000000 00:00 0 
+              /c 7feadc000000-7feadc064000 rw-p 00000000 00:00 0 
+              /c 7feadc064000-7feae0000000 ---p 00000000 00:00 0 
+              /c 7feae0000000-7feae0064000 rw-p 00000000 00:00 0 
+              /c 7feae0064000-7feae4000000 ---p 00000000 00:00 0 
+              /c 7feae4000000-7feae4064000 rw-p 00000000 00:00 0 
+              /c 7feae4064000-7feae8000000 ---p 00000000 00:00 0 
+              /c 7feae8000000-7feae8064000 rw-p 00000000 00:00 0 
+              /c 7feae8064000-7feaec000000 ---p 00000000 00:00 0 
+              /c 7feaec000000-7feaec064000 rw-p 00000000 00:00 0 
+              /c 7feaec064000-7feaf0000000 ---p 00000000 00:00 0 
+              /c 7feaf0000000-7feaf0064000 rw-p 00000000 00:00 0 
+              /c 7feaf0064000-7feaf4000000 ---p 00000000 00:00 0 
+              /c 7feaf4000000-7feaf4064000 rw-p 00000000 00:00 0 
+              /c 7feaf4064000-7feaf8000000 ---p 00000000 00:00 0 
+              /c 7feaf8000000-7feaf8064000 rw-p 00000000 00:00 0 
+              /c 7feaf8064000-7feafc000000 ---p 00000000 00:00 0 
+              /c 7feafc000000-7feafc064000 rw-p 00000000 00:00 0 
+              /c 7feafc064000-7feb00000000 ---p 00000000 00:00 0 
+              /c 7feb00000000-7feb00064000 rw-p 00000000 00:00 0 
+              /c 7feb00064000-7feb04000000 ---p 00000000 00:00 0 
+              /c 7feb04000000-7feb04064000 rw-p 00000000 00:00 0 
+              /c 7feb04064000-7feb08000000 ---p 00000000 00:00 0 
+              /c 7feb08000000-7feb08064000 rw-p 00000000 00:00 0 
+              /c 7feb08064000-7feb0c000000 ---p 00000000 00:00 0 
+              /c 7feb0f7df000-7feb0f7e0000 ---p 00000000 00:00 0 
+              /c 7feb0f7e0000-7feb0ffe0000 rw-p 00000000 00:00 0 
+              /c 7feb10000000-7feb10064000 rw-p 00000000 00:00 0 
+              /c 7feb10064000-7feb14000000 ---p 00000000 00:00 0 
+              /c 7feb16fde000-7feb16fdf000 ---p 00000000 00:00 0 
+              /c 7feb16fdf000-7feb177df000 rw-p 00000000 00:00 0 
+              /c 7feb177df000-7feb177e0000 ---p 00000000 00:00 0 
+              /c 7feb177e0000-7feb17fe0000 rw-p 00000000 00:00 0 
+              /c 7feb17fe0000-7feb17fe1000 ---p 00000000 00:00 0 
+              /c 7feb17fe1000-7feb187e1000 rw-p 00000000 00:00 0 
+              /c 7feb187e1000-7feb187e2000 ---p 00000000 00:00 0 
+              /c 7feb187e2000-7feb18fe2000 rw-p 00000000 00:00 0 
+              /c 7feb18fe2000-7feb18fe3000 ---p 00000000 00:00 0 
+              /c 7feb18fe3000-7feb197e3000 rw-p 00000000 00:00 0 
+              /c 7feb197e3000-7feb197e4000 ---p 00000000 00:00 0 
+              /c 7feb197e4000-7feb19fe4000 rw-p 00000000 00:00 0 
+              /c 7feb19fe4000-7feb19fe5000 ---p 00000000 00:00 0 
+              /c 7feb19fe5000-7feb1a7e5000 rw-p 00000000 00:00 0 
+              /c 7feb1a7e5000-7feb1a7e6000 ---p 00000000 00:00 0 
+              /c 7feb1a7e6000-7feb1afe6000 rw-p 00000000 00:00 0 
+              /c 7feb1afe6000-7feb1afe7000 ---p 00000000 00:00 0 
+              /c 7feb1afe7000-7feb1b7e7000 rw-p 00000000 00:00 0 
+              /c 7feb1b7e7000-7feb1b7e8000 ---p 00000000 00:00 0 
+              /c 7feb1b7e8000-7feb1bfe8000 rw-p 00000000 00:00 0 
+              /c 7feb1bfe8000-7feb1bfe9000 ---p 00000000 00:00 0 
+              /c 7feb1bfe9000-7feb1c7e9000 rw-p 00000000 00:00 0 
+              /c 7feb1c7e9000-7feb1c7ea000 ---p 00000000 00:00 0 
+              /c 7feb1c7ea000-7feb1cfea000 rw-p 00000000 00:00 0 
+              /c 7feb1cfea000-7feb1cfeb000 ---p 00000000 00:00 0 
+              /c 7feb1cfeb000-7feb1d7eb000 rw-p 00000000 00:00 0 
+              /c 7feb1d7eb000-7feb1d7ec000 ---p 00000000 00:00 0 
+              /c 7feb1d7ec000-7feb1dfec000 rw-p 00000000 00:00 0 
+              /c 7feb1dfec000-7feb1dfed000 ---p 00000000 00:00 0 
+              /c 7feb1dfed000-7feb1e7ed000 rw-p 00000000 00:00 0 
+              /c 7feb1e7ed000-7feb1e7ee000 ---p 00000000 00:00 0 
+              /c 7feb1e7ee000-7feb1efee000 rw-p 00000000 00:00 0 
+              /c 7feb1efee000-7feb1efef000 ---p 00000000 00:00 0 
+              /c 7feb1efef000-7feb1f7ef000 rw-p 00000000 00:00 0 
+              /c 7feb1f7ef000-7feb1f7f0000 ---p 00000000 00:00 0 
+              /c 7feb1f7f0000-7feb1fff0000 rw-p 00000000 00:00 0 
+              /c 7feb1fff0000-7feb1fff1000 ---p 00000000 00:00 0 
+              /c 7feb1fff1000-7feb207f1000 rw-p 00000000 00:00 0 
+              /c 7feb207f1000-7feb207f2000 ---p 00000000 00:00 0 
+              /c 7feb207f2000-7feb20ff2000 rw-p 00000000 00:00 0 
+              /c 7feb20ff2000-7feb20ff3000 ---p 00000000 00:00 0 
+              /c 7feb20ff3000-7feb217f3000 rw-p 00000000 00:00 0 
+              /c 7feb217f3000-7feb217f4000 ---p 00000000 00:00 0 
+              /c 7feb217f4000-7feb21ff4000 rw-p 00000000 00:00 0 
+              /c 7feb21ff4000-7feb21ff5000 ---p 00000000 00:00 0 
+              /c 7feb21ff5000-7feb227f5000 rw-p 00000000 00:00 0 
+              /c 7feb227f5000-7feb227f6000 ---p 00000000 00:00 0 
+              /c 7feb227f6000-7feb22ff6000 rw-p 00000000 00:00 0 
+              /c 7feb22ff6000-7feb22ff7000 ---p 00000000 00:00 0 
+              /c 7feb22ff7000-7feb237f7000 rw-p 00000000 00:00 0 
+              /c 7feb237f7000-7feb237f8000 ---p 00000000 00:00 0 
+              /c 7feb237f8000-7feb23ff8000 rw-p 00000000 00:00 0 
+              /c 7feb23ff8000-7feb23ff9000 ---p 00000000 00:00 0 
+              /c 7feb23ff9000-7feb247f9000 rw-p 00000000 00:00 0 
+              /c 7feb247f9000-7feb247fa000 ---p 00000000 00:00 0 
+              /c 7feb247fa000-7feb24ffa000 rw-p 00000000 00:00 0 
+              /c 7feb24ffa000-7feb24ffb000 ---p 00000000 00:00 0 
+              /c 7feb24ffb000-7feb257fb000 rw-p 00000000 00:00 0 
+              /c 7feb257fb000-7feb257fc000 ---p 00000000 00:00 0 
+              /c 7feb257fc000-7feb25ffc000 rw-p 00000000 00:00 0 
+              /c 7feb25ffc000-7feb25ffd000 ---p 00000000 00:00 0 
+              /c 7feb25ffd000-7feb267fd000 rw-p 00000000 00:00 0 
+              /c 7feb267fd000-7feb267fe000 ---p 00000000 00:00 0 
+              /c 7feb267fe000-7feb26ffe000 rw-p 00000000 00:00 0 
+              /c 7feb26ffe000-7feb26fff000 ---p 00000000 00:00 0 
+              /c 7feb26fff000-7feb277ff000 rw-p 00000000 00:00 0 
+              /c 7feb277ff000-7feb27800000 ---p 00000000 00:00 0 
+              /c 7feb27800000-7feb28000000 rw-p 00000000 00:00 0 
+              /c 7feb28000000-7feb28072000 rw-p 00000000 00:00 0 
+              /c 7feb28072000-7feb2c000000 ---p 00000000 00:00 0 
+              /c 7feb2c092000-7feb2c094000 r-xp 00000000 fd:00 7962                       /usr/lib64/libutil-2.17.so
+              /c 7feb2c094000-7feb2c293000 ---p 00002000 fd:00 7962                       /usr/lib64/libutil-2.17.so
+              /c 7feb2c293000-7feb2c294000 r--p 00001000 fd:00 7962                       /usr/lib64/libutil-2.17.so
+              /c 7feb2c294000-7feb2c295000 rw-p 00002000 fd:00 7962                       /usr/lib64/libutil-2.17.so
+              /c 7feb2c295000-7feb2c40f000 r-xp 00000000 fd:00 3222841899                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7feb2c40f000-7feb2c60e000 ---p 0017a000 fd:00 3222841899                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7feb2c60e000-7feb2c64a000 rw-p 00179000 fd:00 3222841899                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7feb2c64a000-7feb2c658000 rw-p 00000000 00:00 0 
+              /c 7feb2c658000-7feb2c7b4000 r-xp 00000000 fd:00 5808209                    /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7feb2c7b4000-7feb2c9b3000 ---p 0015c000 fd:00 5808209                    /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7feb2c9b3000-7feb2c9bf000 rw-p 0015b000 fd:00 5808209                    /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7feb2c9bf000-7feb2c9c4000 r-xp 00000000 fd:00 2232595794                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7feb2c9c4000-7feb2cbc3000 ---p 00005000 fd:00 2232595794                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7feb2cbc3000-7feb2cbc4000 rw-p 00004000 fd:00 2232595794                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7feb2cbc4000-7feb2cbc5000 ---p 00000000 00:00 0 
+              /c 7feb2cbc5000-7feb2ddc6000 rw-p 00000000 00:00 0 
+              /c 7feb2ddc6000-7feb2ddd5000 r-xp 00000000 fd:00 8641                       /usr/lib64/libbz2.so.1.0.6
+              /c 7feb2ddd5000-7feb2dfd4000 ---p 0000f000 fd:00 8641                       /usr/lib64/libbz2.so.1.0.6
+              /c 7feb2dfd4000-7feb2dfd5000 r--p 0000e000 fd:00 8641                       /usr/lib64/libbz2.so.1.0.6
+              /c 7feb2dfd5000-7feb2dfd6000 rw-p 0000f000 fd:00 8641                       /usr/lib64/libbz2.so.1.0.6
+              /c 7feb2dfd6000-7feb2dfed000 r-xp 00000000 fd:00 8282                       /usr/lib64/libelf-0.176.so
+              /c 7feb2dfed000-7feb2e1ec000 ---p 00017000 fd:00 8282                       /usr/lib64/libelf-0.176.so
+              /c 7feb2e1ec000-7feb2e1ed000 r--p 00016000 fd:00 8282                       /usr/lib64/libelf-0.176.so
+              /c 7feb2e1ed000-7feb2e1ee000 rw-p 00017000 fd:00 8282                       /usr/lib64/libelf-0.176.so
+              /c 7feb2e1ee000-7feb2e1f2000 r-xp 00000000 fd:00 8370                       /usr/lib64/libattr.so.1.1.0
+              /c 7feb2e1f2000-7feb2e3f1000 ---p 00004000 fd:00 8370                       /usr/lib64/libattr.so.1.1.0
+              /c 7feb2e3f1000-7feb2e3f2000 r--p 00003000 fd:00 8370                       /usr/lib64/libattr.so.1.1.0
+              /c 7feb2e3f2000-7feb2e3f3000 rw-p 00004000 fd:00 8370                       /usr/lib64/libattr.so.1.1.0
+              /c 7feb2e3f3000-7feb2e441000 r-xp 00000000 fd:00 10777                      /usr/lib64/libdw-0.176.so
+              /c 7feb2e441000-7feb2e641000 ---p 0004e000 fd:00 10777                      /usr/lib64/libdw-0.176.so
+              /c 7feb2e641000-7feb2e643000 r--p 0004e000 fd:00 10777                      /usr/lib64/libdw-0.176.so
+              /c 7feb2e643000-7feb2e644000 rw-p 00050000 fd:00 10777                      /usr/lib64/libdw-0.176.so
+              /c 7feb2e644000-7feb2e648000 r-xp 00000000 fd:00 8659                       /usr/lib64/libgpg-error.so.0.10.0
+              /c 7feb2e648000-7feb2e847000 ---p 00004000 fd:00 8659                       /usr/lib64/libgpg-error.so.0.10.0
+              /c 7feb2e847000-7feb2e848000 r--p 00003000 fd:00 8659                       /usr/lib64/libgpg-error.so.0.10.0
+              /c 7feb2e848000-7feb2e849000 rw-p 00004000 fd:00 8659                       /usr/lib64/libgpg-error.so.0.10.0
+              /c 7feb2e849000-7feb2e8c6000 r-xp 00000000 fd:00 8671                       /usr/lib64/libgcrypt.so.11.8.2
+              /c 7feb2e8c6000-7feb2eac5000 ---p 0007d000 fd:00 8671                       /usr/lib64/libgcrypt.so.11.8.2
+              /c 7feb2eac5000-7feb2eac6000 r--p 0007c000 fd:00 8671                       /usr/lib64/libgcrypt.so.11.8.2
+              /c 7feb2eac6000-7feb2eac9000 rw-p 0007d000 fd:00 8671                       /usr/lib64/libgcrypt.so.11.8.2
+              /c 7feb2eac9000-7feb2eaca000 rw-p 00000000 00:00 0 
+              /c 7feb2eaca000-7feb2eade000 r-xp 00000000 fd:00 8673                       /usr/lib64/liblz4.so.1.7.5
+              /c 7feb2eade000-7feb2ecdd000 ---p 00014000 fd:00 8673                       /usr/lib64/liblz4.so.1.7.5
+              /c 7feb2ecdd000-7feb2ecde000 r--p 00013000 fd:00 8673                       /usr/lib64/liblz4.so.1.7.5
+              /c 7feb2ecde000-7feb2ecdf000 rw-p 00014000 fd:00 8673                       /usr/lib64/liblz4.so.1.7.5
+              /c 7feb2ecdf000-7feb2ed04000 r-xp 00000000 fd:00 8631                       /usr/lib64/liblzma.so.5.2.2
+              /c 7feb2ed04000-7feb2ef03000 ---p 00025000 fd:00 8631                       /usr/lib64/liblzma.so.5.2.2
+              /c 7feb2ef03000-7feb2ef04000 r--p 00024000 fd:00 8631                       /usr/lib64/liblzma.so.5.2.2
+              /c 7feb2ef04000-7feb2ef05000 rw-p 00025000 fd:00 8631                       /usr/lib64/liblzma.so.5.2.2
+              /c 7feb2ef05000-7feb2ef09000 r-xp 00000000 fd:00 8269                       /usr/lib64/libcap.so.2.22
+              /c 7feb2ef09000-7feb2f108000 ---p 00004000 fd:00 8269                       /usr/lib64/libcap.so.2.22
+              /c 7feb2f108000-7feb2f109000 r--p 00003000 fd:00 8269                       /usr/lib64/libcap.so.2.22
+              /c 7feb2f109000-7feb2f10a000 rw-p 00004000 fd:00 8269                       /usr/lib64/libcap.so.2.22
+              /c 7feb2f10a000-7feb2f139000 r-xp 00000000 fd:00 10792                      /usr/lib64/libsystemd.so.0.6.0
+              /c 7feb2f139000-7feb2f339000 ---p 0002f000 fd:00 10792                      /usr/lib64/libsystemd.so.0.6.0
+              /c 7feb2f339000-7feb2f33a000 r--p 0002f000 fd:00 10792                      /usr/lib64/libsystemd.so.0.6.0
+              /c 7feb2f33a000-7feb2f33b000 rw-p 00030000 fd:00 10792                      /usr/lib64/libsystemd.so.0.6.0
+              /c 7feb2f33b000-7feb2f35f000 r-xp 00000000 fd:00 8383                       /usr/lib64/libselinux.so.1
+              /c 7feb2f35f000-7feb2f55e000 ---p 00024000 fd:00 8383                       /usr/lib64/libselinux.so.1
+              /c 7feb2f55e000-7feb2f55f000 r--p 00023000 fd:00 8383                       /usr/lib64/libselinux.so.1
+              /c 7feb2f55f000-7feb2f560000 rw-p 00024000 fd:00 8383                       /usr/lib64/libselinux.so.1
+              /c 7feb2f560000-7feb2f562000 rw-p 00000000 00:00 0 
+              /c 7feb2f562000-7feb2f564000 r-xp 00000000 fd:00 5208                       /usr/lib64/libfreebl3.so
+              /c 7feb2f564000-7feb2f763000 ---p 00002000 fd:00 5208                       /usr/lib64/libfreebl3.so
+              /c 7feb2f763000-7feb2f764000 r--p 00001000 fd:00 5208                       /usr/lib64/libfreebl3.so
+              /c 7feb2f764000-7feb2f765000 rw-p 00002000 fd:00 5208                       /usr/lib64/libfreebl3.so
+              /c 7feb2f765000-7feb2f7b3000 r-xp 00000000 fd:00 10798                      /usr/lib64/libdbus-1.so.3.14.14
+              /c 7feb2f7b3000-7feb2f9b2000 ---p 0004e000 fd:00 10798                      /usr/lib64/libdbus-1.so.3.14.14
+              /c 7feb2f9b2000-7feb2f9b3000 r--p 0004d000 fd:00 10798                      /usr/lib64/libdbus-1.so.3.14.14
+              /c 7feb2f9b3000-7feb2f9b4000 rw-p 0004e000 fd:00 10798                      /usr/lib64/libdbus-1.so.3.14.14
+              /c 7feb2f9b4000-7feb2f9b5000 rw-p 00000000 00:00 0 
+              /c 7feb2f9b5000-7feb2f9b8000 r-xp 00000000 fd:00 8395                       /usr/lib64/libkeyutils.so.1.5
+              /c 7feb2f9b8000-7feb2fbb7000 ---p 00003000 fd:00 8395                       /usr/lib64/libkeyutils.so.1.5
+              /c 7feb2fbb7000-7feb2fbb8000 r--p 00002000 fd:00 8395                       /usr/lib64/libkeyutils.so.1.5
+              /c 7feb2fbb8000-7feb2fbb9000 rw-p 00003000 fd:00 8395                       /usr/lib64/libkeyutils.so.1.5
+              /c 7feb2fbb9000-7feb2fbc7000 r-xp 00000000 fd:00 8618                       /usr/lib64/libkrb5support.so.0.1
+              /c 7feb2fbc7000-7feb2fdc7000 ---p 0000e000 fd:00 8618                       /usr/lib64/libkrb5support.so.0.1
+              /c 7feb2fdc7000-7feb2fdc8000 r--p 0000e000 fd:00 8618                       /usr/lib64/libkrb5support.so.0.1
+              /c 7feb2fdc8000-7feb2fdc9000 rw-p 0000f000 fd:00 8618                       /usr/lib64/libkrb5support.so.0.1
+              /c 7feb2fdc9000-7feb2fdd1000 r-xp 00000000 fd:00 5222                       /usr/lib64/libcrypt-2.17.so
+              /c 7feb2fdd1000-7feb2ffd0000 ---p 00008000 fd:00 5222                       /usr/lib64/libcrypt-2.17.so
+              /c 7feb2ffd0000-7feb2ffd1000 r--p 00007000 fd:00 5222                       /usr/lib64/libcrypt-2.17.so
+              /c 7feb2ffd1000-7feb2ffd2000 rw-p 00008000 fd:00 5222                       /usr/lib64/libcrypt-2.17.so
+              /c 7feb2ffd2000-7feb30000000 rw-p 00000000 00:00 0 
+              /c 7feb30000000-7feb30021000 rw-p 00000000 00:00 0 
+              /c 7feb30021000-7feb34000000 ---p 00000000 00:00 0 
+              /c 7feb34053000-7feb34093000 rw-p 00000000 00:00 0 
+              /c 7feb34093000-7feb340a5000 r--p 00000000 fd:00 3223492291                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/COUR.ttf
+              /c 7feb340a5000-7feb340b6000 r--p 00000000 fd:00 3223492296                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisri.ttf
+              /c 7feb340b6000-7feb34103000 r--p 00000000 fd:00 3262979351                 /usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf
+              /c 7feb34103000-7feb34115000 r--p 00000000 fd:00 3223492306                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisb.ttf
+              /c 7feb34115000-7feb34125000 r-xp 00000000 fd:00 31255                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7feb34125000-7feb34324000 ---p 00010000 fd:00 31255                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7feb34324000-7feb34325000 r--p 0000f000 fd:00 31255                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7feb34325000-7feb34326000 rw-p 00010000 fd:00 31255                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7feb34326000-7feb34332000 r-xp 00000000 fd:00 31257                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7feb34332000-7feb34531000 ---p 0000c000 fd:00 31257                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7feb34531000-7feb34532000 r--p 0000b000 fd:00 31257                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7feb34532000-7feb34533000 rw-p 0000c000 fd:00 31257                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7feb34533000-7feb34769000 r-xp 00000000 fd:00 8605                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7feb34769000-7feb34969000 ---p 00236000 fd:00 8605                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7feb34969000-7feb34985000 r--p 00236000 fd:00 8605                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7feb34985000-7feb34992000 rw-p 00252000 fd:00 8605                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7feb34992000-7feb34996000 rw-p 00000000 00:00 0 
+              /c 7feb34996000-7feb349fd000 r-xp 00000000 fd:00 8624                       /usr/lib64/libssl.so.1.0.2k
+              /c 7feb349fd000-7feb34bfd000 ---p 00067000 fd:00 8624                       /usr/lib64/libssl.so.1.0.2k
+              /c 7feb34bfd000-7feb34c01000 r--p 00067000 fd:00 8624                       /usr/lib64/libssl.so.1.0.2k
+              /c 7feb34c01000-7feb34c08000 rw-p 0006b000 fd:00 8624                       /usr/lib64/libssl.so.1.0.2k
+              /c 7feb34c08000-7feb34c0b000 r-xp 00000000 fd:00 8267                       /usr/lib64/libcom_err.so.2.1
+              /c 7feb34c0b000-7feb34e0a000 ---p 00003000 fd:00 8267                       /usr/lib64/libcom_err.so.2.1
+              /c 7feb34e0a000-7feb34e0b000 r--p 00002000 fd:00 8267                       /usr/lib64/libcom_err.so.2.1
+              /c 7feb34e0b000-7feb34e0c000 rw-p 00003000 fd:00 8267                       /usr/lib64/libcom_err.so.2.1
+              /c 7feb34e0c000-7feb34e3d000 r-xp 00000000 fd:00 10235                      /usr/lib64/libk5crypto.so.3.1
+              /c 7feb34e3d000-7feb3503c000 ---p 00031000 fd:00 10235                      /usr/lib64/libk5crypto.so.3.1
+              /c 7feb3503c000-7feb3503e000 r--p 00030000 fd:00 10235                      /usr/lib64/libk5crypto.so.3.1
+              /c 7feb3503e000-7feb3503f000 rw-p 00032000 fd:00 10235                      /usr/lib64/libk5crypto.so.3.1
+              /c 7feb3503f000-7feb35118000 r-xp 00000000 fd:00 10377                      /usr/lib64/libkrb5.so.3.3
+              /c 7feb35118000-7feb35317000 ---p 000d9000 fd:00 10377                      /usr/lib64/libkrb5.so.3.3
+              /c 7feb35317000-7feb35325000 r--p 000d8000 fd:00 10377                      /usr/lib64/libkrb5.so.3.3
+              /c 7feb35325000-7feb35328000 rw-p 000e6000 fd:00 10377                      /usr/lib64/libkrb5.so.3.3
+              /c 7feb35328000-7feb35372000 r-xp 00000000 fd:00 8615                       /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7feb35372000-7feb35572000 ---p 0004a000 fd:00 8615                       /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7feb35572000-7feb35573000 r--p 0004a000 fd:00 8615                       /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7feb35573000-7feb35575000 rw-p 0004b000 fd:00 8615                       /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7feb35575000-7feb355d8000 r-xp 00000000 fd:00 31253                      /usr/lib64/libcups.so.2
+              /c 7feb355d8000-7feb357d8000 ---p 00063000 fd:00 31253                      /usr/lib64/libcups.so.2
+              /c 7feb357d8000-7feb357dc000 r--p 00063000 fd:00 31253                      /usr/lib64/libcups.so.2
+              /c 7feb357dc000-7feb357dd000 rw-p 00067000 fd:00 31253                      /usr/lib64/libcups.so.2
+              /c 7feb357dd000-7feb357de000 rw-p 00000000 00:00 0 
+              /c 7feb357de000-7feb357f4000 r-xp 00000000 fd:00 5246                       /usr/lib64/libresolv-2.17.so
+              /c 7feb357f4000-7feb359f3000 ---p 00016000 fd:00 5246                       /usr/lib64/libresolv-2.17.so
+              /c 7feb359f3000-7feb359f4000 r--p 00015000 fd:00 5246                       /usr/lib64/libresolv-2.17.so
+              /c 7feb359f4000-7feb359f5000 rw-p 00016000 fd:00 5246                       /usr/lib64/libresolv-2.17.so
+              /c 7feb359f5000-7feb359f7000 rw-p 00000000 00:00 0 
+              /c 7feb359f7000-7feb359fd000 r-xp 00000000 fd:00 5234                       /usr/lib64/libnss_dns-2.17.so
+              /c 7feb359fd000-7feb35bfc000 ---p 00006000 fd:00 5234                       /usr/lib64/libnss_dns-2.17.so
+              /c 7feb35bfc000-7feb35bfd000 r--p 00005000 fd:00 5234                       /usr/lib64/libnss_dns-2.17.so
+              /c 7feb35bfd000-7feb35bfe000 rw-p 00006000 fd:00 5234                       /usr/lib64/libnss_dns-2.17.so
+              /c 7feb35bfe000-7feb35c17000 r-xp 00000000 fd:00 2232595583                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7feb35c17000-7feb35e16000 ---p 00019000 fd:00 2232595583                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7feb35e16000-7feb35e18000 rw-p 00018000 fd:00 2232595583                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7feb35e18000-7feb35e2a000 r-xp 00000000 fd:00 3222798853                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7feb35e2a000-7feb3602a000 ---p 00012000 fd:00 3222798853                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7feb3602a000-7feb3602c000 rw-p 00012000 fd:00 3222798853                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7feb3602c000-7feb36109000 r-xp 00000000 fd:00 3223154444                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7feb36109000-7feb36308000 ---p 000dd000 fd:00 3223154444                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7feb36308000-7feb3630f000 rw-p 000dc000 fd:00 3223154444                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7feb3630f000-7feb3636c000 r-xp 00000000 fd:00 3223154446                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7feb3636c000-7feb3656b000 ---p 0005d000 fd:00 3223154446                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7feb3656b000-7feb36570000 rw-p 0005c000 fd:00 3223154446                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7feb36570000-7feb3657a000 r-xp 00000000 fd:00 3222798868                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7feb3657a000-7feb3677a000 ---p 0000a000 fd:00 3222798868                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7feb3677a000-7feb3677b000 rw-p 0000a000 fd:00 3222798868                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7feb3677b000-7feb367b2000 r-xp 00000000 fd:00 3222798864                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7feb367b2000-7feb369b1000 ---p 00037000 fd:00 3222798864                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7feb369b1000-7feb369b3000 rw-p 00036000 fd:00 3222798864                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7feb369b3000-7feb369b4000 rw-p 00000000 00:00 0 
+              /c 7feb369b4000-7feb36a64000 r--p 00000000 fd:00 3221269780                 /usr/share/fonts/dejavu/DejaVuSans.ttf
+              /c 7feb36a64000-7feb36abd000 r-xp 00000000 fd:00 3223491787                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7feb36abd000-7feb36bbc000 ---p 00059000 fd:00 3223491787                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7feb36bbc000-7feb36bbf000 rw-p 00058000 fd:00 3223491787                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7feb36bbf000-7feb36bc4000 r-xp 00000000 fd:00 3223491788                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7feb36bc4000-7feb36cc4000 ---p 00005000 fd:00 3223491788                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7feb36cc4000-7feb36cc5000 rw-p 00005000 fd:00 3223491788                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7feb36cc5000-7feb36d21000 r-xp 00000000 fd:00 3223491792                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7feb36d21000-7feb36e20000 ---p 0005c000 fd:00 3223491792                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7feb36e20000-7feb36e24000 rw-p 0005b000 fd:00 3223491792                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7feb36e24000-7feb36e60000 r-xp 00000000 fd:00 3223491789                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7feb36e60000-7feb36f60000 ---p 0003c000 fd:00 3223491789                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7feb36f60000-7feb36f61000 rw-p 0003c000 fd:00 3223491789                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7feb36f61000-7feb36f68000 r-xp 00000000 fd:00 3223491791                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7feb36f68000-7feb37067000 ---p 00007000 fd:00 3223491791                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7feb37067000-7feb37068000 rw-p 00006000 fd:00 3223491791                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7feb37068000-7feb3706f000 r-xp 00000000 fd:00 3223491790                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7feb3706f000-7feb3716e000 ---p 00007000 fd:00 3223491790                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7feb3716e000-7feb3716f000 rw-p 00006000 fd:00 3223491790                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7feb3716f000-7feb37171000 r-xp 00000000 fd:00 1073755389                 /usr/lib64/gconv/UTF-16.so
+              /c 7feb37171000-7feb37371000 ---p 00002000 fd:00 1073755389                 /usr/lib64/gconv/UTF-16.so
+              /c 7feb37371000-7feb37372000 r--p 00002000 fd:00 1073755389                 /usr/lib64/gconv/UTF-16.so
+              /c 7feb37372000-7feb37373000 rw-p 00003000 fd:00 1073755389                 /usr/lib64/gconv/UTF-16.so
+              /c 7feb37373000-7feb3d89d000 r--p 00000000 fd:00 1073747668                 /usr/lib/locale/locale-archive
+              /c 7feb3d89d000-7feb3e0a2000 r--s 00000000 fd:00 992701                     /var/lib/sss/mc/passwd
+              /c 7feb3e0a2000-7feb3e0aa000 r-xp 00000000 fd:00 60024582                   /usr/lib64/libnss_sss.so.2
+              /c 7feb3e0aa000-7feb3e2a9000 ---p 00008000 fd:00 60024582                   /usr/lib64/libnss_sss.so.2
+              /c 7feb3e2a9000-7feb3e2aa000 r--p 00007000 fd:00 60024582                   /usr/lib64/libnss_sss.so.2
+              /c 7feb3e2aa000-7feb3e2ab000 rw-p 00008000 fd:00 60024582                   /usr/lib64/libnss_sss.so.2
+              /c 7feb3e2ab000-7feb3e2b7000 r-xp 00000000 fd:00 5236                       /usr/lib64/libnss_files-2.17.so
+              /c 7feb3e2b7000-7feb3e4b6000 ---p 0000c000 fd:00 5236                       /usr/lib64/libnss_files-2.17.so
+              /c 7feb3e4b6000-7feb3e4b7000 r--p 0000b000 fd:00 5236                       /usr/lib64/libnss_files-2.17.so
+              /c 7feb3e4b7000-7feb3e4b8000 rw-p 0000c000 fd:00 5236                       /usr/lib64/libnss_files-2.17.so
+              /c 7feb3e4b8000-7feb3e4be000 rw-p 00000000 00:00 0 
+              /c 7feb3e4be000-7feb3e4c0000 r-xp 00000000 fd:00 25486                      /usr/lib64/libXau.so.6.0.0
+              /c 7feb3e4c0000-7feb3e6c0000 ---p 00002000 fd:00 25486                      /usr/lib64/libXau.so.6.0.0
+              /c 7feb3e6c0000-7feb3e6c1000 r--p 00002000 fd:00 25486                      /usr/lib64/libXau.so.6.0.0
+              /c 7feb3e6c1000-7feb3e6c2000 rw-p 00003000 fd:00 25486                      /usr/lib64/libXau.so.6.0.0
+              /c 7feb3e6c2000-7feb3e723000 r-xp 00000000 fd:00 25360                      /usr/lib64/libXt.so.6.0.0
+              /c 7feb3e723000-7feb3e922000 ---p 00061000 fd:00 25360                      /usr/lib64/libXt.so.6.0.0
+              /c 7feb3e922000-7feb3e923000 r--p 00060000 fd:00 25360                      /usr/lib64/libXt.so.6.0.0
+              /c 7feb3e923000-7feb3e928000 rw-p 00061000 fd:00 25360                      /usr/lib64/libXt.so.6.0.0
+              /c 7feb3e928000-7feb3e929000 rw-p 00000000 00:00 0 
+              /c 7feb3e929000-7feb3e92f000 r-xp 00000000 fd:00 3222798870                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7feb3e92f000-7feb3eb2e000 ---p 00006000 fd:00 3222798870                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7feb3eb2e000-7feb3eb2f000 rw-p 00005000 fd:00 3222798870                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7feb3eb2f000-7feb3eb54000 r-xp 00000000 fd:00 8349                       /usr/lib64/libtinfo.so.5.9
+              /c 7feb3eb54000-7feb3ed54000 ---p 00025000 fd:00 8349                       /usr/lib64/libtinfo.so.5.9
+              /c 7feb3ed54000-7feb3ed58000 r--p 00025000 fd:00 8349                       /usr/lib64/libtinfo.so.5.9
+              /c 7feb3ed58000-7feb3ed59000 rw-p 00029000 fd:00 8349                       /usr/lib64/libtinfo.so.5.9
+              /c 7feb3ed59000-7feb3ed80000 r-xp 00000000 fd:00 25409                      /usr/lib64/libxcb.so.1.1.0
+              /c 7feb3ed80000-7feb3ef7f000 ---p 00027000 fd:00 25409                      /usr/lib64/libxcb.so.1.1.0
+              /c 7feb3ef7f000-7feb3ef80000 r--p 00026000 fd:00 25409                      /usr/lib64/libxcb.so.1.1.0
+              /c 7feb3ef80000-7feb3ef81000 rw-p 00027000 fd:00 25409                      /usr/lib64/libxcb.so.1.1.0
+              /c 7feb3ef81000-7feb3efa8000 r-xp 00000000 fd:00 8699                       /usr/lib64/libexpat.so.1.6.0
+              /c 7feb3efa8000-7feb3f1a8000 ---p 00027000 fd:00 8699                       /usr/lib64/libexpat.so.1.6.0
+              /c 7feb3f1a8000-7feb3f1aa000 r--p 00027000 fd:00 8699                       /usr/lib64/libexpat.so.1.6.0
+              /c 7feb3f1aa000-7feb3f1ab000 rw-p 00029000 fd:00 8699                       /usr/lib64/libexpat.so.1.6.0
+              /c 7feb3f1ab000-7feb3f1b0000 r-xp 00000000 fd:00 25386                      /usr/lib64/libXfixes.so.3.1.0
+              /c 7feb3f1b0000-7feb3f3af000 ---p 00005000 fd:00 25386                      /usr/lib64/libXfixes.so.3.1.0
+              /c 7feb3f3af000-7feb3f3b0000 r--p 00004000 fd:00 25386                      /usr/lib64/libXfixes.so.3.1.0
+              /c 7feb3f3b0000-7feb3f3b1000 rw-p 00005000 fd:00 25386                      /usr/lib64/libXfixes.so.3.1.0
+              /c 7feb3f3b1000-7feb3f3b5000 r-xp 00000000 fd:00 8278                       /usr/lib64/libuuid.so.1.3.0
+              /c 7feb3f3b5000-7feb3f5b4000 ---p 00004000 fd:00 8278                       /usr/lib64/libuuid.so.1.3.0
+              /c 7feb3f5b4000-7feb3f5b5000 r--p 00003000 fd:00 8278                       /usr/lib64/libuuid.so.1.3.0
+              /c 7feb3f5b5000-7feb3f5b6000 rw-p 00004000 fd:00 8278                       /usr/lib64/libuuid.so.1.3.0
+              /c 7feb3f5b6000-7feb3f616000 r-xp 00000000 fd:00 8384                       /usr/lib64/libpcre.so.1.2.0
+              /c 7feb3f616000-7feb3f816000 ---p 00060000 fd:00 8384                       /usr/lib64/libpcre.so.1.2.0
+              /c 7feb3f816000-7feb3f817000 r--p 00060000 fd:00 8384                       /usr/lib64/libpcre.so.1.2.0
+              /c 7feb3f817000-7feb3f818000 rw-p 00061000 fd:00 8384                       /usr/lib64/libpcre.so.1.2.0
+              /c 7feb3f818000-7feb3f9db000 r-xp 00000000 fd:00 5218                       /usr/lib64/libc-2.17.so
+              /c 7feb3f9db000-7feb3fbdb000 ---p 001c3000 fd:00 5218                       /usr/lib64/libc-2.17.so
+              /c 7feb3fbdb000-7feb3fbdf000 r--p 001c3000 fd:00 5218                       /usr/lib64/libc-2.17.so
+              /c 7feb3fbdf000-7feb3fbe1000 rw-p 001c7000 fd:00 5218                       /usr/lib64/libc-2.17.so
+              /c 7feb3fbe1000-7feb3fbe6000 rw-p 00000000 00:00 0 
+              /c 7feb3fbe6000-7feb3fbfb000 r-xp 00000000 fd:00 1076901170                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7feb3fbfb000-7feb3fdfa000 ---p 00015000 fd:00 1076901170                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7feb3fdfa000-7feb3fdfb000 rw-p 00014000 fd:00 1076901170                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7feb3fdfb000-7feb3fe09000 r-xp 00000000 fd:00 1076901169                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7feb3fe09000-7feb40008000 ---p 0000e000 fd:00 1076901169                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7feb40008000-7feb40009000 rw-p 0000d000 fd:00 1076901169                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7feb40009000-7feb40010000 r-xp 00000000 fd:00 7956                       /usr/lib64/librt-2.17.so
+              /c 7feb40010000-7feb4020f000 ---p 00007000 fd:00 7956                       /usr/lib64/librt-2.17.so
+              /c 7feb4020f000-7feb40210000 r--p 00006000 fd:00 7956                       /usr/lib64/librt-2.17.so
+              /c 7feb40210000-7feb40211000 rw-p 00007000 fd:00 7956                       /usr/lib64/librt-2.17.so
+              /c 7feb40211000-7feb40229000 r-xp 00000000 fd:00 25362                      /usr/lib64/libXmu.so.6.2.0
+              /c 7feb40229000-7feb40429000 ---p 00018000 fd:00 25362                      /usr/lib64/libXmu.so.6.2.0
+              /c 7feb40429000-7feb4042a000 r--p 00018000 fd:00 25362                      /usr/lib64/libXmu.so.6.2.0
+              /c 7feb4042a000-7feb4042b000 rw-p 00019000 fd:00 25362                      /usr/lib64/libXmu.so.6.2.0
+              /c 7feb4042b000-7feb4042c000 rw-p 00000000 00:00 0 
+              /c 7feb4042c000-7feb40432000 r-xp 00000000 fd:00 3222841910                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7feb40432000-7feb40631000 ---p 00006000 fd:00 3222841910                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7feb40631000-7feb40632000 rw-p 00005000 fd:00 3222841910                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7feb40632000-7feb40633000 rw-p 00000000 00:00 0 
+              /c 7feb40633000-7feb4067f000 r-xp 00000000 fd:00 3222798866                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7feb4067f000-7feb4087e000 ---p 0004c000 fd:00 3222798866                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7feb4087e000-7feb40881000 rw-p 0004b000 fd:00 3222798866                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7feb40881000-7feb40883000 rw-p 00000000 00:00 0 
+              /c 7feb40883000-7feb40920000 r-xp 00000000 fd:00 3222798861                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7feb40920000-7feb40b20000 ---p 0009d000 fd:00 3222798861                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7feb40b20000-7feb40b28000 rw-p 0009d000 fd:00 3222798861                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7feb40b28000-7feb40b29000 rw-p 00000000 00:00 0 
+              /c 7feb40b29000-7feb40b61000 r-xp 00000000 fd:00 3222798856                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7feb40b61000-7feb40d61000 ---p 00038000 fd:00 3222798856                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7feb40d61000-7feb40d64000 rw-p 00038000 fd:00 3222798856                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7feb40d64000-7feb40d67000 r-xp 00000000 fd:00 3222798855                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7feb40d67000-7feb40f66000 ---p 00003000 fd:00 3222798855                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7feb40f66000-7feb40f67000 rw-p 00002000 fd:00 3222798855                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7feb40f67000-7feb4154b000 r-xp 00000000 fd:00 3222798810                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7feb4154b000-7feb4174b000 ---p 005e4000 fd:00 3222798810                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7feb4174b000-7feb4174c000 rw-p 005e4000 fd:00 3222798810                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7feb4174c000-7feb4182c000 r-xp 00000000 fd:00 3222798859                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7feb4182c000-7feb41a2b000 ---p 000e0000 fd:00 3222798859                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7feb41a2b000-7feb41a38000 rw-p 000df000 fd:00 3222798859                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7feb41a38000-7feb41a39000 rw-p 00000000 00:00 0 
+              /c 7feb41a39000-7feb41a66000 r-xp 00000000 fd:00 3222798850                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7feb41a66000-7feb41c65000 ---p 0002d000 fd:00 3222798850                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7feb41c65000-7feb41c67000 rw-p 0002c000 fd:00 3222798850                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7feb41c67000-7feb41e6d000 r-xp 00000000 fd:00 3222798865                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7feb41e6d000-7feb4206d000 ---p 00206000 fd:00 3222798865                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7feb4206d000-7feb42088000 rw-p 00206000 fd:00 3222798865                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7feb42088000-7feb4208a000 rw-p 00000000 00:00 0 
+              /c 7feb4208a000-7feb423c1000 r-xp 00000000 fd:00 3222798815                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7feb423c1000-7feb425c1000 ---p 00337000 fd:00 3222798815                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7feb425c1000-7feb425e5000 rw-p 00337000 fd:00 3222798815                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7feb425e5000-7feb42609000 rw-p 00000000 00:00 0 
+              /c 7feb42609000-7feb42e00000 r-xp 00000000 fd:00 3222798858                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7feb42e00000-7feb43000000 ---p 007f7000 fd:00 3222798858                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7feb43000000-7feb43058000 rw-p 007f7000 fd:00 3222798858                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7feb43058000-7feb4305f000 rw-p 00000000 00:00 0 
+              /c 7feb4305f000-7feb43069000 r-xp 00000000 fd:00 3222798849                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7feb43069000-7feb43268000 ---p 0000a000 fd:00 3222798849                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7feb43268000-7feb43269000 rw-p 00009000 fd:00 3222798849                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7feb43269000-7feb4327c000 r-xp 00000000 fd:00 3222798812                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7feb4327c000-7feb4347c000 ---p 00013000 fd:00 3222798812                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7feb4347c000-7feb4347e000 rw-p 00013000 fd:00 3222798812                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7feb4347e000-7feb4369c000 r-xp 00000000 fd:00 3222798808                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7feb4369c000-7feb4389c000 ---p 0021e000 fd:00 3222798808                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7feb4389c000-7feb438bb000 rw-p 0021e000 fd:00 3222798808                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7feb438bb000-7feb438ca000 r-xp 00000000 fd:00 3222798813                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7feb438ca000-7feb43ac9000 ---p 0000f000 fd:00 3222798813                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7feb43ac9000-7feb43acb000 rw-p 0000e000 fd:00 3222798813                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7feb43acb000-7feb43add000 r-xp 00000000 fd:00 3222798860                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7feb43add000-7feb43cdd000 ---p 00012000 fd:00 3222798860                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7feb43cdd000-7feb43cde000 rw-p 00012000 fd:00 3222798860                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7feb43cde000-7feb44fae000 r-xp 00000000 fd:00 3222798814                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7feb44fae000-7feb451ae000 ---p 012d0000 fd:00 3222798814                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7feb451ae000-7feb451d3000 rw-p 012d0000 fd:00 3222798814                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7feb451d3000-7feb451f9000 r-xp 00000000 fd:00 8339                       /usr/lib64/libncurses.so.5.9
+              /c 7feb451f9000-7feb453f8000 ---p 00026000 fd:00 8339                       /usr/lib64/libncurses.so.5.9
+              /c 7feb453f8000-7feb453f9000 r--p 00025000 fd:00 8339                       /usr/lib64/libncurses.so.5.9
+              /c 7feb453f9000-7feb453fa000 rw-p 00026000 fd:00 8339                       /usr/lib64/libncurses.so.5.9
+              /c 7feb453fa000-7feb4557b000 r-xp 00000000 fd:00 1076898489                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7feb4557b000-7feb4577b000 ---p 00181000 fd:00 1076898489                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7feb4577b000-7feb45787000 rw-p 00181000 fd:00 1076898489                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7feb45787000-7feb457ad000 r-xp 00000000 fd:00 1076898488                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7feb457ad000-7feb459ac000 ---p 00026000 fd:00 1076898488                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7feb459ac000-7feb459af000 rw-p 00025000 fd:00 1076898488                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7feb459af000-7feb45a81000 r-xp 00000000 fd:00 1076898484                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7feb45a81000-7feb45c81000 ---p 000d2000 fd:00 1076898484                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7feb45c81000-7feb45c89000 rw-p 000d2000 fd:00 1076898484                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7feb45c89000-7feb460ee000 r-xp 00000000 fd:00 1076898485                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7feb460ee000-7feb462ed000 ---p 00465000 fd:00 1076898485                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7feb462ed000-7feb4630d000 rw-p 00464000 fd:00 1076898485                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7feb4630d000-7feb4630e000 rw-p 00000000 00:00 0 
+              /c 7feb4630e000-7feb463f8000 r-xp 00000000 fd:00 1076901167                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7feb463f8000-7feb465f7000 ---p 000ea000 fd:00 1076901167                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7feb465f7000-7feb465ff000 r--p 000e9000 fd:00 1076901167                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7feb465ff000-7feb46601000 rw-p 000f1000 fd:00 1076901167                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7feb46601000-7feb46616000 rw-p 00000000 00:00 0 
+              /c 7feb46616000-7feb4666a000 r-xp 00000000 fd:00 1076901138                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7feb4666a000-7feb4686a000 ---p 00054000 fd:00 1076901138                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7feb4686a000-7feb4686d000 rw-p 00054000 fd:00 1076901138                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7feb4686d000-7feb46884000 r-xp 00000000 fd:00 1076901128                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7feb46884000-7feb46a84000 ---p 00017000 fd:00 1076901128                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7feb46a84000-7feb46a85000 rw-p 00017000 fd:00 1076901128                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7feb46a85000-7feb46afa000 r-xp 00000000 fd:00 1076901157                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7feb46afa000-7feb46cfa000 ---p 00075000 fd:00 1076901157                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7feb46cfa000-7feb46cfe000 rw-p 00075000 fd:00 1076901157                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7feb46cfe000-7feb46cff000 rw-p 00000000 00:00 0 
+              /c 7feb46cff000-7feb46df7000 r-xp 00000000 fd:00 1076901162                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7feb46df7000-7feb46ff7000 ---p 000f8000 fd:00 1076901162                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7feb46ff7000-7feb46ffd000 rw-p 000f8000 fd:00 1076901162                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7feb46ffd000-7feb47069000 r-xp 00000000 fd:00 1076901153                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7feb47069000-7feb47268000 ---p 0006c000 fd:00 1076901153                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7feb47268000-7feb4726c000 rw-p 0006b000 fd:00 1076901153                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7feb4726c000-7feb47281000 r-xp 00000000 fd:00 1076901139                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7feb47281000-7feb47481000 ---p 00015000 fd:00 1076901139                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7feb47481000-7feb47482000 rw-p 00015000 fd:00 1076901139                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7feb47482000-7feb47483000 rw-p 00000000 00:00 0 
+              /c 7feb47483000-7feb47499000 r-xp 00000000 fd:00 1076901137                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7feb47499000-7feb47699000 ---p 00016000 fd:00 1076901137                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7feb47699000-7feb4769a000 rw-p 00016000 fd:00 1076901137                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7feb4769a000-7feb4769d000 r-xp 00000000 fd:00 1076901129                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7feb4769d000-7feb4789c000 ---p 00003000 fd:00 1076901129                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7feb4789c000-7feb4789d000 rw-p 00002000 fd:00 1076901129                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7feb4789d000-7feb478ad000 r-xp 00000000 fd:00 1076901151                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7feb478ad000-7feb47aac000 ---p 00010000 fd:00 1076901151                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7feb47aac000-7feb47aae000 rw-p 0000f000 fd:00 1076901151                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7feb47aae000-7feb47baf000 r-xp 00000000 fd:00 5226                       /usr/lib64/libm-2.17.so
+              /c 7feb47baf000-7feb47dae000 ---p 00101000 fd:00 5226                       /usr/lib64/libm-2.17.so
+              /c 7feb47dae000-7feb47daf000 r--p 00100000 fd:00 5226                       /usr/lib64/libm-2.17.so
+              /c 7feb47daf000-7feb47db0000 rw-p 00101000 fd:00 5226                       /usr/lib64/libm-2.17.so
+              /c 7feb47db0000-7feb47dc5000 r-xp 00000000 fd:00 8302                       /usr/lib64/libz.so.1.2.7
+              /c 7feb47dc5000-7feb47fc4000 ---p 00015000 fd:00 8302                       /usr/lib64/libz.so.1.2.7
+              /c 7feb47fc4000-7feb47fc5000 r--p 00014000 fd:00 8302                       /usr/lib64/libz.so.1.2.7
+              /c 7feb47fc5000-7feb47fc6000 rw-p 00015000 fd:00 8302                       /usr/lib64/libz.so.1.2.7
+              /c 7feb47fc6000-7feb480fe000 r-xp 00000000 fd:00 25350                      /usr/lib64/libX11.so.6.3.0
+              /c 7feb480fe000-7feb482fe000 ---p 00138000 fd:00 25350                      /usr/lib64/libX11.so.6.3.0
+              /c 7feb482fe000-7feb482ff000 r--p 00138000 fd:00 25350                      /usr/lib64/libX11.so.6.3.0
+              /c 7feb482ff000-7feb48304000 rw-p 00139000 fd:00 25350                      /usr/lib64/libX11.so.6.3.0
+              /c 7feb48304000-7feb48315000 r-xp 00000000 fd:00 25353                      /usr/lib64/libXext.so.6.4.0
+              /c 7feb48315000-7feb48514000 ---p 00011000 fd:00 25353                      /usr/lib64/libXext.so.6.4.0
+              /c 7feb48514000-7feb48515000 r--p 00010000 fd:00 25353                      /usr/lib64/libXext.so.6.4.0
+              /c 7feb48515000-7feb48516000 rw-p 00011000 fd:00 25353                      /usr/lib64/libXext.so.6.4.0
+              /c 7feb48516000-7feb48556000 r-xp 00000000 fd:00 60081343                   /usr/lib64/libfontconfig.so.1.11.1
+              /c 7feb48556000-7feb48755000 ---p 00040000 fd:00 60081343                   /usr/lib64/libfontconfig.so.1.11.1
+              /c 7feb48755000-7feb48757000 r--p 0003f000 fd:00 60081343                   /usr/lib64/libfontconfig.so.1.11.1
+              /c 7feb48757000-7feb48758000 rw-p 00041000 fd:00 60081343                   /usr/lib64/libfontconfig.so.1.11.1
+              /c 7feb48758000-7feb487d4000 r-xp 00000000 fd:00 1076901168                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7feb487d4000-7feb489d3000 ---p 0007c000 fd:00 1076901168                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7feb489d3000-7feb489d9000 rw-p 0007b000 fd:00 1076901168                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7feb489d9000-7feb489db000 r-xp 00000000 fd:00 25331                      /usr/lib64/libXinerama.so.1.0.0
+              /c 7feb489db000-7feb48bda000 ---p 00002000 fd:00 25331                      /usr/lib64/libXinerama.so.1.0.0
+              /c 7feb48bda000-7feb48bdb000 r--p 00001000 fd:00 25331                      /usr/lib64/libXinerama.so.1.0.0
+              /c 7feb48bdb000-7feb48bdc000 rw-p 00002000 fd:00 25331                      /usr/lib64/libXinerama.so.1.0.0
+              /c 7feb48bdc000-7feb48be5000 r-xp 00000000 fd:00 25388                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7feb48be5000-7feb48de5000 ---p 00009000 fd:00 25388                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7feb48de5000-7feb48de6000 r--p 00009000 fd:00 25388                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7feb48de6000-7feb48de7000 rw-p 0000a000 fd:00 25388                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7feb48de7000-7feb48df1000 r-xp 00000000 fd:00 25327                      /usr/lib64/libXrandr.so.2.2.0
+              /c 7feb48df1000-7feb48ff0000 ---p 0000a000 fd:00 25327                      /usr/lib64/libXrandr.so.2.2.0
+              /c 7feb48ff0000-7feb48ff1000 r--p 00009000 fd:00 25327                      /usr/lib64/libXrandr.so.2.2.0
+              /c 7feb48ff1000-7feb48ff2000 rw-p 0000a000 fd:00 25327                      /usr/lib64/libXrandr.so.2.2.0
+              /c 7feb48ff2000-7feb48ffb000 r-xp 00000000 fd:00 25355                      /usr/lib64/libXrender.so.1.3.0
+              /c 7feb48ffb000-7feb491fb000 ---p 00009000 fd:00 25355                      /usr/lib64/libXrender.so.1.3.0
+              /c 7feb491fb000-7feb491fc000 r--p 00009000 fd:00 25355                      /usr/lib64/libXrender.so.1.3.0
+              /c 7feb491fc000-7feb491fd000 rw-p 0000a000 fd:00 25355                      /usr/lib64/libXrender.so.1.3.0
+              /c 7feb491fd000-7feb4920c000 r-xp 00000000 fd:00 25324                      /usr/lib64/libXi.so.6.1.0
+              /c 7feb4920c000-7feb4940b000 ---p 0000f000 fd:00 25324                      /usr/lib64/libXi.so.6.1.0
+              /c 7feb4940b000-7feb4940c000 r--p 0000e000 fd:00 25324                      /usr/lib64/libXi.so.6.1.0
+              /c 7feb4940c000-7feb4940d000 rw-p 0000f000 fd:00 25324                      /usr/lib64/libXi.so.6.1.0
+              /c 7feb4940d000-7feb49424000 r-xp 00000000 fd:00 60081311                   /usr/lib64/libICE.so.6.3.0
+              /c 7feb49424000-7feb49623000 ---p 00017000 fd:00 60081311                   /usr/lib64/libICE.so.6.3.0
+              /c 7feb49623000-7feb49624000 r--p 00016000 fd:00 60081311                   /usr/lib64/libICE.so.6.3.0
+              /c 7feb49624000-7feb49625000 rw-p 00017000 fd:00 60081311                   /usr/lib64/libICE.so.6.3.0
+              /c 7feb49625000-7feb49629000 rw-p 00000000 00:00 0 
+              /c 7feb49629000-7feb49630000 r-xp 00000000 fd:00 60081317                   /usr/lib64/libSM.so.6.0.1
+              /c 7feb49630000-7feb4982f000 ---p 00007000 fd:00 60081317                   /usr/lib64/libSM.so.6.0.1
+              /c 7feb4982f000-7feb49830000 r--p 00006000 fd:00 60081317                   /usr/lib64/libSM.so.6.0.1
+              /c 7feb49830000-7feb49831000 rw-p 00007000 fd:00 60081317                   /usr/lib64/libSM.so.6.0.1
+              /c 7feb49831000-7feb49945000 r-xp 00000000 fd:00 177                        /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7feb49945000-7feb49b44000 ---p 00114000 fd:00 177                        /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7feb49b44000-7feb49b45000 r--p 00113000 fd:00 177                        /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7feb49b45000-7feb49b46000 rw-p 00114000 fd:00 177                        /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7feb49b46000-7feb49b47000 rw-p 00000000 00:00 0 
+              /c 7feb49b47000-7feb49b48000 r-xp 00000000 fd:00 183                        /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7feb49b48000-7feb49d47000 ---p 00001000 fd:00 183                        /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7feb49d47000-7feb49d48000 r--p 00000000 fd:00 183                        /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7feb49d48000-7feb49d49000 rw-p 00001000 fd:00 183                        /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7feb49d49000-7feb49d6f000 r-xp 00000000 fd:00 1006825                    /usr/lib64/libpng12.so.0.50.0
+              /c 7feb49d6f000-7feb49f6e000 ---p 00026000 fd:00 1006825                    /usr/lib64/libpng12.so.0.50.0
+              /c 7feb49f6e000-7feb49f6f000 r--p 00025000 fd:00 1006825                    /usr/lib64/libpng12.so.0.50.0
+              /c 7feb49f6f000-7feb49f70000 rw-p 00026000 fd:00 1006825                    /usr/lib64/libpng12.so.0.50.0
+              /c 7feb49f70000-7feb49f87000 r-xp 00000000 fd:00 5244                       /usr/lib64/libpthread-2.17.so
+              /c 7feb49f87000-7feb4a186000 ---p 00017000 fd:00 5244                       /usr/lib64/libpthread-2.17.so
+              /c 7feb4a186000-7feb4a187000 r--p 00016000 fd:00 5244                       /usr/lib64/libpthread-2.17.so
+              /c 7feb4a187000-7feb4a188000 rw-p 00017000 fd:00 5244                       /usr/lib64/libpthread-2.17.so
+              /c 7feb4a188000-7feb4a18c000 rw-p 00000000 00:00 0 
+              /c 7feb4a18c000-7feb4a1ca000 r-xp 00000000 fd:00 2232595559                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7feb4a1ca000-7feb4a2c9000 ---p 0003e000 fd:00 2232595559                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7feb4a2c9000-7feb4a2cb000 rw-p 0003d000 fd:00 2232595559                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7feb4a2cb000-7feb4a321000 r-xp 00000000 fd:00 2232595544                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7feb4a321000-7feb4a421000 ---p 00056000 fd:00 2232595544                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7feb4a421000-7feb4a424000 rw-p 00056000 fd:00 2232595544                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7feb4a424000-7feb4a553000 r-xp 00000000 fd:00 2232595548                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7feb4a553000-7feb4a653000 ---p 0012f000 fd:00 2232595548                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7feb4a653000-7feb4a65b000 rw-p 0012f000 fd:00 2232595548                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7feb4a65b000-7feb4a8fc000 r-xp 00000000 fd:00 2232595547                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7feb4a8fc000-7feb4a9fc000 ---p 002a1000 fd:00 2232595547                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7feb4a9fc000-7feb4aa0b000 rw-p 002a1000 fd:00 2232595547                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7feb4aa0b000-7feb4b47d000 r-xp 00000000 fd:00 2232595570                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7feb4b47d000-7feb4b57d000 ---p 00a72000 fd:00 2232595570                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7feb4b57d000-7feb4b5ce000 rw-p 00a72000 fd:00 2232595570                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7feb4b5ce000-7feb4b5d1000 rw-p 00000000 00:00 0 
+              /c 7feb4b5d1000-7feb4b5d3000 r-xp 00000000 fd:00 5224                       /usr/lib64/libdl-2.17.so
+              /c 7feb4b5d3000-7feb4b7d3000 ---p 00002000 fd:00 5224                       /usr/lib64/libdl-2.17.so
+              /c 7feb4b7d3000-7feb4b7d4000 r--p 00002000 fd:00 5224                       /usr/lib64/libdl-2.17.so
+              /c 7feb4b7d4000-7feb4b7d5000 rw-p 00003000 fd:00 5224                       /usr/lib64/libdl-2.17.so
+              /c 7feb4b7d5000-7feb4b7f7000 r-xp 00000000 fd:00 5211                       /usr/lib64/ld-2.17.so
+              /c 7feb4b804000-7feb4b807000 rw-p 00000000 00:00 0 
+              /c 7feb4b807000-7feb4b859000 r--p 00000000 fd:00 3262979378                 /usr/share/fonts/dejavu/DejaVuSansMono.ttf
+              /c 7feb4b859000-7feb4b85a000 ---p 00000000 00:00 0 
+              /c 7feb4b85a000-7feb4b873000 rw-p 00000000 00:00 0 
+              /c 7feb4b873000-7feb4b87b000 r--s 00000000 fd:00 2300435413                 /usr/lib/fontconfig/cache/9afae11d-be57-4061-b6d7-a7395777efa0-le64.cache-7
+              /c 7feb4b87b000-7feb4b89a000 rw-p 00000000 00:00 0 
+              /c 7feb4b89a000-7feb4b8dc000 r-xp 00000000 fd:00 2232595564                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7feb4b8dc000-7feb4b9db000 ---p 00042000 fd:00 2232595564                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7feb4b9db000-7feb4b9de000 rw-p 00041000 fd:00 2232595564                 /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7feb4b9de000-7feb4b9df000 rw-p 00000000 00:00 0 
+              /c 7feb4b9df000-7feb4b9e5000 r--s 00000000 fd:00 2149641990                 /usr/lib/fontconfig/cache/5ce7fa3f-fd86-449e-bfbb-02a295467645-le64.cache-7
+              /c 7feb4b9e5000-7feb4b9e6000 r--s 00000000 fd:00 2300434744                 /usr/lib/fontconfig/cache/f186e29b-c83e-478f-8d4e-651b1bfd0c38-le64.cache-7
+              /c 7feb4b9e6000-7feb4b9e8000 r--s 00000000 fd:00 2149881026                 /usr/lib/fontconfig/cache/b290f3ed-c0c1-47b6-960f-96f89e1f1472-le64.cache-7
+              /c 7feb4b9e8000-7feb4b9ed000 r--s 00000000 fd:00 2331690027                 /usr/lib/fontconfig/cache/f4d6cec8-5eaf-47dd-b3e8-3f173d6dcc32-le64.cache-7
+              /c 7feb4b9ed000-7feb4b9f4000 r--s 00000000 fd:00 1074365846                 /usr/lib64/gconv/gconv-modules.cache
+              /c 7feb4b9f4000-7feb4b9f6000 rw-p 00000000 00:00 0 
+              /c 7feb4b9f6000-7feb4b9f7000 r--p 00021000 fd:00 5211                       /usr/lib64/ld-2.17.so
+              /c 7feb4b9f7000-7feb4b9f8000 rw-p 00022000 fd:00 5211                       /usr/lib64/ld-2.17.so
+              /c 7feb4b9f8000-7feb4b9f9000 rw-p 00000000 00:00 0 
+              /c 7ffc79456000-7ffc79478000 rw-p 00000000 00:00 0                          [stack]
+              /c 7ffc795d3000-7ffc795d5000 r-xp 00000000 00:00 0                          [vdso]
+              /c ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+              /c 
+[13:07:54.42] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

@@ -1,0 +1,118 @@
+[21:13:06.82] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Jan 31 21:13:00 2020
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[21:13:11.11] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+557+311
+[21:13:15.50] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 0]
+[21:13:15.50] /i dm::showNewCellView -parent 0
+[21:13:15.55] /o oa:0x2224ba00
+[21:13:15.63] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[21:13:15.88] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+577+331
+[21:13:16.96] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[21:13:16.98] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[21:13:18.19] /i gi::setCurrentIndex {cells} -index {NAND_testbench} -in [gi::getDialogs {dmNewCellView}]
+[21:13:18.21] /i gi::setItemSelection {cells} -index {NAND_testbench} -in [gi::getDialogs {dmNewCellView}]
+[21:13:19.54] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getDialogs {dmNewCellView}]
+[21:13:19.55] /i gi::setItemSelection {views} -index {schematic} -in [gi::getDialogs {dmNewCellView}]
+[21:13:21.84] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+[21:13:21.85] /# db::getAttr viewType -of [dm::findCellView schematic -cell [dm::findCell NAND\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[21:13:21.92] /r giDialog gi::setActiveDialog [gi::getDialogs {dmOverwrite}]
+[21:13:22.39] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmOverwrite}] -value 342x89+597+351
+[21:13:24.01] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {dmOverwrite}]
+[21:13:24.07] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[21:13:25.13] /i gi::closeWindows [gi::getDialogs {dmNewCellView}]
+[21:13:29.94] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[21:13:29.94] /i de::showOpenDesign
+[21:13:29.97] /o oa:0x23591960
+[21:13:30.03] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[21:13:30.32] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+577+331
+[21:13:31.18] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[21:13:31.19] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[21:13:32.30] /i gi::setCurrentIndex {designCells} -index {NAND_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:13:32.33] /i gi::setItemSelection {designCells} -index {NAND_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:13:35.14] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:13:35.16] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:13:37.80] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[21:13:37.80] /# de::open [dm::findCellView {schematic} -cellName {NAND_testbench} -libName {mylibrary}] -readOnly 0
+[21:13:37.82] /o 	############################################
+[21:13:37.82] /o 	--------------------------------------------
+[21:13:37.82] /o 	PDK Name................... : SAED_PDK_90
+[21:13:37.82] /o 	PDK Release Date........... : 29-Sep-2015
+[21:13:37.82] /o 	PDK Custom Designer Version : J-2014.12-2
+[21:13:37.82] /o 	--------------------------------------------
+[21:13:37.82] /o 	############################################
+[21:13:37.82] /o 
+[21:13:37.82] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[21:13:37.83] /o SAED PDK 90: Loaded callbacks
+[21:13:37.83] /o SAED PDK 90: Loaded display resources
+[21:13:37.88] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[21:13:37.93] /r giWindowId 1
+[21:13:37.93] /r giWindowGeometry 1428x925
+[21:13:38.25] /o 0.1
+[21:13:40.04] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+68+23
+[21:13:48.40] /i db::setAttr geometry -of [gi::getFrames 1] -value 1428x925+180+131
+[21:13:52.16] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[21:13:52.57] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[21:13:52.63] /i gi::setActiveWindow 0
+[21:13:52.63] /i gi::setActiveWindow 0 -raise true
+[21:14:00.63] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[21:14:00.64] /i de::showOpenDesign
+[21:14:00.66] /o oa:0x255633c0
+[21:14:00.74] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[21:14:00.95] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+577+331
+[21:14:03.73] /i gi::setCurrentIndex {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:14:03.75] /i gi::setItemSelection {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:14:04.65] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:14:04.66] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:14:06.26] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[21:14:06.27] /# de::open [dm::findCellView {schematic} -cellName {inverter_testbench} -libName {mylibrary}] -readOnly 0
+[21:14:06.33] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[21:14:06.33] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[21:14:06.45] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed}]
+[21:14:06.76] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed}] -value 514x89+642+353
+[21:14:08.49] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed}]
+[21:14:08.58] /r giWindowId 2
+[21:14:08.58] /r giWindowGeometry 1428x925
+[21:14:13.49] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[21:14:13.92] /i gi::setActiveWindow 0
+[21:14:13.92] /i gi::setActiveWindow 0 -raise true
+[21:14:20.99] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[21:14:20.99] /i de::showOpenDesign
+[21:14:21.00] /o oa:0x25611a90
+[21:14:21.08] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[21:14:23.58] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+523+302
+[21:14:24.03] /i gi::setCurrentIndex {designCells} -index {NAND_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:14:24.05] /i gi::setItemSelection {designCells} -index {NAND_testbench} -in [gi::getDialogs {deOpenDesign}]
+[21:14:24.98] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:14:24.99] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[21:14:26.00] /i gi::setCurrentIndex {designViews} -index {GG} -in [gi::getDialogs {deOpenDesign}]
+[21:14:26.01] /i gi::setItemSelection {designViews} -index {GG} -in [gi::getDialogs {deOpenDesign}]
+[21:14:27.56] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[21:14:27.57] /# de::open [dm::findCellView {GG} -cellName {NAND_testbench} -libName {mylibrary}] -readOnly 0
+[21:14:28.48] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[21:14:28.56] /r giWindowId 3
+[21:14:28.56] /r giWindowGeometry 600x500
+[21:14:28.81] /o oa:0x27e10530
+[21:14:29.14] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+543+322
+[21:14:38.55] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+659+218
+[21:14:39.21] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+631+210
+[21:14:39.53] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+631+210
+[21:15:22.84] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[21:15:22.84] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 3]]
+[21:15:25.76] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[21:15:25.76] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 3]]
+[21:15:27.06] /# gi::executeAction saShowWindow -in [gi::getWindows 3]
+[21:15:27.06] /i sa::showDesignWindow -parent 3
+[21:15:27.21] /r giWindowId 4
+[21:15:27.21] /r giWindowGeometry 1428x925
+[21:15:27.58] /o oa:0x2854d870
+[21:15:30.23] /i db::setAttr geometry -of [gi::getFrames 4] -value 1428x925+71+55
+[21:15:37.68] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[21:15:38.32] /i gi::setActiveWindow 3
+[21:15:38.32] /i gi::setActiveWindow 3 -raise true
+[21:16:33.81] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+197+192

@@ -1,0 +1,14 @@
+# Thu Feb 6 10:40:49 2020
+
+# icv_vue: RHEL64 O-2018.12-SP2-9.5147677 2019/11/08
+
+# Hostname     : bender.engr.ucr.edu
+# Platform type: LINUX.64
+
+# Called as: 
+# /usr/local/synopsys/icvalidator/O-2018.12-SP2-9/bin/LINUX64_L26el/icv_vue.bin -lay CDesignerLE -load /home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.drc/ringOscillator.vue -cmdPrint 
+
+vue_loadFile {HiLoadPage} {/home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.drc/ringOscillator.vue}
+vue_select {mainTab} {DRC Errors}
+vue_close {HiMain}
+vue_loadFile {HiLoadPage} {/home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.drc/ringOscillator.vue}

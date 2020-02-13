@@ -1,0 +1,16 @@
+* XREF SPICE	Thu Feb  6 11:05:52 2020	ringOscillator
+* icv_netlist Version RHEL64 O-2018.12-SP2-9.5147677 2019/11/08
+
+* Top of hierarchy  cell=ringOscillator
+.subckt ringOscillator VOI5 VOI1 VOI2 VOI3 VOI4 VSS VDD
+M_XI3/MM2 VOI5 VOI4 VSS VSS n12  l=1e-07 w=2.5e-07 nf=1
+M_XI2/MM2 VOI4 VOI3 VSS VSS n12  l=1e-07 w=2.5e-07 nf=1
+M_XI1/MM2 VOI3 VOI2 VSS VSS n12  l=1e-07 w=2.5e-07 nf=1
+M_XI0/MM2 VOI2 VOI1 VSS VSS n12  l=1e-07 w=2.5e-07 nf=1
+M_XI4/MM2 VOI1 VOI5 VSS VSS n12  l=1e-07 w=2.5e-07 nf=1
+M_XI3/MM0 VOI5 VOI4 VDD VDD p12  l=1e-07 w=5e-07 nf=1
+M_XI2/MM0 VOI4 VOI3 VDD VDD p12  l=1e-07 w=5e-07 nf=1
+M_XI1/MM0 VOI3 VOI2 VDD VDD p12  l=1e-07 w=5e-07 nf=1
+M_XI0/MM0 VOI2 VOI1 VDD VDD p12  l=1e-07 w=5e-07 nf=1
+M_XI4/MM0 VOI1 VOI5 VDD VDD p12  l=1e-07 w=5e-07 nf=1
+.ends ringOscillator

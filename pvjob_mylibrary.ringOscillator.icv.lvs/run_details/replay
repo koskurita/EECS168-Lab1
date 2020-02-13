@@ -1,0 +1,1079 @@
+#
+# runset is /home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.lvs/rules.lvs.9m_saed90_lvs.lvs.rs
+#
+runset_csum = 13881
+num_hosts = 2
+events {
+S 513.0.0 2022 0
+# bender.engr.ucr.edu(0):       700  1 _prescan_library
+F 513.0.0 2022 0
+S 515.0.0 2029 0
+# bender.engr.ucr.edu(0):       695  1 _scan_hierarchy
+F 515.0.0 2029 0
+S 517.0.0 2033 0
+# bender.engr.ucr.edu(0):      8281  1 _read_library_segment
+F 517.0.0 2033 0
+S 519.0.0 2040 0
+# bender.engr.ucr.edu(0):      5104  1 _create_hierarchy_tree
+F 519.0.0 2040 0
+S 580.0.0 2248 0
+# bender.engr.ucr.edu(0):       485  1 _empty_layer
+F 580.0.0 2248 0
+S 583.0.0 2255 0
+# bender.engr.ucr.edu(0):      1301  1 _optimize_hierarchy_tree
+S 690.0.0 2588 1
+# bender.engr.ucr.edu(1):      3589  1 _create_layer_dp
+F 690.0.0 2588 1
+S 687.0.0 2577 1
+# bender.engr.ucr.edu(1):      3589  1 _create_layer_dp
+F 687.0.0 2577 1
+S 670.0.0 2528 1
+# bender.engr.ucr.edu(1):      3545  1 _create_layer_dp
+F 670.0.0 2528 1
+S 629.0.0 2415 1
+# bender.engr.ucr.edu(1):      3548  1 _create_layer_dp
+F 629.0.0 2415 1
+S 624.0.0 2398 1
+# bender.engr.ucr.edu(1):      3556  1 _create_layer_dp
+F 583.0.0 2255 0
+S 585.0.0 2266 0
+# bender.engr.ucr.edu(0):       897  1 _hierarchy_cleanup
+F 624.0.0 2398 1
+S 619.0.0 2381 1
+# bender.engr.ucr.edu(1):      3548  1 _create_layer_dp
+F 619.0.0 2381 1
+S 614.0.0 2364 1
+# bender.engr.ucr.edu(1):      3548  1 _create_layer_dp
+F 614.0.0 2364 1
+S 603.0.0 2331 1
+# bender.engr.ucr.edu(1):      3554  1 _create_layer_dp
+F 603.0.0 2331 1
+S 598.0.0 2314 1
+# bender.engr.ucr.edu(1):      3554  1 _create_layer_dp
+F 598.0.0 2314 1
+S 593.0.0 2297 1
+# bender.engr.ucr.edu(1):      3554  1 _create_layer_dp
+F 593.0.0 2297 1
+S 588.0.0 2273 1
+# bender.engr.ucr.edu(1):      3558  1 _create_layer_dp
+F 588.0.0 2273 1
+S 590.0.0 2286 1
+# bender.engr.ucr.edu(1):      3563  1 _optimize_layer_dp
+F 585.0.0 2266 0
+F 590.0.0 2286 1
+S 1051.0.0 3446 1
+# bender.engr.ucr.edu(1):       930  1 _buildsub
+F 1051.0.0 3446 1
+S 761.0.0 2764 1
+# bender.engr.ucr.edu(1):       952  1 _copy
+F 761.0.0 2764 1
+S 860.0.0 2978 1
+# bender.engr.ucr.edu(1):      2558  1 _copy
+F 860.0.0 2978 1
+S 3009.0.0 12713 1
+# bender.engr.ucr.edu(1):      1581  1 _cell_extent
+F 3009.0.0 12713 1
+S 905.0.0 3105 1
+# bender.engr.ucr.edu(1):      1571  1 _tag_violation
+F 905.0.0 3105 1
+S 903.0.0 3100 1
+# bender.engr.ucr.edu(1):      1571  1 _tag_violation
+F 903.0.0 3100 1
+S 901.0.0 3095 1
+# bender.engr.ucr.edu(1):      1571  1 _tag_violation
+F 901.0.0 3095 1
+S 899.0.0 3090 1
+# bender.engr.ucr.edu(1):      1571  1 _tag_violation
+F 899.0.0 3090 1
+S 897.0.0 3085 1
+# bender.engr.ucr.edu(1):      1570  1 _tag_violation
+F 897.0.0 3085 1
+S 859.0.0 2975 1
+# bender.engr.ucr.edu(1):      2560  1 _copy
+F 859.0.0 2975 1
+S 1139.0.0 3639 1
+# bender.engr.ucr.edu(1):      2476  1 _level_one_q
+F 1139.0.0 3639 1
+S 1140.0.0 3643 1
+# bender.engr.ucr.edu(1):      1613  1 _select_donut_hole
+F 1140.0.0 3643 1
+S 851.0.0 2953 1
+# bender.engr.ucr.edu(1):      1024  1 _cell_extent
+F 851.0.0 2953 1
+S 853.0.0 2959 1
+# bender.engr.ucr.edu(1):      2240  1 _size
+F 853.0.0 2959 1
+S 855.0.0 2965 1
+# bender.engr.ucr.edu(1):      1171  1 _boolean_not_q
+F 855.0.0 2965 1
+S 2851.0.0 11898 1
+# bender.engr.ucr.edu(1):       693  1 _exploded_bulk_layer_in_via_cell
+F 2851.0.0 11898 1
+S 586.0.0 2269 1
+# bender.engr.ucr.edu(1):       766  1 _create_substrate_layer
+F 586.0.0 2269 1
+S 595.0.0 2304 1
+# bender.engr.ucr.edu(1):      3559  1 _optimize_layer_dp
+F 595.0.0 2304 1
+S 763.0.0 2769 1
+# bender.engr.ucr.edu(1):       948  1 _copy
+F 763.0.0 2769 1
+S 600.0.0 2321 1
+# bender.engr.ucr.edu(1):      3559  1 _optimize_layer_dp
+F 600.0.0 2321 1
+S 765.0.0 2774 1
+# bender.engr.ucr.edu(1):       948  1 _copy
+F 765.0.0 2774 1
+S 605.0.0 2338 1
+# bender.engr.ucr.edu(1):      3559  1 _optimize_layer_dp
+F 605.0.0 2338 1
+S 767.0.0 2779 1
+# bender.engr.ucr.edu(1):       948  1 _copy
+F 767.0.0 2779 1
+S 616.0.0 2371 1
+# bender.engr.ucr.edu(1):      3553  1 _optimize_layer_dp
+F 616.0.0 2371 1
+S 775.0.0 2796 1
+# bender.engr.ucr.edu(1):       940  1 _copy
+F 775.0.0 2796 1
+S 1055.0.0 3455 1
+# bender.engr.ucr.edu(1):      1163  1 _boolean_not_q
+F 1055.0.0 3455 1
+S 1057.0.0 3461 1
+# bender.engr.ucr.edu(1):      1209  1 _copy
+F 1057.0.0 3461 1
+S 1061.0.0 3470 1
+# bender.engr.ucr.edu(1):      1223  1 _copy
+F 1061.0.0 3470 1
+S 1063.0.0 3475 1
+# bender.engr.ucr.edu(1):      1208  1 _copy
+F 1063.0.0 3475 1
+S 1065.0.0 3480 1
+# bender.engr.ucr.edu(1):      1210  1 _copy
+F 1065.0.0 3480 1
+S 1035.0.0 3409 1
+# bender.engr.ucr.edu(1):      1118  1 _copy
+F 1035.0.0 3409 1
+S 874.0.0 3027 1
+# bender.engr.ucr.edu(1):      1204  1 _copy
+F 874.0.0 3027 1
+S 621.0.0 2388 1
+# bender.engr.ucr.edu(1):      3553  1 _optimize_layer_dp
+F 621.0.0 2388 1
+S 777.0.0 2801 1
+# bender.engr.ucr.edu(1):       940  1 _copy
+F 777.0.0 2801 1
+S 965.0.0 3249 1
+# bender.engr.ucr.edu(1):      1196  1 _copy
+F 965.0.0 3249 1
+S 626.0.0 2405 1
+# bender.engr.ucr.edu(1):      3561  1 _optimize_layer_dp
+F 626.0.0 2405 1
+S 797.0.0 2844 1
+# bender.engr.ucr.edu(1):       948  1 _copy
+F 797.0.0 2844 1
+S 691.0.0 2593 1
+# bender.engr.ucr.edu(1):      3594  1 _optimize_layer_dp
+F 691.0.0 2593 1
+S 1236.0.0 3860 1
+# bender.engr.ucr.edu(1):      2041  1 _text_polygon
+F 1236.0.0 3860 1
+S 688.0.0 2582 1
+# bender.engr.ucr.edu(1):      3594  1 _optimize_layer_dp
+S 672.0.0 2535 0
+# bender.engr.ucr.edu(0):      3550  1 _optimize_layer_dp
+F 688.0.0 2582 1
+S 1234.0.0 3855 1
+# bender.engr.ucr.edu(1):      2041  1 _text_polygon
+F 672.0.0 2535 0
+S 795.0.0 2839 0
+# bender.engr.ucr.edu(0):       940  1 _copy
+F 1234.0.0 3855 1
+S 631.0.0 2422 1
+# bender.engr.ucr.edu(1):      3553  1 _optimize_layer_dp
+F 795.0.0 2839 0
+S 939.0.0 3190 0
+# bender.engr.ucr.edu(0):      1167  1 _boolean_not_q
+F 631.0.0 2422 1
+S 779.0.0 2806 1
+# bender.engr.ucr.edu(1):       940  1 _copy
+F 779.0.0 2806 1
+S 967.0.0 3254 1
+# bender.engr.ucr.edu(1):      1196  1 _copy
+F 939.0.0 3190 0
+S 3814.0.0.3816.0.0 15430 0
+# bender.engr.ucr.edu(0):      2313  1 _nettran_sch
+F 967.0.0 3254 1
+S 3751.0.0 15181 1
+# bender.engr.ucr.edu(1):      1746  2 _dev_update_vue_file
+F 3751.0.0 15181 1
+S 1252.0.0 3893 1
+# bender.engr.ucr.edu(1):      1218  1 _empty_layer
+F 1252.0.0 3893 1
+S 1250.0.0 3889 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1250.0.0 3889 1
+S 1248.0.0 3885 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1248.0.0 3885 1
+S 1246.0.0 3881 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1246.0.0 3881 1
+S 1244.0.0 3877 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1244.0.0 3877 1
+S 1242.0.0 3873 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1242.0.0 3873 1
+S 1240.0.0 3869 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1240.0.0 3869 1
+S 1238.0.0 3865 1
+# bender.engr.ucr.edu(1):      1589  1 _empty_layer
+F 1238.0.0 3865 1
+S 1226.0.0 3835 1
+# bender.engr.ucr.edu(1):       862  1 _empty_layer
+F 1226.0.0 3835 1
+S 1224.0.0 3831 1
+# bender.engr.ucr.edu(1):       862  1 _empty_layer
+F 1224.0.0 3831 1
+S 1222.0.0 3827 1
+# bender.engr.ucr.edu(1):       862  1 _empty_layer
+F 1222.0.0 3827 1
+S 1218.0.0 3818 1
+# bender.engr.ucr.edu(1):      2025  1 _empty_layer
+F 1218.0.0 3818 1
+S 1216.0.0 3814 1
+# bender.engr.ucr.edu(1):      2025  1 _empty_layer
+F 1216.0.0 3814 1
+S 1214.0.0 3810 1
+# bender.engr.ucr.edu(1):      2025  1 _empty_layer
+F 1214.0.0 3810 1
+S 1212.0.0 3806 1
+# bender.engr.ucr.edu(1):      2025  1 _empty_layer
+F 1212.0.0 3806 1
+S 1210.0.0 3802 1
+# bender.engr.ucr.edu(1):      1141  1 _empty_layer
+F 1210.0.0 3802 1
+S 1208.0.0 3797 1
+# bender.engr.ucr.edu(1):       774  1 _empty_layer
+F 1208.0.0 3797 1
+S 1206.0.0 3793 1
+# bender.engr.ucr.edu(1):      1141  1 _empty_layer
+F 1206.0.0 3793 1
+S 1201.0.0 3778 1
+# bender.engr.ucr.edu(1):       900  1 _empty_layer
+F 1201.0.0 3778 1
+S 1199.0.0 3774 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1199.0.0 3774 1
+S 1197.0.0 3770 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1197.0.0 3770 1
+S 1195.0.0 3766 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1195.0.0 3766 1
+S 1193.0.0 3762 1
+# bender.engr.ucr.edu(1):      1179  1 _empty_layer
+F 1193.0.0 3762 1
+S 1191.0.0 3758 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1191.0.0 3758 1
+S 1189.0.0 3754 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1189.0.0 3754 1
+S 1187.0.0 3750 1
+# bender.engr.ucr.edu(1):      1188  1 _empty_layer
+F 1187.0.0 3750 1
+S 1185.0.0 3746 1
+# bender.engr.ucr.edu(1):       900  1 _empty_layer
+F 1185.0.0 3746 1
+S 1183.0.0 3742 1
+# bender.engr.ucr.edu(1):       816  1 _empty_layer
+F 1183.0.0 3742 1
+S 1181.0.0 3738 1
+# bender.engr.ucr.edu(1):      2065  1 _empty_layer
+F 1181.0.0 3738 1
+S 1179.0.0 3734 1
+# bender.engr.ucr.edu(1):      2060  1 _empty_layer
+F 1179.0.0 3734 1
+S 1177.0.0 3730 1
+# bender.engr.ucr.edu(1):      2044  1 _empty_layer
+F 1177.0.0 3730 1
+S 2963.0.0 12226 1
+# bender.engr.ucr.edu(1):       700  1 _exploded_bulk_layer_in_via_cell
+F 2963.0.0 12226 1
+S 1175.0.0 3726 1
+# bender.engr.ucr.edu(1):      2046  1 _empty_layer
+F 1175.0.0 3726 1
+S 1173.0.0 3722 1
+# bender.engr.ucr.edu(1):      2040  1 _empty_layer
+F 1173.0.0 3722 1
+S 1171.0.0 3718 1
+# bender.engr.ucr.edu(1):      1169  1 _empty_layer
+F 1171.0.0 3718 1
+S 1167.0.0 3708 1
+# bender.engr.ucr.edu(1):       811  1 _empty_layer
+F 1167.0.0 3708 1
+S 1165.0.0 3704 1
+# bender.engr.ucr.edu(1):       906  1 _empty_layer
+F 1165.0.0 3704 1
+S 1163.0.0 3700 1
+# bender.engr.ucr.edu(1):      2072  1 _empty_layer
+F 1163.0.0 3700 1
+S 1161.0.0 3696 1
+# bender.engr.ucr.edu(1):      2072  1 _empty_layer
+F 1161.0.0 3696 1
+S 1159.0.0 3692 1
+# bender.engr.ucr.edu(1):      2062  1 _empty_layer
+F 1159.0.0 3692 1
+S 1157.0.0 3688 1
+# bender.engr.ucr.edu(1):      1290  1 _empty_layer
+F 1157.0.0 3688 1
+S 1155.0.0 3684 1
+# bender.engr.ucr.edu(1):      1186  1 _empty_layer
+F 1155.0.0 3684 1
+S 1151.0.0 3671 1
+# bender.engr.ucr.edu(1):      2042  1 _empty_layer
+F 1151.0.0 3671 1
+S 1149.0.0 3667 1
+# bender.engr.ucr.edu(1):      1172  1 _empty_layer
+F 1149.0.0 3667 1
+S 1145.0.0 3657 1
+# bender.engr.ucr.edu(1):      2040  1 _empty_layer
+F 1145.0.0 3657 1
+S 1137.0.0 3635 1
+# bender.engr.ucr.edu(1):      1148  1 _empty_layer
+F 1137.0.0 3635 1
+S 1135.0.0 3631 1
+# bender.engr.ucr.edu(1):       868  1 _empty_layer
+F 1135.0.0 3631 1
+S 1133.0.0 3627 1
+# bender.engr.ucr.edu(1):       875  1 _empty_layer
+F 1133.0.0 3627 1
+S 1131.0.0 3623 1
+# bender.engr.ucr.edu(1):       787  1 _empty_layer
+F 1131.0.0 3623 1
+S 1129.0.0 3619 1
+# bender.engr.ucr.edu(1):      2047  1 _empty_layer
+F 1129.0.0 3619 1
+S 1127.0.0 3615 1
+# bender.engr.ucr.edu(1):      2043  1 _empty_layer
+F 1127.0.0 3615 1
+S 1125.0.0 3611 1
+# bender.engr.ucr.edu(1):      1260  1 _empty_layer
+F 1125.0.0 3611 1
+S 1123.0.0 3607 1
+# bender.engr.ucr.edu(1):      1675  1 _empty_layer
+F 1123.0.0 3607 1
+S 1121.0.0 3603 1
+# bender.engr.ucr.edu(1):      1675  1 _empty_layer
+F 1121.0.0 3603 1
+S 1119.0.0 3599 1
+# bender.engr.ucr.edu(1):       785  1 _empty_layer
+F 1119.0.0 3599 1
+S 1117.0.0 3595 1
+# bender.engr.ucr.edu(1):      1169  1 _empty_layer
+F 1117.0.0 3595 1
+S 1115.0.0 3591 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 1115.0.0 3591 1
+S 1113.0.0 3587 1
+# bender.engr.ucr.edu(1):       888  1 _empty_layer
+F 1113.0.0 3587 1
+S 1111.0.0 3583 1
+# bender.engr.ucr.edu(1):      2054  1 _empty_layer
+F 1111.0.0 3583 1
+S 1109.0.0 3579 1
+# bender.engr.ucr.edu(1):      1156  1 _empty_layer
+F 1109.0.0 3579 1
+S 1107.0.0 3575 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 1107.0.0 3575 1
+S 1105.0.0 3571 1
+# bender.engr.ucr.edu(1):      1155  1 _empty_layer
+F 1105.0.0 3571 1
+S 1103.0.0 3567 1
+# bender.engr.ucr.edu(1):       867  1 _empty_layer
+F 1103.0.0 3567 1
+S 1101.0.0 3563 1
+# bender.engr.ucr.edu(1):      1145  1 _empty_layer
+F 1101.0.0 3563 1
+S 1099.0.0 3559 1
+# bender.engr.ucr.edu(1):       781  1 _empty_layer
+F 1099.0.0 3559 1
+S 1097.0.0 3555 1
+# bender.engr.ucr.edu(1):      2032  1 _empty_layer
+F 1097.0.0 3555 1
+S 1095.0.0 3551 1
+# bender.engr.ucr.edu(1):      1162  1 _empty_layer
+F 1095.0.0 3551 1
+S 1093.0.0 3547 1
+# bender.engr.ucr.edu(1):       869  1 _empty_layer
+F 1093.0.0 3547 1
+S 1091.0.0 3543 1
+# bender.engr.ucr.edu(1):      2033  1 _empty_layer
+F 1091.0.0 3543 1
+S 1089.0.0 3539 1
+# bender.engr.ucr.edu(1):      1258  1 _empty_layer
+F 1089.0.0 3539 1
+S 1087.0.0 3535 1
+# bender.engr.ucr.edu(1):      1667  1 _empty_layer
+F 1087.0.0 3535 1
+S 1085.0.0 3531 1
+# bender.engr.ucr.edu(1):      1667  1 _empty_layer
+F 1085.0.0 3531 1
+S 1083.0.0 3527 1
+# bender.engr.ucr.edu(1):      1161  1 _empty_layer
+F 1083.0.0 3527 1
+S 1081.0.0 3523 1
+# bender.engr.ucr.edu(1):      2045  1 _empty_layer
+F 1081.0.0 3523 1
+S 1079.0.0 3519 1
+# bender.engr.ucr.edu(1):      2043  1 _empty_layer
+F 1079.0.0 3519 1
+S 1077.0.0 3515 1
+# bender.engr.ucr.edu(1):      1179  1 _empty_layer
+F 1077.0.0 3515 1
+S 1075.0.0 3511 1
+# bender.engr.ucr.edu(1):       880  1 _empty_layer
+F 1075.0.0 3511 1
+S 1073.0.0 3507 1
+# bender.engr.ucr.edu(1):      1263  1 _empty_layer
+F 1073.0.0 3507 1
+S 1059.0.0 3466 1
+# bender.engr.ucr.edu(1):       777  1 _empty_layer
+F 1059.0.0 3466 1
+S 1053.0.0 3451 1
+# bender.engr.ucr.edu(1):       804  1 _empty_layer
+F 1053.0.0 3451 1
+S 1049.0.0 3442 1
+# bender.engr.ucr.edu(1):       869  1 _empty_layer
+F 1049.0.0 3442 1
+S 1047.0.0 3438 1
+# bender.engr.ucr.edu(1):      1169  1 _empty_layer
+F 1047.0.0 3438 1
+S 1045.0.0 3434 1
+# bender.engr.ucr.edu(1):      2049  1 _empty_layer
+F 1045.0.0 3434 1
+S 1043.0.0 3430 1
+# bender.engr.ucr.edu(1):      1154  1 _empty_layer
+F 1043.0.0 3430 1
+S 1041.0.0 3426 1
+# bender.engr.ucr.edu(1):      1153  1 _empty_layer
+F 1041.0.0 3426 1
+S 1029.0.0 3393 1
+# bender.engr.ucr.edu(1):       868  1 _empty_layer
+F 1029.0.0 3393 1
+S 1027.0.0 3389 1
+# bender.engr.ucr.edu(1):      1159  1 _empty_layer
+F 1027.0.0 3389 1
+S 1025.0.0 3385 1
+# bender.engr.ucr.edu(1):       908  1 _empty_layer
+F 1025.0.0 3385 1
+S 1023.0.0 3381 1
+# bender.engr.ucr.edu(1):       908  1 _empty_layer
+F 1023.0.0 3381 1
+S 1021.0.0 3377 1
+# bender.engr.ucr.edu(1):      1148  1 _empty_layer
+F 1021.0.0 3377 1
+S 1019.0.0 3373 1
+# bender.engr.ucr.edu(1):      1148  1 _empty_layer
+F 1019.0.0 3373 1
+S 1017.0.0 3369 1
+# bender.engr.ucr.edu(1):      1146  1 _empty_layer
+F 1017.0.0 3369 1
+S 1015.0.0 3365 1
+# bender.engr.ucr.edu(1):       861  1 _empty_layer
+F 1015.0.0 3365 1
+S 1013.0.0 3361 1
+# bender.engr.ucr.edu(1):       861  1 _empty_layer
+F 1013.0.0 3361 1
+S 1011.0.0 3357 1
+# bender.engr.ucr.edu(1):      1148  1 _empty_layer
+F 1011.0.0 3357 1
+S 1009.0.0 3353 1
+# bender.engr.ucr.edu(1):      1148  1 _empty_layer
+F 1009.0.0 3353 1
+S 1007.0.0 3349 1
+# bender.engr.ucr.edu(1):      2029  1 _empty_layer
+F 1007.0.0 3349 1
+S 1005.0.0 3345 1
+# bender.engr.ucr.edu(1):      2029  1 _empty_layer
+F 1005.0.0 3345 1
+S 1003.0.0 3341 1
+# bender.engr.ucr.edu(1):      1146  1 _empty_layer
+F 1003.0.0 3341 1
+S 1001.0.0 3337 1
+# bender.engr.ucr.edu(1):       903  1 _empty_layer
+F 1001.0.0 3337 1
+S 999.0.0 3333 1
+# bender.engr.ucr.edu(1):       903  1 _empty_layer
+F 999.0.0 3333 1
+S 997.0.0 3329 1
+# bender.engr.ucr.edu(1):       808  1 _empty_layer
+F 997.0.0 3329 1
+S 995.0.0 3325 1
+# bender.engr.ucr.edu(1):      1153  1 _empty_layer
+F 995.0.0 3325 1
+S 993.0.0 3321 1
+# bender.engr.ucr.edu(1):      1153  1 _empty_layer
+F 993.0.0 3321 1
+S 981.0.0 3283 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 981.0.0 3283 1
+S 979.0.0 3279 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 979.0.0 3279 1
+S 977.0.0 3275 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 977.0.0 3275 1
+S 975.0.0 3271 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 975.0.0 3271 1
+S 973.0.0 3267 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 973.0.0 3267 1
+S 971.0.0 3263 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 3814.0.0.3816.0.0 15430 0
+S 3819.0.0.3827.0.0 15472 0
+# bender.engr.ucr.edu(0):      6599  2 _translate_database_to_netlist_remote
+F 971.0.0 3263 1
+S 969.0.0 3259 1
+# bender.engr.ucr.edu(1):       848  1 _empty_layer
+F 969.0.0 3259 1
+S 963.0.0 3245 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 963.0.0 3245 1
+S 961.0.0 3241 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 961.0.0 3241 1
+S 959.0.0 3237 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 959.0.0 3237 1
+S 957.0.0 3233 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 957.0.0 3233 1
+S 955.0.0 3229 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 955.0.0 3229 1
+S 953.0.0 3225 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 953.0.0 3225 1
+S 951.0.0 3221 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 951.0.0 3221 1
+S 949.0.0 3217 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 949.0.0 3217 1
+S 947.0.0 3213 1
+# bender.engr.ucr.edu(1):      1142  1 _empty_layer
+F 947.0.0 3213 1
+S 928.0.0 3153 1
+# bender.engr.ucr.edu(1):      1164  1 _empty_layer
+F 928.0.0 3153 1
+S 926.0.0 3149 1
+# bender.engr.ucr.edu(1):      1164  1 _empty_layer
+F 926.0.0 3149 1
+S 924.0.0 3145 1
+# bender.engr.ucr.edu(1):      1164  1 _empty_layer
+F 924.0.0 3145 1
+S 922.0.0 3141 1
+# bender.engr.ucr.edu(1):      1164  1 _empty_layer
+F 922.0.0 3141 1
+S 920.0.0 3137 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 920.0.0 3137 1
+S 918.0.0 3133 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 918.0.0 3133 1
+S 916.0.0 3129 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 916.0.0 3129 1
+S 914.0.0 3125 1
+# bender.engr.ucr.edu(1):      1157  1 _empty_layer
+F 914.0.0 3125 1
+S 908.0.0 3111 1
+# bender.engr.ucr.edu(1):       820  1 _empty_layer
+F 908.0.0 3111 1
+S 906.0.0 3107 1
+# bender.engr.ucr.edu(1):       820  1 _empty_layer
+F 906.0.0 3107 1
+S 888.0.0 3056 1
+# bender.engr.ucr.edu(1):       870  1 _empty_layer
+F 888.0.0 3056 1
+S 886.0.0 3052 1
+# bender.engr.ucr.edu(1):       870  1 _empty_layer
+F 886.0.0 3052 1
+S 884.0.0 3048 1
+# bender.engr.ucr.edu(1):      1161  1 _empty_layer
+F 884.0.0 3048 1
+S 882.0.0 3044 1
+# bender.engr.ucr.edu(1):      1161  1 _empty_layer
+F 882.0.0 3044 1
+S 880.0.0 3040 1
+# bender.engr.ucr.edu(1):      1150  1 _empty_layer
+F 880.0.0 3040 1
+S 878.0.0 3036 1
+# bender.engr.ucr.edu(1):      1150  1 _empty_layer
+F 878.0.0 3036 1
+S 876.0.0 3032 1
+# bender.engr.ucr.edu(1):      1146  1 _empty_layer
+F 876.0.0 3032 1
+S 857.0.0 2971 1
+# bender.engr.ucr.edu(1):      2021  1 _empty_layer
+F 857.0.0 2971 1
+S 849.0.0 2949 1
+# bender.engr.ucr.edu(1):       778  1 _empty_layer
+F 849.0.0 2949 1
+S 847.0.0 2945 1
+# bender.engr.ucr.edu(1):       778  1 _empty_layer
+F 847.0.0 2945 1
+S 845.0.0 2941 1
+# bender.engr.ucr.edu(1):       778  1 _empty_layer
+F 845.0.0 2941 1
+S 843.0.0 2937 1
+# bender.engr.ucr.edu(1):       774  1 _empty_layer
+F 843.0.0 2937 1
+S 841.0.0 2933 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 841.0.0 2933 1
+S 839.0.0 2929 1
+# bender.engr.ucr.edu(1):       779  1 _empty_layer
+F 839.0.0 2929 1
+S 837.0.0 2925 1
+# bender.engr.ucr.edu(1):       773  1 _empty_layer
+F 837.0.0 2925 1
+S 835.0.0 2921 1
+# bender.engr.ucr.edu(1):       778  1 _empty_layer
+F 835.0.0 2921 1
+S 833.0.0 2917 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 833.0.0 2917 1
+S 831.0.0 2913 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 831.0.0 2913 1
+S 829.0.0 2909 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 829.0.0 2909 1
+S 827.0.0 2905 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 827.0.0 2905 1
+S 825.0.0 2901 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 825.0.0 2901 1
+S 823.0.0 2897 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 823.0.0 2897 1
+S 821.0.0 2893 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 821.0.0 2893 1
+S 819.0.0 2889 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 819.0.0 2889 1
+S 817.0.0 2885 1
+# bender.engr.ucr.edu(1):       766  1 _empty_layer
+F 817.0.0 2885 1
+S 815.0.0 2881 1
+# bender.engr.ucr.edu(1):       775  1 _empty_layer
+F 815.0.0 2881 1
+S 813.0.0 2877 1
+# bender.engr.ucr.edu(1):       775  1 _empty_layer
+F 813.0.0 2877 1
+S 811.0.0 2873 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 811.0.0 2873 1
+S 809.0.0 2869 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 809.0.0 2869 1
+S 807.0.0 2865 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 807.0.0 2865 1
+S 805.0.0 2861 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 805.0.0 2861 1
+S 803.0.0 2857 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 803.0.0 2857 1
+S 801.0.0 2853 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 801.0.0 2853 1
+S 799.0.0 2849 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 799.0.0 2849 1
+S 793.0.0 2835 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 793.0.0 2835 1
+S 791.0.0 2831 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 791.0.0 2831 1
+S 789.0.0 2827 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 789.0.0 2827 1
+S 787.0.0 2823 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 787.0.0 2823 1
+S 785.0.0 2819 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 785.0.0 2819 1
+S 783.0.0 2815 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 783.0.0 2815 1
+S 781.0.0 2811 1
+# bender.engr.ucr.edu(1):       763  1 _empty_layer
+F 781.0.0 2811 1
+S 773.0.0 2792 1
+# bender.engr.ucr.edu(1):       769  1 _empty_layer
+F 3819.0.0.3827.0.0 15472 0
+S 771.0.0 2788 0
+# bender.engr.ucr.edu(0):       778  1 _empty_layer
+F 773.0.0 2792 1
+S 769.0.0 2784 1
+# bender.engr.ucr.edu(1):       778  1 _empty_layer
+F 771.0.0 2788 0
+S 758.0.0 2757 0
+# bender.engr.ucr.edu(0):      2303  1 _empty_layer
+F 769.0.0 2784 1
+S 755.0.0 2749 1
+# bender.engr.ucr.edu(1):      2303  1 _empty_layer
+F 758.0.0 2757 0
+S 752.0.0 2741 0
+# bender.engr.ucr.edu(0):      2303  1 _empty_layer
+F 755.0.0 2749 1
+S 749.0.0 2733 1
+# bender.engr.ucr.edu(1):      2303  1 _empty_layer
+F 752.0.0 2741 0
+S 746.0.0 2725 0
+# bender.engr.ucr.edu(0):      2303  1 _empty_layer
+F 749.0.0 2733 1
+S 743.0.0 2717 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 746.0.0 2725 0
+S 740.0.0 2709 0
+# bender.engr.ucr.edu(0):      2291  1 _empty_layer
+F 743.0.0 2717 1
+S 737.0.0 2701 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 740.0.0 2709 0
+S 734.0.0 2693 0
+# bender.engr.ucr.edu(0):      2291  1 _empty_layer
+F 737.0.0 2701 1
+S 731.0.0 2685 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 734.0.0 2693 0
+S 728.0.0 2677 0
+# bender.engr.ucr.edu(0):      2291  1 _empty_layer
+F 731.0.0 2685 1
+S 725.0.0 2669 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 728.0.0 2677 0
+S 722.0.0 2661 0
+# bender.engr.ucr.edu(0):      2291  1 _empty_layer
+F 725.0.0 2669 1
+S 719.0.0 2653 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 722.0.0 2661 0
+S 716.0.0 2645 0
+# bender.engr.ucr.edu(0):      2303  1 _empty_layer
+F 719.0.0 2653 1
+S 713.0.0 2637 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 716.0.0 2645 0
+S 710.0.0 2629 0
+# bender.engr.ucr.edu(0):      2306  1 _empty_layer
+F 713.0.0 2637 1
+S 707.0.0 2621 1
+# bender.engr.ucr.edu(1):      2306  1 _empty_layer
+F 710.0.0 2629 0
+S 705.0.0 2617 0
+# bender.engr.ucr.edu(0):      2323  1 _empty_layer
+F 707.0.0 2621 1
+S 703.0.0 2614 1
+# bender.engr.ucr.edu(1):      2323  1 _empty_layer
+F 705.0.0 2617 0
+S 701.0.0 2611 0
+# bender.engr.ucr.edu(0):      2323  1 _empty_layer
+F 703.0.0 2614 1
+S 699.0.0 2608 1
+# bender.engr.ucr.edu(1):      2323  1 _empty_layer
+F 701.0.0 2611 0
+S 697.0.0 2605 0
+# bender.engr.ucr.edu(0):      2323  1 _empty_layer
+F 699.0.0 2608 1
+S 695.0.0 2602 1
+# bender.engr.ucr.edu(1):      2323  1 _empty_layer
+F 697.0.0 2605 0
+S 693.0.0 2599 0
+# bender.engr.ucr.edu(0):      2323  1 _empty_layer
+F 695.0.0 2602 1
+S 684.0.0 2570 1
+# bender.engr.ucr.edu(1):      2300  1 _empty_layer
+F 693.0.0 2599 0
+S 681.0.0 2562 0
+# bender.engr.ucr.edu(0):      2300  1 _empty_layer
+F 684.0.0 2570 1
+S 678.0.0 2554 1
+# bender.engr.ucr.edu(1):      2294  1 _empty_layer
+F 681.0.0 2562 0
+S 675.0.0 2546 0
+# bender.engr.ucr.edu(0):      2294  1 _empty_layer
+F 678.0.0 2554 1
+S 667.0.0 2521 1
+# bender.engr.ucr.edu(1):      2288  1 _empty_layer
+F 675.0.0 2546 0
+S 664.0.0 2513 0
+# bender.engr.ucr.edu(0):      2288  1 _empty_layer
+F 667.0.0 2521 1
+S 661.0.0 2505 1
+# bender.engr.ucr.edu(1):      2288  1 _empty_layer
+F 664.0.0 2513 0
+S 658.0.0 2497 0
+# bender.engr.ucr.edu(0):      2294  1 _empty_layer
+F 661.0.0 2505 1
+S 655.0.0 2489 1
+# bender.engr.ucr.edu(1):      2288  1 _empty_layer
+F 658.0.0 2497 0
+S 652.0.0 2481 0
+# bender.engr.ucr.edu(0):      2294  1 _empty_layer
+F 655.0.0 2489 1
+S 649.0.0 2473 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 652.0.0 2481 0
+S 646.0.0 2465 0
+# bender.engr.ucr.edu(0):      2297  1 _empty_layer
+F 649.0.0 2473 1
+S 643.0.0 2457 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 646.0.0 2465 0
+S 640.0.0 2449 0
+# bender.engr.ucr.edu(0):      2297  1 _empty_layer
+F 643.0.0 2457 1
+S 637.0.0 2441 1
+# bender.engr.ucr.edu(1):      2291  1 _empty_layer
+F 640.0.0 2449 0
+S 634.0.0 2433 0
+# bender.engr.ucr.edu(0):      2297  1 _empty_layer
+F 637.0.0 2441 1
+S 611.0.0 2357 1
+# bender.engr.ucr.edu(1):      2296  1 _empty_layer
+F 634.0.0 2433 0
+S 608.0.0 2349 0
+# bender.engr.ucr.edu(0):      2305  1 _empty_layer
+F 611.0.0 2357 1
+S 582.0.0 2252 1
+# bender.engr.ucr.edu(1):       335  1 _empty_layer
+F 608.0.0 2349 0
+F 0 0 0
+F 582.0.0 2252 1
+S 1068.0.0 3488 0
+# bender.engr.ucr.edu(0):      1593  1 _boolean_and_q
+S 1204.0.0 3785 1
+# bender.engr.ucr.edu(1):      1583  1 _boolean_and_q
+F 1204.0.0 3785 1
+S 1220.0.0 3822 1
+# bender.engr.ucr.edu(1):      1213  1 _copy
+F 1068.0.0 3488 0
+S 1071.0.0 3499 0
+# bender.engr.ucr.edu(0):      1597  1 _boolean_and_q
+F 1220.0.0 3822 1
+S 2977.0.0 12258 1
+# bender.engr.ucr.edu(1):       929  1 _merge_device_layer
+F 1071.0.0 3499 0
+S 1228.0.0 3839 0
+# bender.engr.ucr.edu(0):      1175  1 _boolean_not_q
+F 2977.0.0 12258 1
+S 937.0.0 3182 1
+# bender.engr.ucr.edu(1):      1591  1 _boolean_and_q
+F 1228.0.0 3839 0
+S 1230.0.0 3845 0
+# bender.engr.ucr.edu(0):       964  1 _copy
+F 937.0.0 3182 1
+S 863.0.0 2986 1
+# bender.engr.ucr.edu(1):      1593  1 _boolean_and_q
+F 1230.0.0 3845 0
+S 866.0.0 2997 0
+# bender.engr.ucr.edu(0):      1638  1 _boolean_and_q
+F 866.0.0 2997 0
+S 931.0.0 3160 0
+# bender.engr.ucr.edu(0):      1595  1 _boolean_and_q
+F 863.0.0 2986 1
+S 934.0.0 3171 1
+# bender.engr.ucr.edu(1):      1593  1 _boolean_and_q
+F 931.0.0 3160 0
+S 1232.0.0 3850 0
+# bender.engr.ucr.edu(0):       958  1 _copy
+F 934.0.0 3171 1
+S 869.0.0 3008 1
+# bender.engr.ucr.edu(1):      1595  1 _boolean_and_q
+F 1232.0.0 3850 0
+S 1153.0.0 3675 0
+# bender.engr.ucr.edu(0):      2822  1 _select_q
+F 869.0.0 3008 1
+S 891.0.0 3063 1
+# bender.engr.ucr.edu(1):      1589  1 _boolean_and_q
+F 1153.0.0 3675 0
+S 1169.0.0 3712 0
+# bender.engr.ucr.edu(0):      1037  1 _copy
+F 891.0.0 3063 1
+S 910.0.0 3115 1
+# bender.engr.ucr.edu(1):      1264  1 _copy
+F 1169.0.0 3712 0
+S 1033.0.0 3403 0
+# bender.engr.ucr.edu(0):      1015  1 _copy
+F 910.0.0 3115 1
+S 983.0.0 3287 1
+# bender.engr.ucr.edu(1):      1012  1 _copy
+F 1033.0.0 3403 0
+S 1039.0.0 3420 0
+# bender.engr.ucr.edu(0):      1176  1 _boolean_not_q
+F 983.0.0 3287 1
+S 988.0.0 3302 1
+# bender.engr.ucr.edu(1):      1591  1 _boolean_and_q
+F 988.0.0 3302 1
+S 872.0.0 3019 1
+# bender.engr.ucr.edu(1):      1593  1 _boolean_and_q
+F 1039.0.0 3420 0
+S 1142.0.0 3648 0
+# bender.engr.ucr.edu(0):      2479  1 _level_one_q
+F 872.0.0 3019 1
+S 894.0.0 3074 1
+# bender.engr.ucr.edu(1):      1589  1 _boolean_and_q
+F 1142.0.0 3648 0
+S 1143.0.0 3652 0
+# bender.engr.ucr.edu(0):      1614  1 _select_donut_hole
+F 1143.0.0 3652 0
+S 1147.0.0 3661 0
+# bender.engr.ucr.edu(0):      1040  1 _copy
+F 894.0.0 3074 1
+S 941.0.0 3196 1
+# bender.engr.ucr.edu(1):      1069  1 _boolean_or_list
+F 1147.0.0 3661 0
+S 912.0.0 3120 0
+# bender.engr.ucr.edu(0):      1262  1 _copy
+F 912.0.0 3120 0
+S 1031.0.0 3397 0
+# bender.engr.ucr.edu(0):      1014  1 _copy
+F 941.0.0 3196 1
+S 945.0.0 3207 1
+# bender.engr.ucr.edu(1):      1184  1 _boolean_not_q
+F 1031.0.0 3397 0
+S 1037.0.0 3414 0
+# bender.engr.ucr.edu(0):      1176  1 _boolean_not_q
+F 1037.0.0 3414 0
+S 943.0.0 3201 0
+# bender.engr.ucr.edu(0):      1184  1 _boolean_not_q
+F 945.0.0 3207 1
+S 1293.0.0 4092 1
+# bender.engr.ucr.edu(1):      4713  1 _preprocess_device_layer
+F 943.0.0 3201 0
+S 1518.0.0 5233 0
+# bender.engr.ucr.edu(0):      4716  1 _preprocess_device_layer
+F 1293.0.0 4092 1
+S 985.0.0 3293 1
+# bender.engr.ucr.edu(1):      1012  1 _copy
+F 985.0.0 3293 1
+S 991.0.0 3313 1
+# bender.engr.ucr.edu(1):      1591  1 _boolean_and_q
+F 991.0.0 3313 1
+S 2943.0.0 12168 1
+# bender.engr.ucr.edu(1):       919  1 _merge_device_layer
+F 1518.0.0 5233 0
+S 2853.0.0 11902 0
+# bender.engr.ucr.edu(0):      1108  1 _merge_device_layer
+F 2943.0.0 12168 1
+S 2945.0.0 12174 1
+# bender.engr.ucr.edu(1):       919  1 _merge_device_layer
+F 2853.0.0 11902 0
+S 2855.0.0 11908 0
+# bender.engr.ucr.edu(0):      1059  1 _merge_device_layer
+F 2945.0.0 12174 1
+F 0 0 1
+F 2855.0.0 11908 0
+S 2857.0.0 11914 0
+# bender.engr.ucr.edu(0):      1129  1 _merge_device_layer
+F 2857.0.0 11914 0
+S 2867.0.0 11944 0
+# bender.engr.ucr.edu(0):       900  1 _merge_device_layer
+F 2867.0.0 11944 0
+S 2869.0.0 11950 0
+# bender.engr.ucr.edu(0):       900  1 _merge_device_layer
+F 2869.0.0 11950 0
+S 2887.0.0 12004 0
+# bender.engr.ucr.edu(0):      1220  1 _merge_device_layer
+S 2988.0.0 12288 1
+# bender.engr.ucr.edu(1):      1025  1 _merge_device_layer
+F 2988.0.0 12288 1
+S 2993.0.0 12306 1
+# bender.engr.ucr.edu(1):       929  1 _pull_down_bulk
+F 2887.0.0 12004 0
+S 2889.0.0 12010 0
+# bender.engr.ucr.edu(0):      1220  1 _merge_device_layer
+F 2993.0.0 12306 1
+S 2985.0.0 12281 1
+# bender.engr.ucr.edu(1):      1025  1 _merge_device_layer
+F 2889.0.0 12010 0
+S 2909.0.0 12070 0
+# bender.engr.ucr.edu(0):       909  1 _merge_device_layer
+F 2985.0.0 12281 1
+S 2986.0.0 12283 1
+# bender.engr.ucr.edu(1):       895  1 _pull_down_bulk
+F 2986.0.0 12283 1
+F 0 0 1
+F 2909.0.0 12070 0
+S 2911.0.0 12076 0
+# bender.engr.ucr.edu(0):       909  1 _merge_device_layer
+F 2911.0.0 12076 0
+S 2996.0.0 12613 0
+# bender.engr.ucr.edu(0):     25645  1 _connect_q
+F 2996.0.0 12613 0
+S 2999.0.0 12636 0
+# bender.engr.ucr.edu(0):      8827  1 _text
+F 2999.0.0 12636 0
+S 3001.0.0 12651 0
+# bender.engr.ucr.edu(0):     10079  1 _process_text_opens
+F 3001.0.0 12651 0
+S 3007.0.0 12690 0
+# bender.engr.ucr.edu(0):      2997  1 _create_ports
+F 3007.0.0 12690 0
+S 3118.0.0 13080 0
+# bender.engr.ucr.edu(0):     34908  2 _mos
+S 3022.0.0 12761 1
+# bender.engr.ucr.edu(1):     34907  2 _mos
+F 3118.0.0 13080 0
+F 0 0 0
+F 3022.0.0 12761 1
+S 3712.0.0 14982 0
+# bender.engr.ucr.edu(0):      3998  1 _connect_device
+F 0 0 1
+F 3712.0.0 14982 0
+S 3716.0.0 15006 0
+# bender.engr.ucr.edu(0):      2688  1 _create_netlist_cdb
+S 3714.0.0 14997 1
+# bender.engr.ucr.edu(1):      2437  1 _dev_create_acct
+F 3714.0.0 14997 1
+F 0 0 1
+F 3716.0.0 15006 0
+S 5718.0.0 21695 0
+# bender.engr.ucr.edu(0):     14595  1 _write_extract_view
+S 3750.0.0 15179 1
+# bender.engr.ucr.edu(1):     11246  1 _write_vue_info
+F 3750.0.0 15179 1
+S 3778.0.0 15270 1
+# bender.engr.ucr.edu(1):      1027  1 _write_icv_netlist
+F 5718.0.0 21695 0
+S 3765.0.0 15227 0
+# bender.engr.ucr.edu(0):      1062  1 _do_ndb
+F 3778.0.0 15270 1
+F 0 0 1
+F 3765.0.0 15227 0
+S 3855.0.0 15592 0
+# bender.engr.ucr.edu(0):     16598  2 _do_compare_remote
+F 3855.0.0 15592 0
+S 3866.0.0 15618 0
+# bender.engr.ucr.edu(0):      1647  1 _do_spice
+F 3866.0.0 15618 0
+S 5746.0.0 21799 0
+# bender.engr.ucr.edu(0):       372  1 _accumulate_results
+F 5746.0.0 21799 0
+}

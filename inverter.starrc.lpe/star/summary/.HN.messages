@@ -1,0 +1,11 @@
+WARNING: Expanded '107695365' hierarchical cells. (SX-2291)
+pre = 0
+main thread ( 197936 ) = 0.000000
+_write_tokens = 0
+_write_file = 0
+  
+InitDB        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=470.9 
+HN            Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=486.9 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=486.9 
+

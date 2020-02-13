@@ -1,0 +1,11 @@
+1 Layers 1581016200 1581016200 0 0.1 0 470.9 bender.engr.ucr.edu
+1 Models 1581016200 1581016201 0 0 0 470.9 bender.engr.ucr.edu
+1 HN 1581016201 1581016201 0 0.1 0 486.9 bender.engr.ucr.edu
+1 XrefHN 1581016201 1581016201 0 0 0 194.6 bender.engr.ucr.edu
+1 Cells 1581016201 1581016202 0 0.1 0 470.9 bender.engr.ucr.edu
+1 Translate 1581016202 1581016202 0 0 0 190.4 bender.engr.ucr.edu
+1 NetlistSetup 1581016202 1581016203 0 0 0 190.2 bender.engr.ucr.edu
+1 xTract 1581016203 1581016203 0 0.2 0.1 272.2 bender.engr.ucr.edu
+1 xTractPP 1581016203 1581016203 0 0 0 192.1 bender.engr.ucr.edu
+1 ReportViolations 1581016203 1581016203 0 0 0 190.1 bender.engr.ucr.edu
+1 Netlist 1581016204 1581016204 0 0.2 0.1 449 bender.engr.ucr.edu

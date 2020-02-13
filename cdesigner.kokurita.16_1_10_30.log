@@ -1,129 +1,346 @@
-[16:35:26.98] /o Custom Designer (TM) Version J-2014.12-SP2-2
+[01:48:05.14] /o Custom Designer (TM) Version J-2014.12-SP2-2
               /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
               /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
-              /c Execution time: Thu Jan 16 16:35:20 2020
+              /c Execution time: Thu Feb 13 01:47:47 2020
               /c Host: bender.engr.ucr.edu
               /c 
               /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
               /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
               /c 
-[16:35:32.74] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+214+408
-[16:36:28.56] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:36:28.57] /i de::showOpenDesign
-[16:36:28.65] /o oa:0x23710cb0
-[16:36:28.74] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:36:29.03] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+234+428
-[16:36:33.63] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
-[16:36:33.64] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
-[16:36:54.41] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
-[16:36:54.44] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
-[16:36:55.86] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
-[16:36:55.87] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
-[16:36:56.04] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
-[16:36:56.04] /# de::open [dm::findCellView {schematic} -cellName {inverter} -libName {mylibrary}] -readOnly 0
-[16:36:56.09] /o 	############################################
-[16:36:56.09] /o 	--------------------------------------------
-[16:36:56.09] /o 	PDK Name................... : SAED_PDK_90
-[16:36:56.09] /o 	PDK Release Date........... : 29-Sep-2015
-[16:36:56.09] /o 	PDK Custom Designer Version : J-2014.12-2
-[16:36:56.09] /o 	--------------------------------------------
-[16:36:56.09] /o 	############################################
-[16:36:56.09] /o 
-[16:36:56.09] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
-[16:36:56.10] /o SAED PDK 90: Loaded callbacks
-[16:36:56.10] /o SAED PDK 90: Loaded display resources
-[16:36:56.17] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
-[16:36:56.17] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
-[16:36:56.29] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed}]
-[16:36:56.61] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed}] -value 443x89+335+450
-[16:36:59.13] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed}]
-[16:36:59.26] /r giWindowId 1
-[16:36:59.26] /r giWindowGeometry 1428x925
-[16:36:59.59] /o 0.1
-[16:37:01.49] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
-[16:37:02.01] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
-[16:37:13.21] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
-[16:37:13.74] /i gi::setActiveWindow 0
-[16:37:13.75] /i gi::setActiveWindow 0 -raise true
-[16:37:26.45] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:37:26.45] /i de::showOpenDesign
-[16:37:26.46] /o oa:0x25a66bf0
-[16:37:26.62] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:37:26.76] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+234+428
-[16:37:35.28] /i gi::setCurrentIndex {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
-[16:37:35.29] /i gi::setItemSelection {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
-[16:37:35.49] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
-[16:37:35.52] /# de::open [dm::findCellView {symbol} -cellName {inverter} -libName {mylibrary}] -readOnly 0
-[16:37:35.57] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
-[16:37:35.57] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
-[16:37:36.07] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed}]
-[16:37:36.28] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed}] -value 423x89+345+450
-[16:37:37.11] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed}]
-[16:37:37.28] /r giWindowId 2
-[16:37:37.29] /r giWindowGeometry 1428x925
-[16:37:37.52] /o 0.1
-[16:37:38.24] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
-[16:37:38.76] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
-[16:37:46.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
-[16:37:46.81] /i gi::setActiveWindow 0
-[16:37:46.81] /i gi::setActiveWindow 0 -raise true
-[16:39:53.85] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:39:53.85] /i de::showOpenDesign
-[16:39:53.86] /o oa:0x2300e610
-[16:39:53.94] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:39:55.84] /i gi::setCurrentIndex {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
-[16:39:55.92] /i gi::setItemSelection {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
-[16:39:57.10] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
-[16:39:57.12] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
-[16:39:57.15] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
-[16:39:57.16] /# de::open [dm::findCellView {schematic} -cellName {inverter_testbench} -libName {mylibrary}] -readOnly 0
-[16:39:57.24] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
-[16:39:57.25] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
-[16:39:57.62] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed}]
-[16:39:57.86] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed}] -value 514x89+299+450
-[16:39:58.63] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed}]
-[16:39:58.72] /r giWindowId 3
-[16:39:58.72] /r giWindowGeometry 1428x925
-[16:40:01.40] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
-[16:40:01.90] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
-[16:40:28.76] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
-[16:40:29.26] /i gi::setActiveWindow 0
-[16:40:29.27] /i gi::setActiveWindow 0 -raise true
-[16:40:32.65] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:40:32.65] /i de::showOpenDesign
-[16:40:32.66] /o oa:0x25e60d00
-[16:40:32.75] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:40:38.03] /i gi::closeWindows [gi::getDialogs {deOpenDesign}]
-[16:40:46.53] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:40:46.53] /i de::showOpenDesign
-[16:40:46.56] /o oa:0x22e23010
-[16:40:46.76] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:40:50.32] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
-[16:40:50.33] /# de::open [dm::findCellView {schematic} -cellName {inverter_testbench} -libName {mylibrary}] -readOnly 0
-[16:40:50.38] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
-[16:40:50.39] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
-[16:40:50.50] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed}]
-[16:40:50.71] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed}] -value 514x89+299+450
-[16:40:52.20] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed}]
-[16:40:52.28] /r giWindowId 4
-[16:40:52.28] /r giWindowGeometry 1428x925
-[16:41:07.43] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
-[16:41:07.94] /i gi::setActiveWindow 0
-[16:41:07.95] /i gi::setActiveWindow 0 -raise true
-[16:41:10.09] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
-[16:41:10.09] /i de::showOpenDesign
-[16:41:10.10] /o oa:0x244d2020
-[16:41:10.18] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
-[16:41:11.13] /i gi::setCurrentIndex {designViews} -index {Tran_DC_SAE} -in [gi::getDialogs {deOpenDesign}]
-[16:41:11.14] /i gi::setItemSelection {designViews} -index {Tran_DC_SAE} -in [gi::getDialogs {deOpenDesign}]
-[16:41:11.69] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
-[16:41:11.70] /# de::open [dm::findCellView {Tran_DC_SAE} -cellName {inverter_testbench} -libName {mylibrary}] -readOnly 0
-[16:41:12.63] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
-[16:41:12.71] /r giWindowId 5
-[16:41:12.71] /r giWindowGeometry 600x500
-[16:41:12.97] /o oa:0x28eb1650
-[16:41:13.33] /i db::setAttr geometry -of [gi::getFrames 5] -value 600x500+254+448
-[16:41:15.43] /i db::setAttr geometry -of [gi::getFrames 5] -value 600x500+540+169
-[16:41:19.05] /i gi::pressButton {plotButton} -in [gi::getWindows 5]
-[16:41:19.14] /m Information: Launching Waveform Viewer "cd /home/tempmaj/kokurita/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/tempmaj/kokurita/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
-[16:49:31.31] /m Information: Waveform Viewer exited normally.
+[01:50:30.08] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+654+357
+[01:50:33.77] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+654+357
+[01:50:35.61] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+560+292
+[01:50:38.52] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[01:50:38.52] /i de::showOpenDesign
+[01:50:38.84] /o oa:0x24459950
+[01:50:39.34] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[01:50:39.59] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+580+312
+[01:50:40.65] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[01:50:40.71] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[01:50:43.16] /i gi::setCurrentIndex {designCells} -index {ringOscillator} -in [gi::getDialogs {deOpenDesign}]
+[01:50:43.24] /i gi::setItemSelection {designCells} -index {ringOscillator} -in [gi::getDialogs {deOpenDesign}]
+[01:50:45.65] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[01:50:45.70] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[01:50:50.33] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[01:50:50.38] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[01:50:51.47] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[01:50:51.53] /# de::open [dm::findCellView {schematic} -cellName {ringOscillator} -libName {mylibrary}] -readOnly 0
+[01:50:51.55] /o 	############################################
+[01:50:51.55] /o 	--------------------------------------------
+[01:50:51.55] /o 	PDK Name................... : SAED_PDK_90
+[01:50:51.55] /o 	PDK Release Date........... : 29-Sep-2015
+[01:50:51.55] /o 	PDK Custom Designer Version : J-2014.12-2
+[01:50:51.55] /o 	--------------------------------------------
+[01:50:51.55] /o 	############################################
+[01:50:51.55] /o 
+[01:50:51.55] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[01:50:51.55] /o SAED PDK 90: Loaded callbacks
+[01:50:51.56] /o SAED PDK 90: Loaded display resources
+[01:50:51.62] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[01:50:51.71] /r giWindowId 1
+[01:50:51.71] /r giWindowGeometry 1428x925
+[01:50:52.76] /o 0.1
+[01:50:57.09] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[01:50:57.15] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[01:51:00.05] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[01:51:02.33] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[01:51:02.80] /i gi::setActiveWindow 0
+[01:51:02.87] /i gi::setActiveWindow 0 -raise true
+[01:51:08.75] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[01:51:08.75] /i de::showOpenDesign
+[01:51:08.90] /o oa:0x22b23fd0
+[01:51:09.25] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+580+312
+[01:51:09.54] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[01:51:10.95] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[01:51:11.00] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[01:51:13.99] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[01:51:14.03] /# de::open [dm::findCellView {layout} -cellName {ringOscillator} -libName {mylibrary}] -readOnly 0
+[01:51:14.08] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[01:51:14.13] /r giWindowId 2
+[01:51:14.13] /r giWindowGeometry 1428x925
+[01:51:15.38] /o 0.1
+[01:51:15.42] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x775
+[01:51:30.83] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[01:51:31.53] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[01:51:31.53] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.499 2.536} -index 0 -intent none] -replace true
+[01:51:31.58] /o oa:0x2549de70
+[01:51:31.60] /# gi::executeAction deRepeatCommand -in [gi::getWindows 2]
+[01:51:31.60] /i de::repeatCommand -window 2
+[01:51:31.71] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[01:51:31.71] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[01:51:53.96] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[01:51:56.75] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[01:52:27.32] /i gi::setActiveWindow 0
+[01:52:27.37] /i gi::setActiveWindow 0 -raise true
+[01:52:33.99] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[01:52:33.99] /i de::showOpenDesign
+[01:52:34.12] /o oa:0x25240f30
+[01:52:34.54] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[01:52:37.68] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[01:52:37.73] /# de::open [dm::findCellView {layout} -cellName {ringOscillator} -libName {mylibrary}] -readOnly 0
+[01:52:37.77] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[01:52:37.81] /r giWindowId 3
+[01:52:37.81] /r giWindowGeometry 1428x925
+[01:52:38.85] /o 1
+[01:52:38.87] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x775
+[01:52:39.81] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
+[01:52:39.89] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
+[01:52:49.70] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[01:52:52.45] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[01:52:53.08] /i gi::setActiveWindow 0
+[01:52:53.13] /i gi::setActiveWindow 0 -raise true
+[01:52:55.69] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[01:52:55.69] /i de::showOpenDesign
+[01:52:55.83] /o oa:0x24e8f4f0
+[01:52:56.30] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[01:52:57.88] /i gi::setCurrentIndex {designCells} -index {ringOscillator_testbench} -in [gi::getDialogs {deOpenDesign}]
+[01:52:57.94] /i gi::setItemSelection {designCells} -index {ringOscillator_testbench} -in [gi::getDialogs {deOpenDesign}]
+[01:52:59.94] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[01:53:00.00] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[01:53:01.27] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[01:53:01.32] /# de::open [dm::findCellView {schematic} -cellName {ringOscillator_testbench} -libName {mylibrary}] -readOnly 0
+[01:53:01.37] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[01:53:01.43] /r giWindowId 4
+[01:53:01.43] /r giWindowGeometry 1428x925
+[01:53:05.92] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[01:53:05.97] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[01:53:11.40] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.40] /i de::zoom -window 4 -factor 0.5 -center {5.6125 0.7125}
+[01:53:11.49] /o {-4.28125 -0.15} {6.40625 6.05}
+[01:53:11.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.49] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:11.59] /o {-14.175 -1.0} {7.1875 11.3875}
+[01:53:11.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.59] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.7125}
+[01:53:11.67] /o {-33.975 -2.7125} {8.7625 22.0625}
+[01:53:11.67] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.67] /i de::zoom -window 4 -factor 0.5 -center {5.6125 0.7125}
+[01:53:11.75] /o {-73.5625 -6.1375} {11.9125 43.4125}
+[01:53:11.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.75] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.7125}
+[01:53:11.84] /o {-152.74375 -12.99375} {18.20625 86.11875}
+[01:53:11.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.84] /i de::zoom -window 4 -factor 0.5 -center {5.6125 0.70625}
+[01:53:11.92] /o {-311.09375 -26.69375} {30.79375 171.53125}
+[01:53:11.95] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:11.97] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:11.97] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.07] /o {-627.80625 -54.09375} {55.96875 342.35625}
+[01:53:12.07] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.07] /i de::zoom -window 4 -factor 0.5 -center {5.6125 0.7125}
+[01:53:12.16] /o {-1261.23125 -108.89375} {106.33125 683.99375}
+[01:53:12.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.16] /i de::zoom -window 4 -factor 0.5 -center {5.6125 0.70625}
+[01:53:12.25] /o {-2528.075 -218.49375} {207.05 1367.28125}
+[01:53:12.25] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.25] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.7125}
+[01:53:12.30] /w Warning: Could not zoom to factor '0.00158' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.34] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.34] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.39] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.43] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.46] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:12.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.48] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.52] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.56] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.56] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.62] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.66] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.66] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.70] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.75] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.75] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.80] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.84] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.88] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:12.90] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.90] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:12.95] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:12.99] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:12.99] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:12.99] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.03] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.07] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.07] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.07] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.14] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.19] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.19] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.19] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.24] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.28] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.28] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.32] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.38] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.40] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:13.43] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.43] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.48] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.53] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.53] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.57] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.61] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.61] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.66] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.70] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.70] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.75] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.80] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.80] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.85] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:13.89] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:13.92] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:13.94] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:13.94] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:13.98] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.02] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.02] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.07] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.12] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.12] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.12] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.16] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.20] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.20] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.26] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.31] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.33] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:14.36] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.36] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.40] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.44] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.44] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.44] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.50] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.54] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.54] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.54] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.58] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.62] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.62] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.62] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.67] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.71] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.71] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.76] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.80] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.82] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:14.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.84] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.89] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:14.94] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:14.94] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:14.94] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:14.99] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.03] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.03] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.03] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.08] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.14] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.14] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.18] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.24] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.27] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:15.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.29] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.34] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.38] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.38] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.38] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.43] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.48] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.48] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.54] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.59] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.59] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.64] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.69] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.71] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:15.73] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.73] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.78] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.82] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.82] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.82] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.87] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:15.91] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:15.91] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:15.91] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:15.96] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.01] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.01] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.01] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.07] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.12] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.15] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:16.17] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.17] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.21] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.26] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.26] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.26] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.31] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.35] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.35] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.41] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.46] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.46] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.46] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.51] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.56] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.58] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[01:53:16.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.61] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.66] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.70] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.70] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.74] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.79] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.79] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.84] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.88] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.88] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:16.93] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:16.97] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:16.97] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:16.97] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:17.01] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:17.06] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:17.06] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[01:53:17.06] /i de::zoom -window 4 -factor 0.5 -center {5.61875 0.70625}
+[01:53:17.11] /w Warning: Could not zoom to factor '0.00112' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[01:53:17.15] /o {-3570.74375 -308.70625} {289.94375 1929.65625}
+[01:53:17.18] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[02:01:46.78] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[02:01:49.01] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[02:01:51.13] /i gi::setActiveWindow 0
+[02:01:51.18] /i gi::setActiveWindow 0 -raise true
+[02:01:52.28] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+725+270
+[02:01:52.95] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+725+270
+[02:03:07.03] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[02:03:07.32] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[02:03:07.69] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+745+290
+[02:03:08.57] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[02:03:09.03] /o Shutdown time: Thu Feb 13 02:03:09 2020
+[02:03:09.03] /o Elapsed session real time: 15.05 minutes
+[02:03:09.03] /o Session terminated. Log is at /home/tempmaj/kokurita/eecs168/cdesigner.kokurita.16_1_10_30.log

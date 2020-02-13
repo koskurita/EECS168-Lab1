@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : mylibrary
+* Cell             : ringOscillator
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt ringOscillator VDD VOI1 VOI2 VOI3 VOI4 VOI5 VSS
+*.PININFO VDD:I VOI1:B VOI2:B VOI3:B VOI4:B VOI5:B VSS:I
+XI4 VDD VOI5 VOI1 VSS inverter
+XI3 VDD VOI4 VOI5 VSS inverter
+XI2 VDD VOI3 VOI4 VSS inverter
+XI1 VDD VOI2 VOI3 VSS inverter
+XI0 VDD VOI1 VOI2 VSS inverter
+.ends ringOscillator
+

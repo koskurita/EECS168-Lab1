@@ -1,0 +1,180 @@
+DEBUG: ConnectToServer: bender.engr.ucr.edu 35705
+DEBUG: connect back to cdesigner: 'bender.engr.ucr.edu:35705'
+
+< LAYOUT: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+L CDESIGNER::StartFilter LAY
+L set topLayLCV  ""
+L set curLayLCV  ""
+
+< LAYOUT: start_filter >
+L CDESIGNER::SendCommand setWorkingDir "[pwd]"
+
+< LAYOUT: load_hercules >
+L set topLayLCV "mylibrary/ringOscillator/layout"
+L set curLayLCV "$topLayLCV"
+L CDESIGNER::SendCommand setWorkingDir "/home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.drc"
+L CDESIGNER::SendCommand setTopLayLCV "$topLayLCV"
+L CDESIGNER::SendCommand openLCV "$curLayLCV"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.001
+}
+DEBUG: PopFrontXprobeMessage{} : /vueSetDbu 0.001
+/ //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+
+< LAYOUT: new_block >
+V ZOOM_EXTENTS_RESET
+L CDESIGNER::SendCommand clearAllHighlights "$curLayLCV"
+L set curLayLCV "mylibrary/ringOscillator/layout"
+L CDESIGNER::SendCommand openLCV "$curLayLCV"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.001
+}
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+
+< LAYOUT: primary_hilite >
+L CDESIGNER::SendCommand setHighlightProperty "yellow" "brick"
+
+< LAYOUT: poly_group_begin >
+
+< LAYOUT: poly_begin >
+L CDESIGNER::SendCommandNB addPolygonBegin $curLayLCV "4"
+
+< LAYOUT: poly_point_set >
+L CDESIGNER::AddPolygonPoints $curLayLCV {13.234 0.91 13.234 1.05 13.235 1.05 13.235 0.91}
+
+< LAYOUT: poly_end >
+L CDESIGNER::SendCommandNB addPolygonEnd $curLayLCV
+
+< LAYOUT: poly_group_end >
+
+< LAYOUT: zoom_extents >
+L CDESIGNER::SendCommand setViewPort $curLayLCV [list 13.233875 0.8925 13.235125 1.0675]
+
+< LAYOUT: drc_error >
+L CDESIGNER::SendCommand addErrorDescription $curLayLCV {"Distance: 0"}
+
+< LAYOUT: after_hilite >
+L CDESIGNER::SendCommand drawHighlights $curLayLCV
+DEBUG: PopFrontXprobeMessage{} : /vueSetDbu 0.001
+/ //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+
+< LAYOUT: primary_hilite >
+L CDESIGNER::SendCommand setHighlightProperty "yellow" "brick"
+
+< LAYOUT: poly_group_begin >
+
+< LAYOUT: poly_begin >
+L CDESIGNER::SendCommandNB addPolygonBegin $curLayLCV "4"
+
+< LAYOUT: poly_point_set >
+L CDESIGNER::AddPolygonPoints $curLayLCV {13.375 0.91 13.375 1.05 13.376 1.05 13.376 0.91}
+
+< LAYOUT: poly_end >
+L CDESIGNER::SendCommandNB addPolygonEnd $curLayLCV
+
+< LAYOUT: poly_group_end >
+
+< LAYOUT: zoom_extents >
+L CDESIGNER::SendCommand setViewPort $curLayLCV [list 13.374875 0.8925 13.376125 1.0675]
+
+< LAYOUT: drc_error >
+L CDESIGNER::SendCommand addErrorDescription $curLayLCV {"Distance: 0"}
+
+< LAYOUT: after_hilite >
+L CDESIGNER::SendCommand drawHighlights $curLayLCV
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PushBackXprobeMessage{vueCloseResult}
+DEBUG: PopFrontXprobeMessage{} : /vueCloseResult/ //
+DEBUG: PopFrontXprobeMessage{} : // //
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights $curLayLCV
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+
+< LAYOUT: load_hercules >
+L set topLayLCV "mylibrary/ringOscillator/layout"
+DEBUG: PopFrontXprobeMessage{} : // //
+L set curLayLCV "$topLayLCV"
+L CDESIGNER::SendCommand setWorkingDir "/home/tempmaj/kokurita/eecs168/pvjob_mylibrary.ringOscillator.icv.drc"
+L CDESIGNER::SendCommand setTopLayLCV "$topLayLCV"
+L CDESIGNER::SendCommand openLCV "$curLayLCV"
+DEBUG: PushBackXprobeMessage{vueSetDbu 0.001
+}
+DEBUG: PopFrontXprobeMessage{} : /vueSetDbu 0.001
+/ //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+DEBUG: PopFrontXprobeMessage{} : // //
+
+< LAYOUT: remove_hilites >
+L CDESIGNER::SendCommand clearAllHighlights $curLayLCV

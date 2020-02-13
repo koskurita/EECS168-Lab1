@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      kokurita
+HostName                       bender.engr.ucr.edu
+ProcessIdentifier              194372
+ProcessCreationTime_UTC        1581005932
+ProcessCreationTime_Readable   Thu 06 Feb 2020 08:18:52 AM PST PST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/tempmaj/kokurita/eecs168/mylibrary/inverter/layout/layout.oa.cdslck
+TimeEditLocked                 Thu 06 Feb 2020 08:22:23 AM PST PST
